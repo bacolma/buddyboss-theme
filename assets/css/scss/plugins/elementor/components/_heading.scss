@@ -1,0 +1,21 @@
+.elementor {
+
+    .elementor-widget-heading.elementor-widget-heading .elementor-heading-title {
+        font-weight: 400;
+        color: $color-headings;
+    }
+
+    .elementor-widget-heading.elementor-widget-heading {
+
+        h1 {
+            font-size: 27px;
+            line-height: 24px;
+        }
+
+        h1, h2, h3, h4 {
+            margin-bottom: 27px;
+        }
+        
+    }
+
+}

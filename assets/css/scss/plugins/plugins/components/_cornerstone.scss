@@ -1,0 +1,649 @@
+/** Variables */
+$color-content-text: $color-small-text;
+$alert-padding-box: 0.615em 2.25em 0.615em 1.15em;
+
+#cs-content.cs-content {
+    font-size: 1rem;
+}
+
+body.page-template-page-fullwidth {
+    #content .container {
+        .content-area .entry-content #cs-content.cs-content {
+            width: 100vw;
+            margin-left: calc(-50vw + 50%);
+        }
+    }
+}
+
+@media( min-width: $md ) {
+    body.page-template-page-fullwidth {
+        #cs-content .x-container.width {
+            width: calc(88% - 68px);
+        }
+    }
+}
+
+@media( max-width: $md ) {
+    #cs-content .x-column.x-sm {
+        height: 100%;
+    }
+}
+
+#cs-content.cs-content .x-text {
+    /*color: $color-content-text;*/
+    /*line-height: 1.5;*/
+}
+
+#cs-content.cs-content .x-text h1,
+#cs-content.cs-content .x-text h2,
+#cs-content.cs-content .x-text h3,
+#cs-content.cs-content .x-text h4,
+#cs-content.cs-content .x-text h5 {
+    color: $color-headings;
+}
+
+/** Buttons */
+.x-anchor {
+    border-radius: 50px;
+    box-shadow: none;
+    border: 1px solid $color-border;
+}
+
+.x-anchor.x-anchor-button .x-anchor-content {
+    padding: 0.575em 1.45em;
+}
+
+#cs-content.cs-content .x-btn {
+    border-radius: 50px;
+    box-shadow: none;
+    border: 1px solid $color-border;
+    background: $color-white;
+    color: $color-text;
+    text-shadow: none;
+    line-height: 1.4;
+
+    &:hover {
+        background-color: $color-white;
+        box-shadow: none;
+        text-shadow: none;
+        color: $color-text;
+    }
+
+    &:visited {
+        color: $color-text;
+    }
+
+    &.x-btn-small {
+        padding: 6px 20px;
+        min-height: 34px;
+        font-size: 14px;
+
+        &:hover {
+            border-color: darken($color-border, 5%);
+        }
+
+        &:active {
+            border-color: darken($color-border, 5%);
+        }
+    }
+
+    &.x-btn-regular {
+        min-height: 40px;
+        padding: 10px 20px;
+        font-size: 15px;
+
+        &:hover {
+            border-color: darken($color-border, 5%);
+        }
+
+        &:active {
+            border-color: darken($color-border, 5%);
+        }
+    }
+
+    &.x-btn-global,
+    &.x-btn-large {
+        font-size: 16px;
+        min-height: 50px;
+        padding: 14px 30px;
+
+        &:hover {
+            border-color: darken($color-border, 5%);
+        }
+
+        &:active {
+            border-color: darken($color-border, 5%);
+        }
+    }
+}
+
+#cs-content.cs-content .mejs-button button {
+    min-height: 30px;
+}
+
+/** Author */
+#cs-content .x-author-box img.avatar {
+    border-radius: 50%;
+}
+
+#cs-content .x-author-box h6.h-about-the-author {
+    font-size: $heading-font-size-6;
+    letter-spacing: 0;
+    line-height: 21px;
+}
+
+#cs-content .x-author-box .x-author-info .h-author {
+    color: $color-headings;
+}
+
+#cs-content .x-author-box .x-author-info .p-author,
+#cs-content .x-author-box .x-author-info p {
+    color: $color-content-text;
+    font-size: $font-size-smaller;
+    line-height: 24px;
+}
+
+/** Accordion */
+#cs-content .x-accordion .x-accordion-heading .x-accordion-toggle.collapsed:before {
+    content: "\f0d8";
+    color: $menu-link-color;
+}
+
+#cs-content .x-accordion .x-accordion-heading .x-accordion-toggle:before {
+    content: "\f0d7";
+    transform: rotate(0deg);
+    color: $color-white;
+}
+
+#cs-content .x-accordion .x-accordion-group {
+    border: 0;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+#cs-content .x-accordion .x-accordion-inner {
+    border-top: 0;
+    line-height: 24px;
+}
+
+#cs-content .x-accordion .x-accordion-heading {
+    border: 0;
+    border-radius: 3px;
+}
+
+#cs-content .x-accordion .x-accordion-heading .x-accordion-toggle {
+    background-color: $color-link;
+    color: $color-white;
+    border: 1px solid $color-link;
+    font-size: 1em;
+    padding: 6px 15px;
+    line-height: 24px;
+}
+
+#cs-content .x-accordion .x-accordion-heading .x-accordion-toggle.collapsed:hover {
+    color: $color-text;
+}
+
+#cs-content .x-accordion .x-accordion-heading .x-accordion-toggle.collapsed {
+    background-color: $color-white;
+    color: $menu-link-color;
+    border: 1px solid $color-border;
+}
+
+/** Alert */
+#cs-content.cs-content .x-alert.x-alert-muted .h-alert {
+    color: $color-headings;
+}
+
+#cs-content.cs-content .x-alert .h-alert {
+    line-height: 1.5;
+}
+
+#cs-content.cs-content .x-alert {
+    background-color: $color-white;
+    border: 1px solid $color-border;
+    padding: $alert-padding-box;
+    box-shadow: none;
+    color: $color-content-text;
+    font-size: $font-size-small;
+    line-height: 24px;
+}
+
+#cs-content.cs-content .x-alert.x-alert-muted {
+    background-color: $color-white;
+    border: 1px solid $color-border;
+    padding: $alert-padding-box;
+    color: $color-content-text;
+}
+
+#cs-content.cs-content .x-alert.x-alert-danger {
+    background-color: $color-error;
+    color: $color-white;
+    border: 1px solid $color-error;
+    padding: $alert-padding-box;
+
+    .close {
+        color: $color-error;
+    }
+}
+
+#cs-content.cs-content .x-alert.x-alert-success {
+    background-color: $color-success;
+    color: $color-white;
+    border: 1px solid $color-success;
+    padding: $alert-padding-box;
+
+    .close {
+        color: $color-success;
+    }
+}
+
+#cs-content.cs-content .x-alert.x-alert-info {
+    background-color: $color-link;
+    color: $color-white;
+    border: 1px solid $color-link;
+    padding: $alert-padding-box;
+
+    .close {
+        color: $color-link;
+    }
+}
+
+#cs-content.cs-content .x-alert .close {
+    background-color: $color-white;
+    border-radius: 50%;
+    color: $color-text;
+    line-height: 70%;
+    top: -2px;
+    padding: 1px 2px 3px;
+    opacity: 1;
+}
+
+#cs-content.cs-content .x-alert.x-alert-muted .close {
+    background-color: $color-border;
+}
+
+/** Blockquote */
+#cs-content.cs-content .x-blockquote,
+#cs-content.cs-content .x-blockquote:not(.x-pullquote) {
+    border: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: $heading-font-size-2;
+}
+
+/** Code snippet */
+#cs-content.cs-content .x-code,
+#cs-content.cs-content .x-code code {
+    font-size: $font-size-extra-small;
+    line-height: 21px;
+    max-width: 100%;
+}
+
+/** Search */
+#cs-content input[type="search"].search-field {
+    padding-left: 3rem;
+    padding-right: 1rem;
+    width: 100%;
+}
+
+#cs-content input[type="search"].x-search-input {
+    background-image: none;
+}
+
+#cs-content .x-search .x-search-btn {
+    margin: 0 10px 0 20px;
+}
+
+form.x-search {
+    border-radius: 100em;
+}
+
+#cs-content form.x-search {
+    border: 1px solid $color-border;
+}
+
+#cs-content .boss-social-ge-search input[type="search"].search-field {
+    width: 100%;
+}
+
+/** Tabs */
+#cs-content.cs-content .x-nav-tabs {
+    border: 0;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+#cs-content.cs-content .x-tab-content {
+    border: 0;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+#cs-content.cs-content .x-tab-content .x-tab-pane {
+    color: $color-content-text;
+    line-height: 24px;
+}
+
+#cs-content.cs-content .x-nav-tabs>li.x-nav-tabs-item {
+    border-bottom: 0;
+    border-right: 0;
+    border-bottom: 1px solid $color-border;
+}
+
+#cs-content.cs-content .x-nav-tabs > li.x-nav-tabs-item.active {
+    border-bottom: 1px solid $color-link;
+}
+
+#cs-content.cs-content .x-nav-tabs > li > a {
+    color: $color-content-text;
+    font-size: $font-size-smaller;
+}
+
+#cs-content.cs-content .x-nav-tabs > li.active > a,
+#cs-content.cs-content .x-nav-tabs > li > a:hover {
+    color: $color-text;
+}
+
+#cs-content.cs-content .x-nav-tabs > li.active > a {
+    font-weight: 600;
+}
+
+/** Slider */
+#cs-content .flex-direction-nav li a {
+    border-radius: 100%;
+    line-height: 32px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#cs-content .flex-direction-nav li a.flex-next {
+    right: 15px;
+    left: auto;
+}
+
+/** Pricing table */
+#cs-content .x-pricing-column-info h3.x-price {
+    font-weight: normal;
+    font-size: $heading-font-size-1;
+    letter-spacing: 0;
+}
+
+#cs-content .x-pricing-table .x-pricing-column {
+    padding-left: 5px;
+    padding-right: 5px;
+    background-color: transparent;
+
+    h2 {
+        background-color: $color-white;
+        text-transform: uppercase;
+        font-size: $heading-font-size-3;
+        color: $color-content-text;
+
+    }
+
+    .x-pricing-column-info {
+        background-color: $color-white;
+    }
+}
+
+#cs-content .x-pricing-table .x-pricing-column.featured h2 {
+    background-color: $color-white;
+    color: $color-content-text;
+    border: 1px solid rgba(0,0,0,0.125);
+}
+
+#cs-content .x-pricing-table .x-pricing-column.featured {
+    box-shadow: none;
+}
+
+#cs-content .x-pricing-table .x-pricing-column-info .x-btn {
+    color: $color-white;
+    background-color: $color-link;
+    border-color: $color-link;
+
+    &:hover {
+        border-color: darken($color-link, 5%);
+        background-color: darken($color-link, 5%);
+    }
+
+    &.x-btn-medium {
+        min-height: 40px;
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+
+    &.x-btn-large {
+        font-size: 16px;
+        min-height: 50px;
+        padding: 14px 30px;
+    }
+}
+
+#cs-content .x-pricing-column-info span.x-interval {
+    color: $color-content-text;
+}
+
+#cs-content .x-pricing-table .x-pricing-column h2 span.x-featured-sub {
+    letter-spacing: 0;
+    text-transform: none;
+}
+
+#cs-content .x-pricing-table .x-pricing-column-info ul>li [class*="x-icon-"] {
+    color: $color-success;
+    font-family: "bb-icons";
+    margin-left: 0;
+}
+
+#cs-content .x-pricing-table [class*="x-icon-"]:before {
+    border: 1px solid $color-success;
+    border-radius: 100%;
+    padding: 0px;
+    font-size: 1.2em;
+    content: '\e809';
+}
+
+#cs-content .x-pricing-table [class*="x-icon-times"]:before {
+    content: '\e828';
+}
+
+#cs-content .x-pricing-table .x-pricing-column-info ul {
+    display: inline-block;
+
+    > li {
+        border-bottom: 0;
+        text-align: left;
+        padding: 5px 30px;
+        color: $color-text;
+
+        &:first-child {
+            border-top: 0;
+        }
+    }
+}
+
+/** Call to action */
+#cs-content.cs-content .x-callout {
+    background-color: transparent;
+    border: 0;
+    box-shadow: none;
+    font-size: $font-size;
+}
+
+#cs-content.cs-content .x-callout .h-callout {
+    font-size: $heading-font-size-2;
+}
+
+#cs-content.cs-content .x-callout .p-callout {
+    color: $color-content-text;
+}
+
+#cs-content.cs-content .x-callout .x-btn {
+    color: $color-white;
+    background-color: $color-link;
+    border-color: $color-link;
+    font-size: 15px;
+    min-height: 40px;
+    padding: 10px 20px;
+
+    &:hover {
+        border-color: darken($color-link, 5%);
+        background-color: darken($color-link, 5%);
+    }
+}
+
+/** Feature box */
+#cs-content.cs-content .x-feature-box {
+    border: 1px solid $color-border;
+    border-radius: 3px;
+    padding: 1.25rem;
+}
+
+/** Feature box */
+#cs-content.cs-content .x-promo {
+    box-shadow: none;
+}
+
+/** Skill bar */
+#cs-content.cs-content .x-skill-bar {
+    height: 5px;
+    margin-bottom: 3em;
+}
+
+#cs-content.cs-content .x-skill-bar .bar {
+    overflow: visible;
+}
+
+#cs-content.cs-content .x-skill-bar .bar .percent {
+    left: 0;
+    right: inherit;
+    bottom: -25px;
+    color: $color-content-text;
+    font-size: 12px;
+}
+
+/** Icon list */
+#cs-content.cs-content .x-ul-icons li {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: $color-content-text;
+}
+
+/** Counter */
+@media( max-width: $md ) {
+    #cs-content .el150.x-container .x-counter {
+        margin-bottom: 3em !important;
+    }
+
+    #cs-content .el150.x-container .el158.x-counter {
+        margin-bottom: 0 !important;
+    }
+
+    .el150.x-container .el157 .x-counter-number-wrap,
+    .el150.x-container .el158 .x-counter-number-wrap,
+    .el150.x-container .el157 .x-counter-before, .el158 .x-counter-before,
+    .el150.x-container .el157 .x-counter-after, .el158 .x-counter-after {
+        text-align: center !important;
+    }
+}
+
+/** Feature heading */
+#cs-content.cs-content .h-feature-headline > span {
+    padding-left: 0;
+    padding-top: 1.5em;
+    line-height: 1.4;
+}
+
+#cs-content.cs-content .h-feature-headline > span i {
+    top: 0;
+    margin-top: 0;
+}
+
+/** Recent posts */
+#cs-content.cs-content .x-recent-posts > a {
+    border: 0;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+#cs-content .x-recent-posts a .x-recent-posts-content {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#cs-content .x-recent-posts a:hover .x-recent-posts-content .h-recent-posts {
+    color: $color-link;
+}
+
+#cs-content.cs-content .x-recent-posts .x-recent-posts-date {
+    font-size: 12px;
+    text-transform: none;
+    color: $color-content-text;
+}
+
+#cs-content .x-recent-posts a .x-recent-posts-img:after {
+    background-color: $color-link;
+}
+
+/** Google maps */
+#cs-content .x-google-map.with-container {
+    border: 0;
+    padding: 0;
+    box-shadow: none;
+}
+
+#cs-content .x-map.x-google-map .x-map-inner,
+#cs-content .x-frame-map-google .x-frame-inner {
+    border-radius: 3px;
+}
+
+#cs-content .x-google-map button {
+    min-height: auto;
+}
+
+/** Feature box */
+#cs-content.cs-content .x-feature-box h4.x-feature-box-title {
+    font-size: $heading-font-size-2;
+}
+
+/** Promo box */
+.x-promo .x-promo-content p {
+    color: $color-content-text;
+    line-height: 24px;
+}
+
+/** Raw content */
+#cs-content.cs-content .x-raw-content {
+    line-height: 24px;
+}
+
+/** Feature list */
+#cs-content.cs-content .x-feature-list .x-feature-box {
+    margin-bottom: 15px;
+}
+
+#cs-content .x-feature-box p.x-feature-box-text {
+    color: $color-content-text;
+    line-height: 1.5;
+}
+
+/** Social sharing */
+#cs-content .x-entry-share .x-share-options a.x-share {
+    color: #9CA8B4;
+    margin: 0 0.25em;
+}
+
+#cs-content .x-entry-share .x-share-options a.x-share:hover {
+    color: $color-link;
+}
+
+/** Navigation */
+.x-menu li .x-anchor {
+    border-radius: 0;
+    box-shadow: none;
+    border: 0;
+}
+
+#cs-content .x-dropdown {
+    box-shadow: none;
+}

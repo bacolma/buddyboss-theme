@@ -1,0 +1,92 @@
+#learndash-page-content .ld-focus-comments{
+    .ld-focus-comment:last-child {
+        margin-bottom: 2em;
+    }
+    .ld-comment-wrapper{
+        background: $color-white;
+        border: 1px solid $color-border;
+        border-radius: 4px;
+        margin-bottom: 20px;
+        padding: 30px;
+    }
+    #commentform textarea#comment{
+        background-color: transparent;
+        border-width: 1px;
+        border-radius: 3px;
+    }
+    #commentform .logged-in-as{
+        display: none;
+    }
+    .ld-expand-button.ld-button-alternate{
+        font-size: 14px;
+        color: $color-link;
+    }
+    .comment-respond{
+        padding: 30px;
+        #reply-title{
+            font-size: 18px;
+            font-weight: 400;
+            margin-bottom: 25px;
+        }
+    }
+    .ld-focus-comments__heading{
+        border-bottom: none;
+        .ld-focus-comments__header{
+            color: $color-headings;
+            font-size: 18px;
+            font-weight: 400;
+            margin-bottom: 0;
+        }
+    }
+    #ld-comments {
+        margin-bottom: 0;
+    }
+    .ld-comment-avatar {
+        .ld-comment-avatar-author{
+            a.ld-comment-permalink{
+                line-height: normal;
+                color: $color-link;
+            }
+            .ld-comment-author-name {
+                font-size: 14px;
+                margin-bottom: 0;
+            }
+        }  
+    }
+    .ld-comment-body{
+        margin-left: 60px;
+        p{
+            margin-bottom: 0;
+        }
+    }
+    .ld-comment-reply {
+        margin: 10px 0 0;
+    }
+    .ld-comment-reply a.comment-reply-link{
+        background-color: transparent;
+        padding: 0;
+        font-size: 14px;
+        color: #939597;
+        font-weight: 400;
+        border-radius: 0;
+        letter-spacing: -.26px;
+    }
+    .comment .ld-comment-avatar{
+        align-items: flex-start;
+        &> img{
+            max-width: 42px;
+            border: 0;
+        }
+    }
+    .form-submit #submit{
+        background-color: transparent;
+        border: 1px solid $color-link;
+        color: $color-link;
+        width: auto;
+        padding: 6px 20px;
+        font-size: 14px;
+        min-height: 34px;
+        font-weight: 500;
+        border-radius: 100px;
+    }
+}

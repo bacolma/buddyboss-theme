@@ -1,0 +1,452 @@
+html.quiz-sort {
+    &, body, .site {
+        overflow: initial;
+    }
+}
+
+html.elementor-html body.bb-sfwd-aside {
+    overflow: auto;
+}
+
+.learndash-theme.archive {
+    .post-grid > .hentry {
+        flex: 0 0 25%;
+        
+        @media screen and (max-width: 1100px) {
+            flex: 0 0 33.3333%;
+        }
+        
+        @media screen and (max-width: 800px) {
+            flex: 0 0 50%;
+        }
+        
+        @media screen and (max-width: 480px) {
+            flex: 0 0 100%;
+        }
+        
+        .entry-content {
+            margin-bottom: 0;
+
+            p:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+#learndash-page-content {
+    background-color: $color-white;
+    border-bottom: 1px solid $color-border;
+    padding: 30px 100px 0;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: calc(100vh - 76px);
+
+    &.loading {
+        & > .learndash-content-body {
+            opacity: 0.2;
+        }
+
+        &:after {
+            font: normal normal normal 20px/1 "bb-icons";
+            speak: none;
+            display: inline-block;
+            text-decoration: inherit;
+            text-transform: none;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            content: '\E838';
+            animation: spin 2s infinite linear;
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            z-index: 102;
+            margin-left: auto;
+            margin-right: auto;
+            left: 0;
+            right: 0;
+        }
+    }
+
+    @media screen and (max-width: $xl) {
+        padding: 30px 60px 0;
+    }
+
+    @media screen and (max-width: $lg) {
+        padding: 30px 40px 0;
+    }
+
+    @media screen and (max-width: 543px) {
+        padding: 30px 20px 0;
+    }
+
+    .learndash_next_prev_link {
+        margin-top: auto;
+        display: flex;
+        padding: 30px 0;
+
+        a.next-link {
+            margin-left: auto;
+        }
+    }
+
+    .sfwd-course-nav {
+        display: flex;
+        align-items: center; 
+
+        .sfwd-course-expire {
+            margin-right: 20px;
+            font-size: 14px;
+
+            i {
+                color: $color-small-text;
+                margin-right: 8px;
+            }
+        }
+
+        .learndash_next_prev_link {
+            margin-top: 0;
+            display: flex;
+            padding: 0;
+
+            a {
+                font-size: 0;
+                background-color: #D3D7DB;
+                color: #fff;
+
+                &:hover {
+                    background-color: $color-link;
+                }
+
+                &:after,
+                &:before {
+                    font-size: $font-size-small;
+                    padding-bottom: 0;
+                    margin: 0;
+                }
+            }
+
+            a.next-link {
+                margin-left: auto;
+            }
+
+            span.empty-post {
+                font-size: 0;
+                background-color: #D3D7DB;
+                color: #fff;
+                opacity: 0.5;
+                pointer-events: none;
+
+                &:after,
+                &:before {
+                    font-size: $font-size-small;
+                    padding-bottom: 0;
+                    margin: 0;
+                }
+            }
+
+            span.next-link {
+                margin-left: auto;
+            }
+        }        
+    }
+
+    .bb-lms-secondary-header {
+
+        & > span {
+            text-transform: uppercase;
+            font-size: 12px;
+        }
+
+        h1 {
+            line-height: 1.2;
+            font-weight: 700;
+            font-size: 36px;
+            margin: 0;
+        }
+
+        p#learndash_next_prev_link {
+            font-size: 13px;
+            margin-bottom: 0;
+        }
+    }
+}
+/*Hide Shortcode content*/
+.sfwd-lessons-template-default,
+.sfwd-topic-template-default,
+.sfwd-quiz-template-default{
+    #learndash-page-content #learndash-content{
+        .lms-topic-sidebar-wrapper{
+            display: none;
+        }
+        #learndash-page-content{
+            min-height: inherit;
+            padding: 0;
+            border: 0;
+            .learndash_content_wrap{
+                padding: 0;
+                margin: 0;
+                &>div{
+                    padding: 0;
+                    margin: 0;
+                }
+            }
+            #learndash-course-header{
+                display: none;
+            }
+            .learndash_content_wrap{
+                #comments.comments-area,
+                .ld-focus-comments{
+                    display: none;
+                }
+            }
+        }
+    }
+}
+#learndash_lessons,
+#learndash_quizzes,
+#learndash_profile,
+#learndash_lesson_topics_list > div {
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+    margin-bottom: 0;
+}
+
+body.bb-buddypanel.bb-sfwd-aside {
+    .site-header .bb-toggle-panel {
+        display: inherit;
+        margin-left: -18px;    
+    }
+
+    .header-aside-inner .bb-toggle-panel {
+        display: none;
+    }
+
+    &.bb-buddypanel-right {
+        .site-header .site-header-container > .bb-toggle-panel {
+            display: none;
+        }
+
+        .site-header .site-header-container {
+            padding-left: 0;
+        }
+
+        .header-3 {
+            .header-aside-inner .bb-toggle-panel {
+                margin-right: 0;
+            }
+        }
+
+        .header-aside-inner .bb-toggle-panel {
+            display: inline-block;
+            padding-left: 20px;
+            margin: 0;
+            margin-right: -18px;
+        }
+    }
+
+    .site-header .site-header-container:not(.header-3) #header-aside .bb-toggle-panel i {
+        color: inherit;
+    }
+
+    &.buddypanel-open:not(.buddypanel-header),
+    &.buddypanel-transtioned:not(.buddypanel-header) {
+        .site-header .bb-toggle-panel {
+            visibility: hidden;
+            opacity: 0;
+        }
+    }
+
+    &.buddypanel-header {
+        .site-header .bb-toggle-panel {
+            margin-left: -18px;
+        }
+    }
+
+    &.buddypanel-header.bb-buddypanel-right {
+        .site-header .bb-toggle-panel {
+            margin-left: 0;
+        }
+    }
+
+    &:not(.buddypanel-open) {
+        .buddypanel .bb-toggle-panel {
+            visibility: hidden;
+            opacity: 0;   
+        }
+    }
+}
+
+body.bb-sfwd-aside {
+    .site-header,
+    .footer-container {
+        .container {
+            max-width: 100%;
+        }
+    }
+
+    .site-header {
+        .container {
+            max-width: 100%;
+            margin-right: 0;
+        }
+    }
+
+    &.buddypanel-header {
+        .buddypanel .panel-head {
+            height: 0;
+
+            .bb-toggle-panel {
+                display: none;
+            }
+        }
+    }
+
+    .side-panel-inner {
+        height: calc(100% - 70px);
+    }
+}
+
+.single-sfwd-quiz,
+.single-sfwd-lessons,
+.single-sfwd-topic {
+    .elementor.elementor-location-footer {
+        display: none !important;
+    }
+}
+
+.bb-sfwd-aside {
+    .site-content .container {
+        max-width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+
+        & > .grid {
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .grid>*:not(.no-gutter),
+            .grid-cell:not(.no-gutter) {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .container-full {
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+            left: 0;
+            right: 0;
+        }
+
+        .content-area {
+            padding-bottom: 0;
+            padding-top: 0;
+        }
+    }
+
+    .header-aside {
+        margin-left: auto;
+    }
+}
+
+.single-sfwd-courses,
+.single-sfwd-quiz,
+.single-sfwd-lessons,
+.single-sfwd-topic {
+    &.has-sidebar #primary {
+        max-width: 100% !important;
+    }
+}
+
+.site-branding.ld-brand-logo {
+    img {
+        max-height: 100%;
+        padding: 10px 0;
+    }
+}
+
+.site-header-container .site-branding.ld-brand-logo {
+    min-width: inherit;
+}
+
+.buddypanel-header .buddypanel .site-branding.ld-brand-logo {
+    padding-right: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    img {
+        padding: 0;
+        margin: 0 auto;
+    }
+}
+
+.lms-topic-sidebar-wrapper.lms-topic-sidebar-close.md-grid-1-3 {
+    flex: 0 0 0%;
+    opacity: 0;
+}
+
+.ld-course-navigation {
+    .bb-toggle-panel {
+        margin-right: 10px;
+        position: relative;
+        top: 4px;
+
+        .bb-icon-menu-left {
+            font-size: 24px;
+        }
+    }
+}
+
+.lms-topic-sidebar-wrapper {
+    .bb-elementor-header-items {
+        display: none;
+    }
+}
+
+.learndash-content-body {
+    position: relative;
+
+    .bb-elementor-header-items {
+        position: absolute;
+        right: 0;
+        z-index: 2;
+
+        a {
+            margin-left: 10px;
+        }
+
+        i {
+            font-size: 16px;
+        }
+    }
+}
+
+.lms-side-panel-close .bb-elementor-header-items {
+    right: 30px;
+
+    .header-minimize-link {
+        display: inline-block;
+    }
+}
+
+
+@media screen and (min-width: $md) {
+    .sfwd-single-sidebar-right:not(.single-sfwd-courses) {
+        #learndash-content > .bb-grid {
+            flex-flow: row-reverse;
+        }
+    }
+}
+
+@media screen and (min-width: $md) {
+    .single-sfwd-quiz.bb-buddypanel .site-content,
+    .single-sfwd-lessons.bb-buddypanel .site-content,
+    .single-sfwd-topic.bb-buddypanel .site-content {
+        padding: 0 10px;
+    }
+}

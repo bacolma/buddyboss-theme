@@ -1,0 +1,181 @@
+body.buddypress.activation article.bp_activate {
+    max-width: 450px;
+    width: 48%;
+    margin-left: auto;
+    margin-right: auto;
+
+    .entry-header {
+        margin-bottom: 1.2rem;
+        display: flex;
+
+        h1 {
+            font-size: $font-size-big;
+            margin-right: auto;
+        }
+
+        span {
+            font-size: $font-size-smaller;
+            text-transform: lowercase;
+        }
+    }
+
+    label {
+        font-weight: normal;
+        font-size: 14px;
+    }
+}
+
+body.buddypress.activation {
+    .site {
+        min-height: initial;
+    }
+}
+
+body.buddypress.activation .activate-section-logo {
+    width: 48%;
+    max-width: 450px;
+    text-align: center;
+    margin: 0 auto 1.7rem;
+
+    img {
+        max-width: 320px;
+        width: 22%;
+    }
+
+    span {
+        background-size: contain;
+        width: 84px;
+        /*height: 84px;*/
+        height: auto;
+        display: block;
+        background-position: center top;
+        background-repeat: no-repeat;
+        margin: auto;
+    }
+
+    a {
+        font-size: 20px;
+        line-height: 1.3em;
+    }
+}
+
+body.buddypress.activation.login-split-page .login-split {
+    display: none;
+}
+
+@media( min-width: 992px ) {
+    body.buddypress.activation.login-split-page {
+        height: 100%;
+
+        .site-content {
+            padding: 0;
+            min-height: initial;
+            height: 100%;
+        }
+
+        .container {
+            max-width: none;
+            padding: 0;
+            height: 100%;
+        }
+
+        .bb-grid {
+            margin: 0;
+            height: 100%;
+        }
+
+        .login-split {
+            padding: 0;
+            width: 50%;
+            position: fixed;
+            left: 0px;
+            height: 100%;
+            display: block;
+        }
+
+        #primary {
+            position: absolute;
+            left: 50%;
+        }
+
+        .bs-bp-container-reg {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .activate-section-logo {
+            margin-right: 0;
+            margin-left: 50px;
+            margin-top: 50px;
+            min-width: 320px;
+            text-align: left;
+        }
+
+        article.bp_activate {
+            margin-right: 0;
+            margin-left: 50px;
+            min-width: 320px;
+        }
+
+        .submit input[type=submit] {
+            width: 100%;
+        }
+    }
+
+    body.buddypress.activation.login-split-page .login-split .split-overlay {
+        width: 100%;
+        height: 100%;
+        background-color: #000000;
+        position: relative;
+        z-index: 1;
+        opacity: 0;
+    }
+
+    body.buddypress.activation.login-split-page .login-split div {
+        color: $color-white;
+    }
+
+    body.buddypress.activation.login-split-page .login-split > div:not(.split-overlay) {
+        display: block;
+        width: 50%;
+        max-width: 300px;
+        margin: 0 auto;
+        padding: 8% 0 0;
+        font-size: 32px;
+        line-height: 1.15;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 9;
+        margin: auto;
+    }
+
+    body.buddypress.activation.login-split-page .login-split > div > span {
+        font-size: 16px;
+        line-height: 1.4;
+        display: block;
+        margin-top: 20px;
+    }
+}
+
+@media( max-width: $md ) {
+    body.buddypress.activation article.bp_activate {
+        width: 90%;
+    }
+
+    body.buddypress.activation .activate-section-logo {
+        width: 90%;   
+    }
+}
+
+@media( max-width: $sm ) {
+    body.buddypress.activation article.bp_activate {
+        width: 100%;
+    }
+
+    body.buddypress.activation .activate-section-logo {
+        width: 100%;   
+    }
+}

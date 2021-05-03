@@ -1,0 +1,501 @@
+.bs-bp-container-reg #buddypress #signup-form.standard-form {
+    overflow: hidden;
+
+    > p {
+        font-size: $font-size-smaller;
+        line-height: 21px;
+    }
+
+    p.description {
+        margin: 0 0 12px 0;
+        background: transparent;
+    }
+
+    #basic-details-section.register-section,
+    #profile-details-section.register-section {
+        float: none;
+        margin: 0 auto;
+        width: 100%;
+
+        > h2 {
+            margin-bottom: 0.5rem;
+        }
+    }
+
+    #basic-details-section.register-section {
+        margin-bottom: 0;
+    }
+
+    #profile-details-section.register-section {
+        .editfield {
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    }
+
+    input[type=color],
+    input[type=date],
+    input[type=datetime-local],
+    input[type=datetime],
+    input[type=email],
+    input[type=month],
+    input[type=number],
+    input[type=password],
+    input[type=range],
+    input[type=search],
+    input[type=tel],
+    input[type=text],
+    input[type=time],
+    input[type=url],
+    input[type=week],
+    select,
+    textarea {
+        display: inline-block;
+        width: 100%;
+        font-family: inherit;
+        font-size: $input-font-size;
+        height: $input-height;
+        outline: none;
+        vertical-align: middle;
+        background-color: $input-background-color;
+        border: $input-border-width solid $input-border-color;
+        border-radius: $input-border-radius;
+        box-shadow: $input-box-shadow;
+        padding: 0 $input-padding-rl;
+        margin-bottom: 12px;
+    }
+
+    input#signup_blog_url {
+        margin-bottom: 0;
+    }
+
+    select {
+        padding-right: 30px;
+    }
+
+    .datebox-selects select {
+        width: auto;
+    }
+
+    @media( max-width: $sm ) {
+        .datebox-selects select {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+    }
+
+    fieldset {
+        margin-top: 0;
+    }
+
+    label,
+    legend {
+        font-weight: normal;
+        font-size: $font-size-smaller;
+        color: $color-headings;
+    }
+
+    .checkbox-options label,
+    .radio-button-options label {
+        margin-top: 5px;
+    }
+
+    .submit input[type=submit],
+    button {
+        font-size: $button-font-size-small;
+        margin-right: 0;
+    }
+
+    button {
+        padding: $button-padding-small-tb $button-padding-small-rl;
+        min-height: $button-height-small;
+    }
+
+    .field-visibility-settings-toggle {
+        font-size: $font-size-extra-small;
+        margin-top: 0.3rem;
+
+        button {
+            font-size: $font-size-extra-small;
+            font-weight: normal;
+            background: none;
+            background-color: none;
+            color: $color-button-secondary;
+            border: 0;
+            min-height: auto;
+            padding: 0;
+            border-radius: 0;
+            line-height: rem-calc($base-line);
+            vertical-align: baseline;
+        }
+    }
+
+    a.clear-value {
+        font-size: $font-size-extra-small;
+    }
+
+    .register-section > h2 {
+        font-size: $font-size;
+    }
+
+    .wp-editor-wrap {
+        &.html-active {
+            .wp-editor-tabs button {
+                border-color: #ddd;
+                border-bottom: 0;
+                background-color: transparent;
+                border-radius: 3px 3px 0 0;
+                box-shadow: none;
+            }
+
+            .wp-editor-tabs button.switch-html {
+                background-color: $background-light;
+            }
+        }
+
+        &.tmce-active {
+            .wp-editor-tabs button {
+                border-color: #ddd;
+                border-bottom: 0;
+                background-color: transparent;
+                border-radius: 3px 3px 0 0;
+                box-shadow: none;
+            }
+
+            button.switch-tmce {
+                background-color: $background-light;
+            }
+        }
+
+        .wp-editor-tabs button {
+            border-radius: 0;
+            padding: 0 15px;
+        }
+
+
+        .wp-editor-container {
+            border-radius: 3px;
+
+            .mce-panel,
+            .quicktags-toolbar {
+                background-color: $background-light;
+
+                .mce-toolbar {
+
+                    .mce-btn-group .mce-btn:focus,
+                        .mce-btn-group .mce-btn:hover,
+                        .qt-dfw:focus, .qt-dfw:hover {
+                        box-shadow: none;
+                        border-color: transparent;
+                        color: rgba(18,43,70,0.8);
+
+                        .mce-ico {
+                            color: rgba(18,43,70,0.8);
+                        }
+                    }
+
+                    .mce-btn-group .mce-btn.mce-disabled:focus,
+                        .mce-btn-group .mce-btn.mce-disabled:hover {
+                        color: rgba(18,43,70,0.4);
+
+                        .mce-ico {
+                            color: rgba(18,43,70,0.4);
+                        }
+                    }
+
+                    .mce-ico {
+                        color: rgba(18,43,70,0.4);
+                        transition: all linear .2s;
+                    }
+                }
+
+                button i {
+                    font-size: $font-size-small;
+                }
+            }
+
+            button,
+            input[type=button] {
+                background-color: transparent;
+                border-color: transparent;
+                border-radius: 0;
+                padding: 0 8px;
+                color: rgba(18,43,70,0.4);
+                box-shadow: none;
+                min-height: 30px;
+                transition: all linear .2s;
+
+                &:hover {
+                    color: rgba(18,43,70,0.8);
+                }
+            }
+        }
+
+    }
+
+    div.error {
+        background-color: $color-error;
+        color: $color-button-success-text;
+        width: 100%;
+        border-radius: 3px;
+        font-size: $font-size-smaller;
+        padding: 6px 12px;
+        margin-bottom: 3px;
+        border: 0;
+        
+        .error {
+            padding: 0;
+            border: 0;
+            border-radius: 0;
+            width: auto;
+            margin: 0;
+            background: transparent;
+            line-height: 1;
+        }
+
+        span.bp-icon {
+            margin-right: 0;
+            display: none;
+        }
+
+        p {
+            padding: 0;
+            margin: 0;
+            line-height: 1.6875rem;
+        }
+    }
+
+    .submit {
+        padding: 25px 0 0;
+    }
+}
+
+.bs-bp-container-reg .buddypress-wrap #pass-strength-result.short,
+.bs-bp-container-reg .buddypress-wrap #pass-strength-result.show {
+    font-weight: normal;
+    background-color: $color-silver;
+    border-color: $color-silver;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.bs-bp-container-reg .buddypress-wrap #pass-strength-result.short {
+    background-color: $color-error;
+    border-color: $color-error;
+    color: $color-white;
+}
+
+.bs-bp-container-reg .buddypress-wrap #pass-strength-result.strong {
+    background-color: $color-success;
+    border-color: $color-success;
+    color: $color-white;   
+    font-weight: normal !important;
+}
+
+.bs-bp-container-reg .buddypress-wrap .bp-messages.info {
+    background-color: $color-link;
+    border-color: $color-link;
+
+    .bp-icon {
+        background-color: $color-link;
+        margin-right: 0px;
+
+        &:before {
+            font-family: 'bb-icons';
+            speak: none;
+            font-style: normal;
+            font-weight: normal;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1;
+            list-style: none;
+            -webkit-font-smoothing: antialiased;
+            content: "\e8c2";
+        }
+    }
+
+    p {
+        color: $color-white;
+    }
+}
+
+body.buddypress.register article.bp_register {
+    max-width: 450px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+
+    .entry-header {
+        margin-bottom: 1.2rem;
+        display: flex;
+        flex-flow: row wrap;
+
+        h1 {
+            font-size: $font-size-big;
+            margin-right: auto;
+        }
+
+        span {
+            font-size: $font-size-smaller;
+            text-transform: lowercase;
+        }
+    }
+}
+
+body.buddypress.register .register-section-logo {
+    width: 48%;
+    max-width: 450px;
+    text-align: center;
+    margin: 0 auto 1.7rem;
+
+    img {
+        max-width: 320px;
+        width: 22%;
+    }
+
+    span {
+        background-size: contain;
+        width: 84px;
+        /*height: 84px;*/
+        height: auto;
+        display: block;
+        background-position: center top;
+        background-repeat: no-repeat;
+        margin: auto;
+    }
+
+    .bs-register-section-logo {
+        visibility: hidden;
+        width: 100%;
+    }
+
+    a {
+        font-size: 20px;
+        line-height: 1.3em;
+    }
+}
+
+body.buddypress.register.login-split-page .login-split {
+    display: none;
+}
+
+@media( min-width: 992px ) {
+    body.buddypress.register.login-split-page {
+        min-height: 100%;
+
+        .site-content {
+            padding: 0;
+            min-height: 100vh;
+            height: 100%;
+        }
+
+        .container {
+            max-width: none;
+            padding: 0;
+            height: 100%;
+        }
+
+        .bb-grid {
+            margin: 0;
+            height: 100%;
+        }
+
+        .login-split {
+            padding: 0;
+            width: 50%;
+            position: fixed;
+            left: 0px;
+            height: 100%;
+            display: block;
+        }
+
+        #primary {
+            position: static;
+            margin-left: 50%;
+        }
+
+        .bs-bp-container-reg {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .register-section-logo {
+            margin-right: 0;
+            margin-left: 50px;
+            margin-top: 50px;
+            min-width: 320px;
+            text-align: left;
+        }
+
+        article.bp_register {
+            margin-right: 0;
+            margin-left: 50px;
+            min-width: 320px;
+        }
+
+        .submit input[type=submit] {
+            width: 100%;
+        }
+    }
+
+    body.buddypress.register.login-split-page .login-split .split-overlay {
+        width: 100%;
+        height: 100%;
+        background-color: #000000;
+        position: relative;
+        z-index: 1;
+        opacity: 0;
+    }
+
+    body.buddypress.register.login-split-page .login-split div {
+        color: $color-white;
+    }
+
+    body.buddypress.register.login-split-page .login-split > div:not(.split-overlay) {
+        display: block;
+        width: 50%;
+        max-width: 300px;
+        margin: 0 auto;
+        padding: 8% 0 0;
+        font-size: 32px;
+        line-height: 1.15;
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 9;
+        margin: auto;
+    }
+
+    body.buddypress.register.login-split-page .login-split > div > span {
+        font-size: 16px;
+        line-height: 1.4;
+        display: block;
+        margin-top: 20px;
+    }
+}
+
+@media( max-width: $md ) {
+    body.buddypress.register article.bp_register {
+        width: 90%;
+    }
+
+    body.buddypress.register .register-section-logo {
+        width: 90%;   
+    }
+}
+
+@media( max-width: $sm ) {
+    body.buddypress.register article.bp_register {
+        width: 100%;
+    }
+
+    body.buddypress.register .register-section-logo {
+        width: 100%;   
+    }
+}
+
+body.register .registration-popup.bb-modal {
+    max-width: 800px;
+}

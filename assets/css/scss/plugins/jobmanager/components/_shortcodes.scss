@@ -1,0 +1,145 @@
+/* Embeddable job widget generator */
+.entry-content {
+    .job-manager-form {
+        fieldset {
+            border: 0;
+            margin: 0 0 30px;
+            padding: 0;
+        }
+
+        label {
+            display: inline-block;
+            min-width: 200px;
+            padding-right: 20px;
+            vertical-align: top;
+            font-size: 15px;
+            font-weight: 500;
+            margin-top: 5px;
+        }
+
+        .field {
+            display: inline-block;
+            min-width: 65%;
+            vertical-align: top;
+
+            input {
+                width: 100%;
+            }
+        }
+        
+        select,
+        .job-manager-chosen-select {
+            width: 100%;
+        }
+
+        ul.chosen-choices {
+            height: auto;
+            background: $color-white;
+            min-width: 100%;
+            padding: 0;
+            display: flex;
+            flex-flow: row wrap;
+            margin: 0;
+            list-style: none;
+        }
+        
+        li.search-field input[type=text] {
+            min-width: 160px;
+            border: 0;
+            background: transparent;
+        }
+
+        ul.chosen-results {
+            list-style: none;
+            margin: 0;
+            background: $color-white;
+            box-shadow: 0 2px 7px 1px rgba(0, 0, 0, 0.05), 0 6px 32px 0 rgba(18, 43, 70, 0.1);
+            border-radius: 4px;
+
+            li {
+                font-size: 13px;
+                padding: 1px 12px;
+            }
+        }
+
+        li.search-choice {
+            padding: 0 25px 0 12px !important;
+            position: relative;
+            margin-left: 8px !important;
+            text-align: center;
+            height: 26px;
+            margin-top: 6px !important;
+            margin-right: 0 !important;
+        }
+        
+        a.search-choice-close {
+            position: absolute;
+            line-height: 1;
+            top: 6px;
+        }
+
+        .search-choice-close {
+            &:after {
+                content: '\E828';
+                font: normal normal normal 14px/1 "bb-icons";
+                speak: none;
+                display: inline-block;
+                text-decoration: inherit;
+                text-transform: none;
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+        }
+
+        .chosen-drop {
+            display: none;
+        }
+
+        .chosen-container-active {
+            .chosen-drop {
+                display: block;
+            }
+        }
+
+        #widget_job_type_chosen {
+            width: 100% !important;
+        }
+
+        #widget-get-code {
+            padding-left: 30px;
+            padding-right: 30px;
+
+            @media ( min-width: 544px ) {
+                margin-left: 200px;
+            }
+        }
+    }
+}
+
+@media ( max-width: 1185px ) {
+    .has-sidebar {
+        .entry-content .job-manager-form label,
+        .entry-content .job-manager-form .field {
+            width: 100%;
+        }
+
+        .entry-content .job-manager-form .field {
+            min-width: 100%;
+        }
+
+        .entry-content .job-manager-form #widget-get-code {
+            margin: 0;
+        }
+    }
+}
+
+@media ( max-width: 640px ) {
+    .entry-content .job-manager-form label,
+    .entry-content .job-manager-form .field {
+        width: 100%;
+    }
+
+    .entry-content .job-manager-form #widget-get-code {
+        margin: 0;
+    }
+}

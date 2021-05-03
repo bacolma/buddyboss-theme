@@ -1,0 +1,267 @@
+/*------------------------------------*\
+    #HEADINGS
+\*------------------------------------*/
+h1, .h1 {
+    @include font-size($heading-font-size-1, $line-height: false);
+    line-height: $heading-base-line-1;
+    @extend %vertical-rhythm;
+}
+
+h2, .h2 {
+    @include font-size($heading-font-size-2, $line-height: false);
+    line-height: $heading-base-line-2;
+    @extend %vertical-rhythm;
+}
+
+h3, .h3 {
+    @include font-size($heading-font-size-3, $line-height: false);
+    line-height: $heading-base-line-3;
+    @extend %vertical-rhythm;
+}
+
+h4, .h4 {
+    @include font-size($heading-font-size-4, $line-height: false);
+    line-height: $heading-base-line-4;
+    @extend %vertical-rhythm;
+}
+
+h5, .h5 {
+    @include font-size($heading-font-size-5, $line-height: false);
+    line-height: $heading-base-line-5;
+    @extend %vertical-rhythm;
+}
+
+h6, .h6 {
+    @include font-size($heading-font-size-6, $line-height: false);
+    line-height: $heading-base-line-6;
+    @extend %vertical-rhythm;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+    color: $color-headings;
+    font-family: $headings-font-family;
+    font-weight: 400;
+}
+
+h6, .h6{
+    font-weight: 500;
+}
+
+// Lists
+ul, ol, dd {
+    margin: rem-calc(0 0 $base-line $base-line);
+    padding: 0;
+}
+
+li > ul,
+li > ol {
+    //margin-bottom: 0;
+}
+
+/**
+ * Paragraphs
+ */
+
+p {
+    @extend %vertical-rhythm;
+}
+
+/**
+ * Not strictly a paragraph, but probably doesn't need its own section.
+ */
+
+address {
+    @extend %vertical-rhythm;
+}
+
+
+/**
+ * CODE
+ */
+
+pre {
+    background: $background-pre;
+    border: 1px solid rgba(0, 0, 0, .03);
+    margin: 0 auto 1.6875rem;
+    max-width: 80%;
+    overflow: auto; /* Contain overflow in all browsers. */
+    padding: 2rem;
+
+    code.bash,
+    & > code {
+        background: transparent;
+        border: 0;
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+
+    code code.bash {
+        font-size: inherit;
+    }
+}
+
+code {
+    padding: rem-calc(2 6);
+    margin: rem-calc(0 3);
+    font-size: 80%;
+    //white-space: nowrap;
+    background: $background-pre;
+    border: 1px solid rgba(0, 0, 0, .03);
+    border-radius: 3px;
+}
+
+
+/**
+ * 1. Fix an odd quirk whereby, without this, code blocks are rendered at a font-size smaller than 1em.
+ * 2. Correct the odd 'em' font sizing in all browsers.
+ */
+
+code,
+kbd,
+pre,
+samp {
+    font-family: $monospace-font-family; /* [1] */
+    font-size: 1rem; /* 2 */
+}
+
+/**
+ * Set up quote marks on quoting elements.
+ */
+
+q,
+blockquote {
+    font-size: rem-calc(20);
+    font-weight: 300;
+    font-style: italic;
+    color: $color-text;
+    line-height: 1.637;
+}
+
+/**
+ * HR
+ */
+
+hr {
+    background-color: $background-hr;
+    border: 0;
+    box-sizing: content-box; /* Address differences between Firefox and other browsers. Source- normalize.css */
+    height: 2px;
+    @extend %vertical-rhythm;
+}
+
+/**
+ * Address margin not present in IE 8/9 and Safari. [normalize.css]
+ */
+
+figure {
+    margin: 0;
+}
+
+// Alignment
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+// Modifiers
+ul.unstyled {
+    & {
+        margin-left: 0;
+    }
+    &,
+    & ul {
+        list-style: none;
+    }
+}
+
+.monospace {
+    font-family: $monospace-font-family;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.lower {
+    text-transform: lowercase;
+}
+
+.italic {
+    font-style: italic !important;
+}
+
+.strong {
+    font-weight: bold !important;
+}
+
+.normal {
+    font-weight: normal !important;
+}
+
+.muted {
+    opacity: .55;
+}
+
+a.muted {
+    color: $color-black;
+}
+
+a.muted:hover {
+    opacity: 1;
+}
+
+.black {
+    color: $color-black;
+}
+
+.smaller {
+    font-size: $font-size-smaller;
+    line-height: $base-line-smaller;
+}
+
+.small {
+    font-size: $font-size-small;
+    line-height: $base-line-small;
+    color: $color-small-text;
+}
+
+.big {
+    font-size: $font-size-big;
+    line-height: $base-line-big;
+}
+
+.large {
+    font-size: $font-size-large;
+    line-height: $base-line-large;
+}
+
+.end {
+    margin-bottom: 0 !important;
+}
+
+.nowrap,
+.nowrap td {
+    white-space: nowrap;
+}
+
+// Text Columns
+@include breakpoint(md) {
+// This code has conflict with Elementor styles
+//    .columns-2,
+//    .columns-3,
+//    .columns-4 {
+//        column-gap: $base-line;
+//    }
+
+//    .columns-2 { column-count: 2; }
+//    .columns-3 { column-count: 3; }
+//    .columns-4 { column-count: 4; }
+}

@@ -1,0 +1,51 @@
+.elementor {
+
+    .elementor-widget-button a.elementor-button, .elementor-widget-button .elementor-button {
+        display: flex;
+        align-items: center;
+        width: max-content;
+        font-family: inherit;
+        font-size: 15px;
+        font-weight: 400;
+        color: $color-white;
+        border-radius: 100px;  
+        text-decoration: none;
+        cursor: pointer;
+        line-height: 1.3;
+        border: 1px solid transparent;
+        outline: none;
+        vertical-align: middle;
+        -webkit-appearance: none;
+        transition: 0.3s all;
+    }
+
+    .elementor-button.elementor-size-lg {
+        height: 50px;
+        padding: auto 40px;
+    }
+
+
+    .elementor-button.elementor-size-md {
+        height: 42px;
+        padding: auto 30px;
+    }
+
+    .elementor-button.elementor-size-sm {
+        height: 33px;
+        padding: auto 24px;
+    }
+
+    .elementor-button.elementor-size-lg,
+    .elementor-button.elementor-size-md,
+    .elementor-button.elementor-size-sm {
+       &:hover {
+        outline: none;
+        text-decoration: none;
+        color: $color-white;
+        box-shadow: inset 0 0 0 99999px rgba(0, 0, 0, 0.1);
+       }
+    }
+
+
+
+}

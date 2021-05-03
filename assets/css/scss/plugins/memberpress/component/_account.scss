@@ -1,0 +1,266 @@
+.bb-mp-account-settings {
+    display: flex;
+    flex-flow: row wrap;
+    background: #fff;
+    border: 1px solid #E7E9EC;
+    border-radius: 4px;
+    margin-bottom: 30px;
+
+    .mp_wrapper.mp_wrapper_nav {
+        flex: 0 0 230px;
+        background: #FBFBFC;
+        border-right: 1px solid #E7E9EC;
+        min-height: 60vh;
+        border-radius: 4px 0 0 4px;
+        margin: 0;
+        padding: 30px 0;
+    }
+
+    .mp-wrapper:not(.mp_wrapper_nav),
+    .mp_wrapper:not(.mp_wrapper_nav) {
+        flex: 1;
+        min-width: 0;
+        padding: 30px;
+    }
+}
+
+#mepr-account-nav {
+    .mepr-nav-item {
+        display: block;
+        padding: 0;
+    }
+
+    a {
+        font-size: 14px;
+        color: #939597;
+        letter-spacing: -0.24px;
+        display: flex;
+        align-items: center;
+        padding: 16px 20px;
+        line-height: 1;
+        margin-bottom: 1px;
+    }
+
+    a:hover,
+    .mepr-active-nav-tab a {
+        background: rgba(77, 92, 109, 0.1);
+        color: $color-headings;
+        font-weight: 400;
+    }
+}
+
+.mp_wrapper table.mepr-account-table {
+    background-color: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    box-shadow: 0 0 0 1px #E7EAEC;
+}
+
+.mp_wrapper table.mepr-account-table th {
+    text-transform: none;
+    font-size: 14px;
+    padding: 10px 20px;
+    border-right: 1px solid rgba(0, 0, 0, 0.05);
+    white-space: nowrap;
+}
+
+.mp_wrapper table.mepr-account-table td {
+    padding: 10px 20px;
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.3;
+    white-space: nowrap;
+}
+
+.mp_wrapper-table-wrapper {
+    border: 1px solid #E7EAEC;
+    border-radius: 3px;
+    overflow-x: auto;
+}
+
+.mepr-subscription-row {
+    .mepr-account-subscr-id,
+    .mepr-account-terms {
+        color: #bbb;
+        padding-top: 5px;   
+    }
+}
+
+.mp-form-row.mepr_bold.mepr_price {
+    background: #FFFFFF;
+    border: 1px solid #E7E9EC;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 15px 20px;
+
+    label {
+        margin: 0 20px 0 0;
+        flex: 1;
+    }
+
+    .mepr_price_cell {
+        font-weight: 500;
+    }
+}
+
+.bb-mp-checkout-details {
+    background: #FFFFFF;
+    border: 1px solid #E7E9EC;
+    border-radius: 4px;
+    padding: 20px;
+}
+
+.mepr-signup-form {
+    .mp-form-label {
+        position: relative;
+    }
+
+    .mepr-coupon-loader {
+        margin-bottom: 20px;
+        position: absolute;
+        right: 0;
+        top: -10px;
+    }
+
+    .mepr-payment-method-label label {
+        margin: 0;
+    }
+    
+    .mp_wrapper .mepr-payment-method {
+        margin-bottom: 0;
+    }
+
+    img.mepr-loading-gif {
+        margin: 0 10px 12px 12px;
+    }
+    
+    .mp_wrapper .mepr-form-has-errors, .mp_wrapper .cc-error {
+        font-size: 14px;
+        padding-left: 0;
+    }
+
+    .iradio_minimal {
+        margin-right: 6px;
+    }
+}
+
+.registration.register {
+    .site {
+        margin-left: 0;
+    }
+
+    #primary {
+        .entry-header {
+            margin-bottom: 20px;
+        }
+
+        h1.entry-title {
+            font-size: 28px;
+            color: #122B46;
+            letter-spacing: 0;
+            line-height: 24px;
+        }
+    }
+    
+    .entry-content > p {
+        font-size: 15px;
+        color: #939597;
+        letter-spacing: -0.24px;
+        text-align: center;
+        line-height: 1.4;
+        font-style: italic;
+    }
+
+    /* Hide sidebar on checkout page */
+    #secondary {
+        display: none;
+    }
+
+    span.mepr-payment-method-label-text {
+        padding-left: 0 !important;
+    }
+    
+    .mp_wrapper .mp-form-row {
+        margin-bottom: 20px;
+    }
+    
+    .mp_wrapper .mepr-payment-method {
+        margin-bottom: 0;
+    }
+
+    input.mepr-submit {
+        min-width: 160px;
+    }
+}
+
+.mepr-payment-method-desc-text p {
+    margin: 0;
+    font-size: 15px;
+}
+
+.mp_wrapper.mp_invoice {
+    background: #fff;
+    margin-top: 30px;
+    
+    table.mp-table th,
+    table.mp-table td {
+        padding: 12px 20px;
+    }
+}
+
+@media ( max-width: 1100px ) {
+    .has-sidebar {
+        .bb-mp-account-settings .mp_wrapper.mp_wrapper_nav {
+            flex: 0 0 100%;
+            min-height: 0;
+            border-right: 0;
+            border-bottom: 1px solid #E7E9EC;
+            border-radius: 4px 4px 0 0;
+            margin: 0;
+            padding: 0;
+        }
+        
+        div#mepr-account-nav {
+            margin-bottom: 0;
+        }
+        
+        #mepr-account-nav .mepr-nav-item {
+            display: inline-block;
+        }
+    }
+}
+
+@media ( max-width: 800px ) {
+    body:not(.has-sidebar) {
+        .bb-mp-account-settings .mp_wrapper.mp_wrapper_nav {
+            flex: 0 0 100%;
+            min-height: 0;
+            border-right: 0;
+            border-bottom: 1px solid #E7E9EC;
+            border-radius: 4px 4px 0 0;
+            margin: 0;
+            padding: 0;
+        }
+
+        div#mepr-account-nav {
+            margin-bottom: 0;
+        }
+
+        #mepr-account-nav .mepr-nav-item {
+            display: inline-block;
+        }
+    }
+}
+
+@media ( max-width: 600px ) {
+    .mp_wrapper table.mepr-account-table td {
+        text-align: right;
+    }
+    
+    .mp_wrapper-table-wrapper {
+        border: 0;
+        border-radius: 0;
+    }
+}

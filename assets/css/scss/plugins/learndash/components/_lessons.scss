@@ -1,0 +1,156 @@
+dd.course_progress {
+    margin-left: 0;
+    margin-right: 0;
+    border-radius: 100px;
+    box-shadow: none;
+
+    div.course_progress_blue {
+        background-color: $color-link;
+    }
+}
+
+#ld_course_info {
+    #ld_course_info_mycourses_list {
+        .ld-course-info-my-courses {
+            padding-bottom: 20px;
+        }
+    }
+}
+
+#course_progress_details {
+    .bb_profile_course_wrapper:last-of-type {
+        border-bottom: 0;
+    }
+}
+
+.bp-feedback.ld-feedback {
+    color: $color-text;
+    border: 1px solid $color-border;
+    margin: 10px 0;
+    position: relative;
+    border-radius: 3px;
+    box-shadow: none;
+
+    .bp-icon {
+        border-radius: 3px 0 0 3px;
+        background-color: $color-link;
+    }
+
+    p {
+        font-size: $font-size-smaller;
+        line-height: 1.5;
+        padding: 10px 5px;
+    }
+}
+
+.leardash-course-status-completed {
+    color: $color-success;
+}
+
+.learndash_checkout_buttons {
+    margin: 10px 0;
+
+    .learndash_checkout_button {
+        width: 100%;
+        max-width: 100%;
+        margin-right: 0;
+    }
+
+    form {
+        margin-bottom: 10px;
+    }
+}
+
+#learndash_course_content {
+    & > #learndash_course_content_title {
+        margin-bottom: 30px;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 0.6px;
+        margin: 0 0 20px;
+        text-transform: uppercase;
+    }
+
+    #learndash_lessons {
+        #lesson_heading {
+            background-color: transparent;
+            padding-left: 0;
+            padding-right: 0;
+
+            span:first-child {
+                font-size: 16px;
+                font-weight: 600;
+                letter-spacing: 0.6px;
+                margin: 0 0 20px;
+            }
+        }
+
+        #lessons_list {
+            font-size: 15px;
+
+            & > div {
+                border: 0;
+
+                div.list-count {
+                    border: 0;
+                }
+            }
+
+            h4,
+            h4 a {
+                font-size: 15px;
+                margin-bottom: 0;
+            }
+
+            h4 a {
+                color: #939597;
+                display: flex;
+                align-items: center;
+                background: none;
+
+                &:hover {
+                    color: $color-headings;
+                    background-color: transparent;
+
+                    &.completed:after,
+                    &.notcompleted:after {
+                        color: $color-headings;
+                    }
+                }
+
+                &.completed:after,
+                &.notcompleted:after {
+                    font-family: 'bb-icons';
+                    speak: none;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-variant: normal;
+                    text-transform: none;
+                    line-height: 1;
+                    list-style: none;
+                    -webkit-font-smoothing: antialiased;
+                    -moz-osx-font-smoothing: grayscale;
+                    content: "\e877";
+                    margin-left: auto;
+                    margin-right: 15px;
+                    color: $color-headings;
+                }
+
+                &.notcompleted:after {
+                    opacity: 0.2;
+                }
+            }
+        }
+    }
+}
+
+.learndash_post_sfwd-lessons {
+    .notavailable_message {
+        padding: 100px 100px;
+        font-size: inherit;
+
+        & > span {
+            text-transform: uppercase;
+        }
+    }
+}

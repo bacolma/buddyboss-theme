@@ -1,0 +1,326 @@
+div.wpforms-container-full {
+    .wpforms-form input[type=submit], 
+    .wpforms-form button[type=submit] {
+        border-radius: 100px;
+        background-color: $color-link;
+        color: $color-white;
+        border: 1px solid $color-link;
+        font-size: 15px;
+        padding: 10px 20px;
+
+        &:hover {
+            color: $color-white;
+            background-color: $color-link-hover-button;
+            border-color: $color-link-hover-button;
+        }
+    }
+
+    .wpforms-form .wpforms-field-description {
+        line-height: 1.6;
+    }
+ 
+    .wpforms-form select {
+        background-image: url('../images/svg/arrow-down.svg');
+        background-repeat: no-repeat;
+        background-position: right 1rem center;
+        padding-right: 40px;
+    }
+
+    .wpforms-form .icheckbox_minimal {
+        display: inline-block;
+        vertical-align: middle;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+
+        width: 22px;
+        height: 22px;
+        line-height: 1;
+        background-color: $color-white;
+        border: 2px solid #D6DCE6;
+        border-radius: 4px;
+        margin-right: 10px;
+
+        input {
+            height: 100%;
+            width: 100%;
+        }
+
+        &.checked {
+            background-color: $color-link;
+            border-color: $color-link;
+
+            &:after {
+                content: '\E809';
+                font-family: "bb-icons";
+                font-style: normal;
+                font-weight: normal;
+                speak: none;
+                display: inline-block;
+                text-decoration: inherit;
+                text-align: center;
+                font-variant: normal;
+                text-transform: none;
+                width: 100%;
+                position: absolute;
+                height: 100%;
+                text-align: center;
+                color: $color-white;
+                line-height: 1;
+                font-size: 27px;
+                left: -4px;
+                top: -4px;
+
+                -webkit-font-smoothing: antialiased;
+                -moz-osx-font-smoothing: grayscale;
+            }
+        }
+
+        &.focus {
+            border-color: $color-link;
+        }
+
+        &.disabled {
+            cursor: default;
+        }
+
+        &.disabled:not(.checked) {
+
+            &:after {
+                content: '';
+                background-color: #A1ADBF;
+                margin: auto;
+                width: 14px;
+                position: absolute;
+                height: 14px;
+                text-align: center;
+                left: 2px;
+                top: 2px;
+                border-radius: 2px;
+            }
+        }
+
+        &.checked.disabled {
+            opacity: 0.6;
+        }
+    }
+
+    .wpforms-form .iradio_minimal {
+        display: inline-block;
+        vertical-align: middle;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+
+        width: 22px;
+        height: 22px;
+        line-height: 1;
+        background-color: $color-white;
+        border: 2px solid #D6DCE6;
+        border-radius: 100%;
+        margin-right: 10px;
+
+        &.checked {
+
+            &:after {
+                content: '';
+                background-color: $color-link;
+                margin: auto;
+                width: 14px;
+                position: absolute;
+                height: 14px;
+                text-align: center;
+                left: 2px;
+                top: 2px;
+                border-radius: 100%;
+            }
+        }
+
+        &.disabled {
+            cursor: default;
+
+            &:after {
+                content: '';
+                background-color: #A1ADBF;
+                margin: auto;
+                width: 14px;
+                position: absolute;
+                height: 14px;
+                text-align: center;
+                left: 2px;
+                top: 2px;
+                border-radius: 100%;
+            }
+        }
+
+        &.checked.disabled {
+            opacity: 0.6;
+
+            &:after {
+                background-color: $color-link;
+            }
+        }
+    }
+}
+
+.flatpickr-calendar.open:after {
+    border-width: 6px;
+    margin: 0 -6px;
+}
+
+.flatpickr-calendar.open {
+    .flatpickr-month {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .flatpickr-next-month svg path, 
+    .flatpickr-prev-month svg path {
+        fill: #939597;
+    }
+
+    .flatpickr-next-month:hover svg path, 
+    .flatpickr-prev-month:hover svg path {
+        fill: $color-headings;
+    }
+
+    .flatpickr-current-month {
+        span.cur-month {
+            font-weight: normal;
+            font-size: 15px;
+            color: $color-link;
+        }  
+
+        input.cur-year {
+            font-weight: normal;
+            font-size: 15px;
+            color: $color-link; 
+        }
+    } 
+
+    .numInputWrapper:hover {
+        background: rgba(0,0,0,.01);
+    }
+
+    span.flatpickr-weekday {
+        font-weight: 300;
+        color: rgba(57,57,57,.3) 
+    }
+
+    .flatpickr-day.today {
+        border-color: transparent;
+        color: $color-link;
+    }
+
+    .flatpickr-day {
+        line-height: 36px;
+
+        &:hover {
+            background-color: $color-link;
+            color: $color-white;
+            border-color: transparent;
+            box-shadow: none;
+        }
+    }
+}
+
+.ui-timepicker-wrapper {
+    li.ui-timepicker-selected, 
+    .ui-timepicker-list li:hover, 
+    .ui-timepicker-list .ui-timepicker-selected:hover {
+        background: $color-link;
+    }
+}
+
+.wpforms-field-file-upload input[type=file] {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.wpforms-field-file-upload input[type=file]+label {
+    font-size: 16px;
+    font-weight: 700;
+    color: $color-link;
+    background-color: $color-white;
+    border: 2px dashed $color-lightgray;
+    width: 100%;
+    text-align: center;
+    padding: 2em 1em;
+    display: inline-block;
+    float: none;
+    cursor: pointer;
+}
+
+div.wpforms-container-full .wpforms-form {
+     .wpforms-field input.wpforms-error, 
+     .wpforms-field textarea.wpforms-error, 
+     .wpforms-field select.wpforms-error {
+        border-color: $color-error;
+     }
+
+     label.wpforms-error {
+        color: $color-error;
+     }
+
+     .wpforms-required-label {
+        color: $color-error;  
+     }
+}
+
+input.wpforms-field-date-time-time + .wpforms-field-sublabel,
+input.wpforms-field-date-time-date + .wpforms-field-sublabel,
+.wpforms-field-date-time label.wpforms-field-label {
+    pointer-events: none;
+}
+
+.wpforms-field-file-upload label.wpforms-field-label {
+    pointer-events: none;   
+}
+
+div.wpforms-container-full .wpforms-form .wpforms-field-credit-card-expiration select {
+    padding-right: 30px;
+}
+
+.entry-content .wpforms-confirmation-container-full,
+.wpforms-confirmation-container-full {
+    background-color: $color-success;
+    border-color: $color-success;
+    color: $color-white;
+    font-size: 14px;
+    border-radius: 4px;
+    padding: 5px 10px;
+}
+
+@media screen and (max-width: $sm) {
+    div.wpforms-container.wpforms-container-full {
+        .wpforms-form .wpforms-one-half {
+            width: 100%;
+            float: none;
+            margin-left: 0;
+        }
+
+        .wpforms-form .wpforms-field-credit-card-number {
+            margin-right: 0;
+        }
+
+        .wpforms-form .wpforms-field-credit-card-code {
+            width: 100%;
+            position: relative;
+            margin-top: 8px;
+        }
+
+        .wpforms-form .wpforms-field-credit-card-name {
+            margin-right: 0;
+        }
+
+        .wpforms-form .wpforms-field-credit-card-expiration {
+            width: 100%;
+            position: relative;
+            margin-top: 8px;
+        }
+    }
+}

@@ -1,0 +1,22 @@
+.buddypress-wrap .bp-tables-report tr th {
+    font-size: $font-size-smaller;
+}
+
+body #buddypress a.export-csv {
+    background-color: $color-link;
+    color: $color-white;
+    font-size: $font-size-smaller;
+    border-radius: 100px;
+    padding: 10px 30px;
+    text-decoration: none;
+    display: inline-block;
+    line-height: 1.3;
+    outline: none;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    transition: 0.3s all;
+
+    &:hover {
+        box-shadow: inset 0 0 0 99999px rgba(0, 0, 0, 0.1);
+    }
+}

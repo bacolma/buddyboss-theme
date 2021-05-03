@@ -1,0 +1,154 @@
+.widget-area {
+    padding-bottom: rem-calc(20px);
+}
+
+.widget-area-secondary {
+    .widget {
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+}
+
+.widget {
+    background: $color-white;
+    border: 1px solid $color-border;
+    border-radius: 4px;
+    font-size: rem-calc(14px);
+    line-height: 1.35;
+    margin-bottom: rem-calc(20px);
+    padding: rem-calc(20px 15px);
+
+    form,
+    ul,
+    ol  {
+        margin-bottom: 0;
+    }
+
+    fieldset {
+        border: 0;
+        margin: 0;
+        padding: 0;
+    }
+
+    select {
+        width: 100%;
+    }
+}
+
+.textwidget {
+    p:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.widget .widget-title {
+    display: flex;
+
+    .widget-num-count {
+        padding: rem-calc(0 4px);
+        color: $color-small-text;
+        margin-right: auto;
+    }
+
+    a.bs-widget-reload {
+        color: #939597;
+    }
+}
+
+.widget-title {
+    font-family: inherit;
+    font-size: rem-calc(12px);
+    font-weight: 600;
+    color: $color-headings;
+    letter-spacing: 0.25px;
+    line-height: rem-calc(16px);
+    margin: 0 0 20px;
+    text-transform: uppercase;
+
+    .widget &:empty {
+        display: none;
+    }
+}
+
+form.search-form {
+    position: relative;
+}
+
+/* Search Widget */
+.widget_search {
+    padding: .9375rem;
+
+    .search-field {
+        background-size: 17px;
+        font-size: 13px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: 100%;
+        border-radius: 20px;
+    }
+
+    .search-field-top {
+        background-image: none;
+        padding-left: 15px;
+        padding-right: 40px;
+        width: 100%;
+    }
+
+    .search-submit {
+        border: 0;
+        position: absolute;
+        width: 40px;
+        font-size: 0;
+        top: 0;
+        padding: 0;
+        background: url(../images/svg/search.svg) no-repeat center transparent;
+        background-size: 45%;
+        right: 0;
+        opacity: 0.8;
+
+        &:hover {
+            box-shadow: none;
+            opacity: 1;
+        }
+    }
+}
+
+/* Calendar Widget */
+#wp-calendar {
+    font-size: 12px;
+    margin-bottom: 0;
+    table-layout: fixed;
+
+    th, td {
+        padding: 0;
+    }
+
+    caption {
+        text-align: center;
+        padding-bottom: 5px;
+        text-transform: uppercase;
+        font-size: 13px;
+        border-bottom: 1px solid rgba(0,0,0,0.08);
+        margin-bottom: 20px;
+    }
+}
+
+/* Custom Menu */
+.widget_nav_menu {
+    .sub-menu {
+        margin-left: 1.5rem;
+    }
+    
+    li {
+        padding-left: 0;
+        margin-top: 10px;
+    }
+}
+
+.widget.widget_media_gallery {
+    .gallery {
+        margin: 0;
+    }
+}

@@ -1,0 +1,235 @@
+@font-face {
+    font-family: 'SF UI Text';
+    src: url('../fonts/SFUIText-Light.woff') format('woff'),
+        url('../fonts/SFUIText-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF UI Text';
+    src: url('../fonts/SFUIText-LightItalic.woff') format('woff'),
+        url('../fonts/SFUIText-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SF UI Text';
+    src: url('../fonts/SFUIText-Regular.woff') format('woff'),
+        url('../fonts/SFUIText-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF UI Text';
+    src: url('../fonts/SFUIText-RegularItalic.woff') format('woff'),
+        url('../fonts/SFUIText-RegularItalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SF UI Text';
+    src:url('../fonts/SFUIText-Medium.woff') format('woff'),
+        url('../fonts/SFUIText-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF UI Text';
+    src: url('../fonts/SFUIText-Semibold.woff') format('woff'),
+        url('../fonts/SFUIText-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF UI Display';
+    src: url('../fonts/SFUIDisplay-Regular.woff') format('woff'),
+        url('../fonts/SFUIDisplay-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF UI Display';
+    src: url('../fonts/SFUIDisplay-Medium.woff') format('woff'),
+        url('../fonts/SFUIDisplay-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    min-height: 100%;
+    font-family: 'SF UI Text', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.maintenance-content {
+    text-align: center;
+    padding: 40px 15px;
+}
+
+.page-header {
+    margin-bottom: 60px;
+}
+
+.page-title {
+    font-family: 'SF UI Display', sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1.1;
+    margin: 0 0 10px;
+}
+
+.desc {
+    font-size: 18px;
+    font-weight: 300;
+    color: #939597;
+    letter-spacing: -0.24px;
+    line-height: 1.5;
+}
+
+.bb-maintenance-img {
+    margin: 0 0 30px;
+}
+
+#clockdiv {
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+#clockdiv > div {
+    padding: 10px 15px;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+#clockdiv div > span {
+    display: inline-block;
+    font-family: 'SF UI Display', sans-serif;
+    font-size: 42px;
+    color: #122B46;
+    letter-spacing: -0.68px;
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 10px;
+}
+
+.smalltext {
+    font-size: 12px;
+    color: #939597;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.mc4wp-form-fields > p,
+.bb-subscribe-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0 auto 55px;
+    max-width: 325px;
+}
+
+.bb-subscribe-form-wrap h3 {
+    font-size: 18px;
+    color: #4D5C6D;
+    letter-spacing: -0.24px;
+    text-align: center;
+    line-height: 27px;
+    font-weight: 400;
+}
+
+.bb-subscribe-form-wrap input:not([type=submit]) {
+    border: 1px solid #DEDFE2;
+    border-radius: 3px 0 0 3px;
+    color: #A3A5A9;
+    font-size: 14px;
+    letter-spacing: -0.24px;
+    border-right: 0;
+    padding-left: 15px;
+    width: 232px;
+    height: 42px;
+    outline: none;
+    box-shadow: none;
+}
+
+.bb-subscribe-form-wrap input[type=submit] {
+    background: #007CFF;
+    border-radius: 0 3px 3px 0;
+    font-size: 14px;
+    color: #FFFFFF;
+    text-align: center;
+    border: 0;
+    min-width: 100px;
+    padding: 10px 15px;
+    min-height: 42px;
+    cursor: pointer;
+}
+
+.bb-subscribe-form-wrap input[type=submit]:hover {
+    background-color: #0070e6;
+}
+
+.bb-social-icons {
+    margin-bottom: 30px;
+}
+
+.bb-social-icons a {
+    color: #122B46;
+    display: inline-block;
+    padding: 8px;
+    margin: 0 6px;
+    font-size: 18px;
+    opacity: 0.35;
+    -webkit-transition: 0.2s linear all;
+    transition: 0.2s linear all;
+    text-decoration: none;
+}
+
+.bb-social-icons a i {
+    font-size: 21px;
+}
+
+.bb-social-icons a:hover {
+    opacity: 0.8;
+}
+
+.bb-contact-wrap {
+    margin-bottom: 20px;
+}
+
+.button.outline {
+    border: 1px solid #007CFF;
+    border-radius: 100px;
+    outline: none;
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    min-width: 146px;
+    font-size: 14px;
+    color: #007CFF;
+    letter-spacing: -0.24px;
+    text-align: center;
+}
+
+.button.outline:hover {
+    background: none;
+    color: #0070e6;
+    border-color: #0070e6;
+}

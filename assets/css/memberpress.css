@@ -1,0 +1,841 @@
+.mp_wrapper.mp_login_form #mepr_loginform {
+  width: 100%;
+}
+.mp_wrapper.mp_login_form #wp-submit {
+  width: 100%;
+}
+.mp_wrapper.mp_login_form #wp-submit:hover {
+  background: #007CFF;
+}
+.mp_wrapper.mp_login_form input[type=text],
+.mp_wrapper.mp_login_form input[type=url],
+.mp_wrapper.mp_login_form input[type=email],
+.mp_wrapper.mp_login_form input[type=tel],
+.mp_wrapper.mp_login_form input[type=number],
+.mp_wrapper.mp_login_form input[type=password] {
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #e7e9ec;
+  box-shadow: none;
+  border-radius: 3px;
+  font-size: 16px;
+}
+.mp_wrapper.mp_login_form input[type=text],
+.mp_wrapper.mp_login_form input[type=password] {
+  padding: 0 5px 0 40px !important;
+}
+.mp_wrapper.mp_login_form .mepr_username,
+.mp_wrapper.mp_login_form .mepr_password {
+  position: relative;
+  margin-bottom: 18px;
+}
+.mp_wrapper.mp_login_form .mepr_username:before,
+.mp_wrapper.mp_login_form .mepr_password:before {
+  font-family: "bb-icons";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  margin-left: .2em;
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  z-index: 9;
+  color: #72777c;
+}
+.mp_wrapper.mp_login_form .mepr_username .mp-form-label {
+  display: none;
+}
+.mp_wrapper.mp_login_form .mepr_username:before {
+  content: '\e825';
+  font-size: 16px;
+}
+.mp_wrapper.mp_login_form .mepr_password .mp-form-label {
+  display: none;
+}
+.mp_wrapper.mp_login_form .mepr_password:before {
+  content: '\e829';
+  font-size: 20px;
+}
+.mp_wrapper.mp_login_form label {
+  font-weight: 400;
+  font-size: 14px;
+  color: #122b46;
+}
+.mp_wrapper.mp_login_form label .icheckbox_minimal {
+  border-width: 1px;
+  border-radius: 2px;
+  margin-right: 6px;
+}
+.mp_wrapper.mp_login_form #rememberme {
+  width: 17px;
+  height: 17px;
+  background: #fff;
+}
+.mp_wrapper.mp_login_form .mepr-login-actions {
+  font-size: 14px;
+  position: absolute;
+  top: 115px;
+  right: 20px;
+}
+.mp_wrapper.mp_login_form .mp-spacer {
+  line-height: 10px;
+}
+.mp_wrapper.mp_login_form .submit {
+  margin-top: 5px;
+}
+
+.mp_wrapper .mepr_error {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.65;
+  max-width: 320px;
+  margin: auto;
+  background: #ef3e46 !important;
+  color: #fff;
+  border: none !important;
+  border-radius: 3px;
+  padding: 12px !important;
+}
+.mp_wrapper ul {
+  padding: 0 !important;
+}
+.mp_wrapper input[type=text],
+.mp_wrapper input[type=url],
+.mp_wrapper input[type=email],
+.mp_wrapper input[type=tel],
+.mp_wrapper input[type=number],
+.mp_wrapper input[type=password] {
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #e7e9ec;
+  box-shadow: none;
+  border-radius: 3px;
+  font-size: 16px;
+}
+.mp_wrapper label {
+  font-size: 14px;
+  color: #122B46;
+}
+
+.mepr-login-page .entry-header,
+.mepr-thankyou-page .entry-header {
+  margin: 30px 0;
+}
+.mepr-login-page .entry-title,
+.mepr-thankyou-page .entry-title {
+  font-size: 22px;
+  text-align: center;
+}
+.mepr-login-page .mp_wrapper,
+.mepr-thankyou-page .mp_wrapper {
+  margin: auto;
+  max-width: 360px;
+  padding: 0 20px;
+  position: relative;
+}
+
+.mepr-account-page .mp_login_form {
+  padding: 0;
+}
+
+.mepr-forgot-password-page .mp_wrapper {
+  max-width: 360px;
+  margin: auto;
+}
+
+.mp_wrapper .mp-form-row label {
+  display: block !important;
+  margin-bottom: 10px;
+}
+
+.mp-spacer {
+  line-height: 15px;
+}
+
+.mepr-forgot-password-page .entry-header {
+  display: none;
+}
+.mepr-forgot-password-page .mp_wrapper {
+  margin-top: 30px;
+}
+
+.mepr-login-page .mp_wrapper.mp_login_form {
+  padding: 0;
+}
+.mepr-login-page .mepr-unauthorized-message {
+  margin-top: 30px;
+  text-align: center;
+}
+.mepr-login-page .entry-header {
+  margin: 30px auto;
+  max-width: 360px;
+  padding: 0 20px;
+}
+.mepr-login-page .entry-title {
+  line-height: 1.3;
+}
+
+.bb-mp-account-settings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  background: #fff;
+  border: 1px solid #E7E9EC;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.bb-mp-account-settings .mp_wrapper.mp_wrapper_nav {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 230px;
+          flex: 0 0 230px;
+  background: #FBFBFC;
+  border-right: 1px solid #E7E9EC;
+  min-height: 60vh;
+  border-radius: 4px 0 0 4px;
+  margin: 0;
+  padding: 30px 0;
+}
+.bb-mp-account-settings .mp-wrapper:not(.mp_wrapper_nav),
+.bb-mp-account-settings .mp_wrapper:not(.mp_wrapper_nav) {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 0;
+  padding: 30px;
+}
+
+#mepr-account-nav .mepr-nav-item {
+  display: block;
+  padding: 0;
+}
+#mepr-account-nav a {
+  font-size: 14px;
+  color: #939597;
+  letter-spacing: -0.24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 16px 20px;
+  line-height: 1;
+  margin-bottom: 1px;
+}
+#mepr-account-nav a:hover,
+#mepr-account-nav .mepr-active-nav-tab a {
+  background: rgba(77, 92, 109, 0.1);
+  color: #122B46;
+  font-weight: 400;
+}
+
+.mp_wrapper table.mepr-account-table {
+  background-color: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 0 0 1px #E7EAEC;
+}
+
+.mp_wrapper table.mepr-account-table th {
+  text-transform: none;
+  font-size: 14px;
+  padding: 10px 20px;
+  border-right: 1px solid rgba(0, 0, 0, 0.05);
+  white-space: nowrap;
+}
+
+.mp_wrapper table.mepr-account-table td {
+  padding: 10px 20px;
+  text-align: left;
+  font-size: 14px;
+  line-height: 1.3;
+  white-space: nowrap;
+}
+
+.mp_wrapper-table-wrapper {
+  border: 1px solid #E7EAEC;
+  border-radius: 3px;
+  overflow-x: auto;
+}
+
+.mepr-subscription-row .mepr-account-subscr-id,
+.mepr-subscription-row .mepr-account-terms {
+  color: #bbb;
+  padding-top: 5px;
+}
+
+.mp-form-row.mepr_bold.mepr_price {
+  background: #FFFFFF;
+  border: 1px solid #E7E9EC;
+  border-radius: 4px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 20px;
+  padding: 15px 20px;
+}
+.mp-form-row.mepr_bold.mepr_price label {
+  margin: 0 20px 0 0;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.mp-form-row.mepr_bold.mepr_price .mepr_price_cell {
+  font-weight: 500;
+}
+
+.bb-mp-checkout-details {
+  background: #FFFFFF;
+  border: 1px solid #E7E9EC;
+  border-radius: 4px;
+  padding: 20px;
+}
+
+.mepr-signup-form .mp-form-label {
+  position: relative;
+}
+.mepr-signup-form .mepr-coupon-loader {
+  margin-bottom: 20px;
+  position: absolute;
+  right: 0;
+  top: -10px;
+}
+.mepr-signup-form .mepr-payment-method-label label {
+  margin: 0;
+}
+.mepr-signup-form .mp_wrapper .mepr-payment-method {
+  margin-bottom: 0;
+}
+.mepr-signup-form img.mepr-loading-gif {
+  margin: 0 10px 12px 12px;
+}
+.mepr-signup-form .mp_wrapper .mepr-form-has-errors, .mepr-signup-form .mp_wrapper .cc-error {
+  font-size: 14px;
+  padding-left: 0;
+}
+.mepr-signup-form .iradio_minimal {
+  margin-right: 6px;
+}
+
+.registration.register {
+  /* Hide sidebar on checkout page */
+}
+.registration.register .site {
+  margin-left: 0;
+}
+.registration.register #primary .entry-header {
+  margin-bottom: 20px;
+}
+.registration.register #primary h1.entry-title {
+  font-size: 28px;
+  color: #122B46;
+  letter-spacing: 0;
+  line-height: 24px;
+}
+.registration.register .entry-content > p {
+  font-size: 15px;
+  color: #939597;
+  letter-spacing: -0.24px;
+  text-align: center;
+  line-height: 1.4;
+  font-style: italic;
+}
+.registration.register #secondary {
+  display: none;
+}
+.registration.register span.mepr-payment-method-label-text {
+  padding-left: 0 !important;
+}
+.registration.register .mp_wrapper .mp-form-row {
+  margin-bottom: 20px;
+}
+.registration.register .mp_wrapper .mepr-payment-method {
+  margin-bottom: 0;
+}
+.registration.register input.mepr-submit {
+  min-width: 160px;
+}
+
+.mepr-payment-method-desc-text p {
+  margin: 0;
+  font-size: 15px;
+}
+
+.mp_wrapper.mp_invoice {
+  background: #fff;
+  margin-top: 30px;
+}
+.mp_wrapper.mp_invoice table.mp-table th,
+.mp_wrapper.mp_invoice table.mp-table td {
+  padding: 12px 20px;
+}
+
+@media (max-width: 1100px) {
+  .has-sidebar .bb-mp-account-settings .mp_wrapper.mp_wrapper_nav {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    min-height: 0;
+    border-right: 0;
+    border-bottom: 1px solid #E7E9EC;
+    border-radius: 4px 4px 0 0;
+    margin: 0;
+    padding: 0;
+  }
+  .has-sidebar div#mepr-account-nav {
+    margin-bottom: 0;
+  }
+  .has-sidebar #mepr-account-nav .mepr-nav-item {
+    display: inline-block;
+  }
+}
+@media (max-width: 800px) {
+  body:not(.has-sidebar) .bb-mp-account-settings .mp_wrapper.mp_wrapper_nav {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    min-height: 0;
+    border-right: 0;
+    border-bottom: 1px solid #E7E9EC;
+    border-radius: 4px 4px 0 0;
+    margin: 0;
+    padding: 0;
+  }
+  body:not(.has-sidebar) div#mepr-account-nav {
+    margin-bottom: 0;
+  }
+  body:not(.has-sidebar) #mepr-account-nav .mepr-nav-item {
+    display: inline-block;
+  }
+}
+@media (max-width: 600px) {
+  .mp_wrapper table.mepr-account-table td {
+    text-align: right;
+  }
+
+  .mp_wrapper-table-wrapper {
+    border: 0;
+    border-radius: 0;
+  }
+}
+/* Pricing Page Theme : Comman Styles */
+#content .mepr-price-menu {
+  margin-bottom: 40px;
+}
+#content .mepr-price-menu.fixed {
+  position: static;
+}
+#content .mepr-price-menu .mepr-price-boxes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+  margin: 0 -10px !important;
+}
+#content .mepr-price-menu .mepr-price-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column;
+      flex-flow: column;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 0 10px 30px;
+  padding: 40px 20px;
+  width: auto;
+}
+@media (max-width: 640px) {
+  #content .mepr-price-menu .mepr-price-box {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+}
+#content .mepr-price-menu .mepr-most-popular {
+  display: none;
+}
+#content .mepr-price-menu .mepr-price-box-title {
+  font-size: 22px;
+  font-weight: 400;
+  color: #122B46;
+  line-height: 1;
+  margin-bottom: 30px;
+  text-align: center;
+}
+#content .mepr-price-menu .mepr-price-box-heading {
+  font-size: 15px;
+  line-height: 1;
+  font-weight: 500;
+  color: #122B46;
+  letter-spacing: -0.22px;
+  margin-bottom: 16px;
+  font-family: inherit !important;
+}
+#content .mepr-price-menu .mepr-price-box-price {
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  color: #939597;
+  letter-spacing: -0.24px;
+  line-height: 1.428;
+}
+#content .mepr-price-menu .mepr-price-box-price span {
+  font-size: 38px;
+  color: #122B46;
+  display: block;
+  line-height: 1;
+  margin-bottom: 5px;
+}
+#content .mepr-price-menu .mepr-price-box-benefits-item {
+  font-size: 14px;
+  letter-spacing: -0.24px;
+  line-height: 2.142;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#content .mepr-price-menu .mepr-price-box-benefits-item:before {
+  content: '\E876';
+  color: #007CFF;
+  font: normal normal normal 15px/1 "bb-icons";
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-right: 12px;
+  margin-top: 8px;
+}
+#content .mepr-price-menu .mepr-price-box-footer:empty {
+  display: none;
+}
+#content .mepr-price-menu .mepr-price-box-foot {
+  margin-top: auto !important;
+}
+#content .mepr-price-menu .mepr-price-box-footer {
+  font-size: 14px;
+  color: #939597;
+  letter-spacing: -0.24px;
+  text-align: center;
+  line-height: 1.428;
+  margin-bottom: 20px;
+}
+
+/* Pricing Page Theme : Custom */
+.mepr-price-menu.custom .mepr-price-box {
+  background: #FFFFFF;
+  border: 1px solid #E7E9EC;
+  border-radius: 4px;
+}
+.mepr-price-menu.custom .mepr-price-box.highlighted {
+  border: 1px solid rgba(11, 11, 12, 0.16);
+  box-shadow: 0 4px 35px 0 rgba(0, 0, 0, 0.22);
+  border-radius: 4.36px;
+  -webkit-transform: scale(1.08);
+      -ms-transform: scale(1.08);
+          transform: scale(1.08);
+}
+@media (max-width: 640px) {
+  .mepr-price-menu.custom .mepr-price-box.highlighted {
+    -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+            transform: scale(1);
+  }
+}
+.mepr-price-menu.custom .mepr-price-box-button a {
+  background: #007CFF;
+  border-radius: 100px;
+  color: #fff;
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.24px;
+  line-height: 1;
+  padding: 14px 20px;
+  text-align: center;
+}
+.mepr-price-menu.custom .mepr-price-box-button a:hover, .mepr-price-menu.custom .mepr-price-box-button a:focus {
+  outline: none;
+  text-decoration: none;
+  color: #fff;
+  box-shadow: inset 0 0 0 99999px rgba(0, 0, 0, 0.1);
+}
+.mepr-price-menu.custom .mepr-price-box-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: column;
+      flex-flow: column;
+}
+.mepr-price-menu.custom .mepr-price-box-head .mepr-price-box-button {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+.mepr-price-menu.custom .mepr-price-box-head .mepr-price-box-heading {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+.mepr-price-menu.custom .mepr-price-box-benefits {
+  margin-bottom: 35px;
+}
+
+/* Pricing Page Theme : Classic Dark/Light */
+#content .mepr-price-menu.classic .mepr-price-box {
+  background: #FFFFFF;
+  border: 1px solid #E7E9EC;
+  border-radius: 4px;
+}
+#content .mepr-price-menu.classic .mepr-price-box.highlighted {
+  box-shadow: 0 4px 35px 0 rgba(0, 0, 0, 0.22);
+}
+#content .mepr-price-menu.classic.classic_light {
+  color: inherit !important;
+}
+#content .mepr-price-menu.classic.classic_light .mepr-price-box {
+  border: 1px solid #E7E9EC;
+  border-radius: 4px;
+}
+#content .mepr-price-menu.classic.classic_light .mepr-price-box-head {
+  padding: 0;
+}
+#content .mepr-price-menu.classic.classic_light .mepr-price-box.highlighted {
+  border: 1px solid rgba(11, 11, 12, 0.16);
+}
+#content .mepr-price-menu.classic.classic_light .mepr-price-box-benefits {
+  border-top: 2px solid #ddd;
+}
+#content .mepr-price-menu.classic.classic_light .mepr-price-box-benefits-item {
+  border-bottom: 1px solid #ddd;
+}
+#content .mepr-price-menu.classic .mepr-price-box-title {
+  font-size: 20px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+#content .mepr-price-menu.classic .mepr-price-box-benefits-list {
+  margin: 0;
+}
+#content .mepr-price-menu.classic .mepr-price-box {
+  text-align: left;
+}
+#content .mepr-price-menu.classic .mepr-price-box-foot {
+  margin-top: auto;
+  text-align: center;
+}
+
+/* Pricing Page Theme : Clean */
+#content .mepr-price-menu.clean .mepr-price-boxes {
+  margin: 0 !important;
+}
+#content .mepr-price-menu.clean .mepr-price-box {
+  background: #FFFFFF;
+  border: 1px solid #E7E9EC;
+  margin: 0;
+  padding-bottom: 30px;
+}
+#content .mepr-price-menu.clean .mepr-price-box.highlighted {
+  background-color: #efefef;
+}
+#content .mepr-price-menu.clean .mepr-price-box-title {
+  margin-top: 0;
+  padding-bottom: 0;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+#content .mepr-price-menu.clean .mepr-price-box-head {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+#content .mepr-price-menu.clean .mepr-price-box-heading {
+  line-height: 1;
+  padding-bottom: 5px;
+  padding-top: 20px;
+}
+#content .mepr-price-menu.clean .mepr-price-box-price {
+  padding-bottom: 0;
+}
+#content .mepr-price-menu.clean .mepr-price-box-benefits {
+  padding: 20px 0;
+}
+#content .mepr-price-menu.clean .mepr-price-box-button a {
+  font-size: 16px;
+  border-radius: 100px;
+  padding: 7px 20px;
+  text-transform: none;
+  width: 100%;
+}
+#content .mepr-price-menu.clean .mepr-price-box-head,
+#content .mepr-price-menu.clean .mepr-price-box-benefits,
+#content .mepr-price-menu.clean .mepr-price-box-foot,
+#content .mepr-price-menu.clean .mepr-price-box-benefits-list {
+  margin: 0;
+}
+
+/* Pricing Page Theme : Minimal Themes */
+#content .mepr-price-menu.minimal_vertical .mepr-price-box,
+#content .mepr-price-menu.minimal_horizontal .mepr-price-box {
+  padding: 30px 20px;
+}
+#content .mepr-price-menu.minimal_vertical .mepr-price-box-title,
+#content .mepr-price-menu.minimal_vertical .mepr-price-box-price span,
+#content .mepr-price-menu.minimal_vertical .mepr-price-box-heading,
+#content .mepr-price-menu.minimal_vertical .mepr-price-box-price,
+#content .mepr-price-menu.minimal_vertical .mepr-price-box-benefits,
+#content .mepr-price-menu.minimal_vertical .mepr-price-box-benefits-item:before,
+#content .mepr-price-menu.minimal_horizontal .mepr-price-box-title,
+#content .mepr-price-menu.minimal_horizontal .mepr-price-box-price span,
+#content .mepr-price-menu.minimal_horizontal .mepr-price-box-heading,
+#content .mepr-price-menu.minimal_horizontal .mepr-price-box-price,
+#content .mepr-price-menu.minimal_horizontal .mepr-price-box-benefits,
+#content .mepr-price-menu.minimal_horizontal .mepr-price-box-benefits-item:before {
+  color: #fff;
+}
+#content .mepr-price-menu.minimal_vertical .mepr-price-box-benefits-item,
+#content .mepr-price-menu.minimal_horizontal .mepr-price-box-benefits-item {
+  border-color: #fff;
+}
+#content .mepr-price-menu.minimal_vertical .mepr-price-box-price span,
+#content .mepr-price-menu.minimal_horizontal .mepr-price-box-price span {
+  margin-bottom: 8px;
+}
+#content .mepr-price-menu.minimal_vertical .mepr-price-box-benefits-list,
+#content .mepr-price-menu.minimal_horizontal .mepr-price-box-benefits-list {
+  margin-bottom: 20px;
+  text-align: left;
+}
+#content .mepr-price-menu.minimal_vertical .mepr-price-box-title,
+#content .mepr-price-menu.minimal_horizontal .mepr-price-box-title {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+#content .mepr-price-menu.minimal_vertical .mepr-price-box-button a,
+#content .mepr-price-menu.minimal_horizontal .mepr-price-box-button a {
+  display: block;
+  font-size: 14px;
+  background: #fff;
+  border-radius: 100px;
+  padding: 7px 10px;
+}
+#content .mepr-price-menu.minimal_vertical .mepr-price-box-heading,
+#content .mepr-price-menu.minimal_horizontal .mepr-price-box-heading {
+  margin-bottom: 0;
+  text-align: left;
+}
+#content .mepr-price-menu.minimal_vertical.minimal_sandstone_vertical .mepr-price-box.highlighted, #content .mepr-price-menu.minimal_vertical.minimal_sandstone_horizontal .mepr-price-box.highlighted,
+#content .mepr-price-menu.minimal_horizontal.minimal_sandstone_vertical .mepr-price-box.highlighted,
+#content .mepr-price-menu.minimal_horizontal.minimal_sandstone_horizontal .mepr-price-box.highlighted {
+  background-color: #bbb456;
+}
+#content .mepr-price-menu.minimal_vertical.minimal_clay_vertical .mepr-price-box.highlighted, #content .mepr-price-menu.minimal_vertical.minimal_clay_horizontal .mepr-price-box.highlighted,
+#content .mepr-price-menu.minimal_horizontal.minimal_clay_vertical .mepr-price-box.highlighted,
+#content .mepr-price-menu.minimal_horizontal.minimal_clay_horizontal .mepr-price-box.highlighted {
+  background-color: #864a27;
+}
+#content .mepr-price-menu.minimal_vertical.minimal_dawn_vertical .mepr-price-box.highlighted, #content .mepr-price-menu.minimal_vertical.minimal_dawn_horizontal .mepr-price-box.highlighted,
+#content .mepr-price-menu.minimal_horizontal.minimal_dawn_vertical .mepr-price-box.highlighted,
+#content .mepr-price-menu.minimal_horizontal.minimal_dawn_horizontal .mepr-price-box.highlighted {
+  background-color: #c3b608;
+}
+#content .mepr-price-menu.minimal_vertical.minimal_mercury_vertical .mepr-price-box.highlighted, #content .mepr-price-menu.minimal_vertical.minimal_mercury_horizontal .mepr-price-box.highlighted,
+#content .mepr-price-menu.minimal_horizontal.minimal_mercury_vertical .mepr-price-box.highlighted,
+#content .mepr-price-menu.minimal_horizontal.minimal_mercury_horizontal .mepr-price-box.highlighted {
+  background-color: #8daf75;
+}
+#content .mepr-price-menu.minimal_vertical.minimal_gray_vertical .mepr-price-box-title,
+#content .mepr-price-menu.minimal_vertical.minimal_gray_vertical .mepr-price-box-price span,
+#content .mepr-price-menu.minimal_vertical.minimal_gray_vertical .mepr-price-box-heading, #content .mepr-price-menu.minimal_vertical.minimal_gray_horizontal .mepr-price-box-title,
+#content .mepr-price-menu.minimal_vertical.minimal_gray_horizontal .mepr-price-box-price span,
+#content .mepr-price-menu.minimal_vertical.minimal_gray_horizontal .mepr-price-box-heading,
+#content .mepr-price-menu.minimal_horizontal.minimal_gray_vertical .mepr-price-box-title,
+#content .mepr-price-menu.minimal_horizontal.minimal_gray_vertical .mepr-price-box-price span,
+#content .mepr-price-menu.minimal_horizontal.minimal_gray_vertical .mepr-price-box-heading,
+#content .mepr-price-menu.minimal_horizontal.minimal_gray_horizontal .mepr-price-box-title,
+#content .mepr-price-menu.minimal_horizontal.minimal_gray_horizontal .mepr-price-box-price span,
+#content .mepr-price-menu.minimal_horizontal.minimal_gray_horizontal .mepr-price-box-heading {
+  color: #122B46;
+}
+#content .mepr-price-menu.minimal_vertical.minimal_gray_vertical .mepr-price-box-price,
+#content .mepr-price-menu.minimal_vertical.minimal_gray_vertical .mepr-price-box-benefits,
+#content .mepr-price-menu.minimal_vertical.minimal_gray_vertical .mepr-price-box-benefits-item:before, #content .mepr-price-menu.minimal_vertical.minimal_gray_horizontal .mepr-price-box-price,
+#content .mepr-price-menu.minimal_vertical.minimal_gray_horizontal .mepr-price-box-benefits,
+#content .mepr-price-menu.minimal_vertical.minimal_gray_horizontal .mepr-price-box-benefits-item:before,
+#content .mepr-price-menu.minimal_horizontal.minimal_gray_vertical .mepr-price-box-price,
+#content .mepr-price-menu.minimal_horizontal.minimal_gray_vertical .mepr-price-box-benefits,
+#content .mepr-price-menu.minimal_horizontal.minimal_gray_vertical .mepr-price-box-benefits-item:before,
+#content .mepr-price-menu.minimal_horizontal.minimal_gray_horizontal .mepr-price-box-price,
+#content .mepr-price-menu.minimal_horizontal.minimal_gray_horizontal .mepr-price-box-benefits,
+#content .mepr-price-menu.minimal_horizontal.minimal_gray_horizontal .mepr-price-box-benefits-item:before {
+  color: inherit;
+}
+#content .mepr-price-menu.minimal_vertical.minimal_gray_vertical .mepr-price-box-benefits-item, #content .mepr-price-menu.minimal_vertical.minimal_gray_horizontal .mepr-price-box-benefits-item,
+#content .mepr-price-menu.minimal_horizontal.minimal_gray_vertical .mepr-price-box-benefits-item,
+#content .mepr-price-menu.minimal_horizontal.minimal_gray_horizontal .mepr-price-box-benefits-item {
+  border-color: inherit;
+}
+
+#content .mepr-price-menu.minimal_vertical .mepr-price-boxes {
+  -ms-flex-flow: column;
+      flex-flow: column;
+}
+#content .mepr-price-menu.minimal_vertical .mepr-4-col .mepr-price-box {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+#content .mepr-price-menu.minimal_vertical .mepr-price-box-heading,
+#content .mepr-price-menu.minimal_vertical .mepr-price-box-benefits,
+#content .mepr-price-menu.minimal_vertical .mepr-price-box-foot {
+  max-width: 380px;
+  margin: auto;
+  width: 100%;
+}
+
+@media (min-width: 641px) {
+  #content .mepr-price-boxes.mepr-4-col .mepr-price-box {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(50% - 20px);
+            flex: 0 0 -webkit-calc(50% - 20px);
+            flex: 0 0 calc(50% - 20px);
+  }
+
+  #content .clean .mepr-price-boxes.mepr-4-col .mepr-price-box {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+  }
+}
+@media (min-width: 1021px) {
+  #content .mepr-price-boxes.mepr-4-col .mepr-price-box {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 calc(25% - 20px);
+            flex: 0 0 -webkit-calc(25% - 20px);
+            flex: 0 0 calc(25% - 20px);
+  }
+
+  #content .clean .mepr-price-boxes.mepr-4-col .mepr-price-box {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
+  }
+}

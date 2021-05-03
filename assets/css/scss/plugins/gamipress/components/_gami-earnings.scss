@@ -1,0 +1,116 @@
+table.gamipress-earnings-table {
+    border-collapse: separate;
+    transform-style: preserve-3d;
+
+    th, td {
+        background-color: $color-white;
+
+        &:first-child {
+            padding-left: 1em;
+        }
+    }
+
+    thead {
+        th {
+            text-transform: uppercase;
+            font-size: $font-size-smaller;
+            font-weight: 500;
+            color: $color-small-text;
+            white-space: nowrap;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+        }
+
+        tr:first-child {
+            th:first-child {
+                border-radius: 4px 0 0 0;
+                border-left: 1px solid rgba(0,0,0,0.05);
+            }
+
+            th:last-child {
+                border-radius: 0 4px 0 0;
+                border-right: 1px solid rgba(0,0,0,0.05);
+            }
+
+            th {
+                border-top: 1px solid rgba(0,0,0,0.05);    
+            }
+        } 
+    }
+
+    tbody {
+        tr {
+            transform: translateZ(-1em);
+            position: relative;
+            z-index: 0;
+
+            td {
+                border-bottom: 0;
+                font-size: $font-size-smaller;
+                padding-top: 1em;
+                padding-bottom: 1em;
+            }
+
+            &:hover {
+                transform: scale(1);
+                transform: translateZ(0);
+                box-shadow: 0 3px 24px 0 rgba(18,43,70,0.08);
+                position: relative;
+                z-index: 9;
+            }
+        }
+        tr:last-child {
+            td {
+                border-bottom: 1px solid rgba(0,0,0,0.05);
+            }
+
+            td:first-child {
+                border-radius: 0 0 0 4px;    
+            }
+
+            td:last-child {
+                border-radius: 0 0 4px 0;       
+            }
+        }
+
+        td:first-child {
+            border-left: 1px solid rgba(0,0,0,0.05);
+        }
+
+        td:last-child {
+            border-right: 1px solid rgba(0,0,0,0.05);
+        }
+
+        td.gamipress-earnings-col-thumbnail {
+            width: 60px;
+
+            img.gamipress-achievement-thumbnail,
+            img.gamipress-rank-thumbnail {
+                object-fit: cover;
+                width: 52px;
+                height: 52px;
+                border-radius: 100%;
+            }
+        }
+
+        td.gamipress-earnings-col-date {
+            font-size: 13px;
+            color: $color-small-text;
+        }
+
+        td.gamipress-earnings-col-points {
+            font-size: 13px;
+            color: $color-small-text;
+        }
+    }
+}
+
+.gamipress-earnings-pagination {
+    font-size: 13px;
+    text-align: right;
+
+    span,
+    a {
+        padding: 0 5px;
+    }
+}

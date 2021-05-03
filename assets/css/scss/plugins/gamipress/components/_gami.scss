@@ -1,0 +1,113 @@
+#gamipress-achievements-container {
+    border-top: 0;
+}
+
+.gamipress-user-points-image {
+    margin-right: 15px;
+}
+
+.entry-content-wrap {
+	.gamipress-achievement-earned,
+	.gamipress-rank-earned {
+		margin-top: 30px;
+	}
+}
+
+.gamipress-achievement-attached,
+.gamipress-rank-requirements {
+	margin-bottom: 20px;
+	border-bottom: 1px dotted $color-border;
+
+	.gamipress-open-close-switch > a {
+		display: flex;
+		align-items: center;
+		text-align: left;
+		padding: 5px 0;
+		font-size: $font-size-extra-small;
+		text-transform: uppercase;
+		color: $color-small-text;
+
+		&:after {
+			padding: 0;
+			margin-left: auto;
+			background: transparent;
+			background-image: none;
+			background-color: #EEF0F3;
+			border-radius: 100%;
+			font-family: "bb-icons";
+		    display: inline-block;
+		    line-height: 1;
+		    font-weight: normal;
+		    font-style: normal;
+		    speak: none;
+		    text-decoration: inherit;
+		    text-transform: none;
+		    text-rendering: auto;
+		    -webkit-font-smoothing: antialiased;
+		    -moz-osx-font-smoothing: grayscale;
+		    width: 20px;
+		    height: 20px;
+		    font-size: 16px;
+		    line-height: 20px;
+		    vertical-align: top;
+		    text-align: center;
+		    transition: color .1s ease-in 0;
+		    color: $color-small-text;
+		}
+
+		&.show-hide-open:after {
+			content: '\e879';
+			line-height: 21px;
+		}
+
+		&.show-hide-close:after {
+			content: '\e87c';
+			transform: none;
+		}
+	}
+
+	.gamipress-extras-window {
+		margin-top: 10px;
+
+		h4 {
+			font-size: $font-size-smaller;
+			margin-bottom: 5px;
+
+			body.buddypress & {
+				margin-bottom: 10px;
+			}
+		}
+	}
+}
+
+ul.gamipress-achievement-earners-list,
+ul.gamipress-rank-earners-list {
+	margin-left: 8px;
+
+	& > li {
+		margin-right: 0;
+		margin-left: -8px;
+
+		img.avatar {
+			border: 1px solid #fff;
+		}
+	}
+}
+
+.gamipress-logs-list {
+	margin-bottom: 20px;
+
+	.gamipress-log {
+		font-size: $font-size-smaller;
+		padding: 3px 0;
+	}
+}
+
+.gamipress-logs-pagination {
+	font-size: 13px;
+
+    span,
+    a {
+        padding: 0 5px;
+    }
+}

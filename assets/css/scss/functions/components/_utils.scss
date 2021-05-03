@@ -1,0 +1,147 @@
+//Micro clearfix, as per: http://cssmojo.com/latest_new_clearfix_so_far/
+//Extend the clearfix class with Sass to avoid the '.clearfix' class appearing
+//over and over in your markup.
+%clearfix {
+
+    &:after {
+        content: ' ';
+        display: table;
+        clear: both;
+    }
+
+}
+
+// Vertical rhythm
+%vertical-rhythm {
+    margin: rem-calc(0 0 $base-line);
+    padding: 0;
+}
+
+// Center block
+%center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// Clearfix
+@mixin clearfix {
+    &:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+
+// Transition
+@mixin transition($transition: all linear .2s) {
+    transition: $transition;
+}
+
+// transform
+@mixin transform($transforms) {
+    transform: $transforms;
+}
+
+// blur
+@mixin blur($radius) {
+    filter: blur($radius);
+}
+
+// striped
+@mixin striped($color: rgba(255, 255, 255, .2), $angle: 45deg) {
+    background-image: -webkit-linear-gradient($angle, $color 25%, transparent 25%, transparent 50%, $color 50%, $color 75%, transparent 75%, transparent);
+    background-image: -o-linear-gradient($angle, $color 25%, transparent 25%, transparent 50%, $color 50%, $color 75%, transparent 75%, transparent);
+    background-image: linear-gradient($angle, $color 25%, transparent 25%, transparent 50%, $color 50%, $color 75%, transparent 75%, transparent);
+}
+
+// animation
+@mixin animation($animation) {
+    animation: $animation;
+}
+
+// @param $font-size - font size value, default is $font__base-font-size
+// @param $line-height - true or flase, default is false
+//
+// @group helpers
+//
+// @example scss - Usage
+// .site-title {
+//     @include font-size(50);
+// }
+//
+// @example css - CSS output
+// site-title {
+//     font-size: 3.125rem;
+// }
+@mixin font-size($font-size: $font-size, $line-height: false) {
+    font-size: rem-calc($font-size);
+
+    @if $line-height == true {
+        line-height: ceil($font-size / $base-line) * ($base-line / $font-size);
+    }
+
+}
+
+// @param {Integer} $psvalue - The value should be the same value as in Photoshop, required
+//
+// @group helpers
+//
+// @example scss - Usage
+// .wide-tracking {
+//     @include letter-spacing(50);
+// }
+//
+// @example css - CSS output
+// .wide-tracking {
+//     letter-spacing: .05rem;
+// }
+
+@mixin letter-spacing( $psvalue ) {
+    letter-spacing: $psvalue / 1000 + rem;
+}
+
+// We use this to do clear floats
+@mixin clearfix {
+    @extend %clearfix;
+}
+
+// Bottom space
+@mixin bottom-space {
+    margin-bottom: rem-calc($base-line);
+}
+
+
+@mixin input-placeholder {
+    &.placeholder { @content; }
+    &:-moz-placeholder { @content; }
+    &::-moz-placeholder { @content; }
+    &:-ms-input-placeholder { @content; }
+    &::-webkit-input-placeholder { @content; }
+}
+
+// input,
+// textarea {
+//     @include input-placeholder {
+//         color: $grey;
+//     }
+// }
+
+@mixin truncate($truncation-boundary) {
+    max-width: $truncation-boundary;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+@mixin label($text, $back) {
+    background: $back;
+    color: $text;
+
+    &.tag,
+    &.outline {
+        background: none;
+        border-color: $back;
+        color: $back;
+    }
+}

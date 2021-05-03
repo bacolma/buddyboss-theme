@@ -1,0 +1,109 @@
+@font-face {
+    font-family: 'SF UI Text';
+    src: url('SFUIText-Light.woff') format('woff'),
+        url('SFUIText-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF UI Text';
+    src: url('SFUIText-LightItalic.woff') format('woff'),
+        url('SFUIText-LightItalic.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SF UI Text';
+    src: url('SFUIText-Regular.woff') format('woff'),
+        url('SFUIText-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF UI Text';
+    src: url('SFUIText-RegularItalic.woff') format('woff'),
+        url('SFUIText-RegularItalic.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'SF UI Text';
+    src:url('SFUIText-Medium.woff') format('woff'),
+        url('SFUIText-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF UI Text';
+    src: url('SFUIText-Semibold.woff') format('woff'),
+        url('SFUIText-Semibold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF UI Display';
+    src: url('SFUIDisplay-Regular.woff') format('woff'),
+        url('SFUIDisplay-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF UI Display';
+    src: url('SFUIDisplay-Medium.woff') format('woff'),
+        url('SFUIDisplay-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SF UI Display';
+    src: url('SFUIDisplay-Bold.woff') format('woff'),
+        url('SFUIDisplay-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+body.bb-custom-typo {
+    font-family: 'SF UI Text', sans-serif;
+}
+
+.bb-custom-typo h1,
+.bb-custom-typo .h1,
+.bb-custom-typo h2,
+.bb-custom-typo .h2,
+.bb-custom-typo h3,
+.bb-custom-typo .h3,
+.bb-custom-typo h4,
+.bb-custom-typo .h4,
+.bb-custom-typo h5,
+.bb-custom-typo .h5,
+.bb-custom-typo h6,
+.bb-custom-typo .h6,
+.bb-custom-typo .bb-course-footer,
+.bb-custom-typo .ld-table-list-header .ld-text,
+.bb-custom-typo .gamipress-achievement-points,
+.bb-custom-typo .elementor .elementor-widget-heading.elementor-widget-heading .elementor-heading-title {
+    font-family: 'SF UI Display', sans-serif;
+}
+
+.bb-custom-typo #content .mepr-price-menu .mepr-price-box-title {
+    font-family: 'SF UI Display' !important;
+}
+
+.bb-custom-typo .mepr-price-box-price span,
+.bb-custom-typo .learndash-wrapper #ld-profile .ld-profile-heading {
+    font-family: 'SF UI Display', sans-serif;
+    font-weight: 500;
+}
+
+.bb-custom-typo .ld-profile-stats .ld-profile-stat strong {
+    font-family: 'SF UI Display', sans-serif;
+    font-weight: 600;
+}

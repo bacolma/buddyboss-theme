@@ -1,0 +1,23 @@
+{
+  "name": "codeinwp/themeisle-sdk",
+  "description": "BuddyBoss SDK ",
+  "keywords": [
+    "wordpress"
+  ],
+  "homepage": "https://github.com/Codeinwp/themeisle-sdk",
+  "license": "GPL-2.0+",
+  "authors": [
+    {
+      "name": "BuddyBoss",
+      "homepage": "https://buddyboss.com"
+    }
+  ],
+  "autoload": {
+    "files": [
+      "load.php"
+    ]
+  },
+  "support": {
+    "issues": "https://github.com/Codeinwp/themeisle-sdk/issues"
+  }
+}

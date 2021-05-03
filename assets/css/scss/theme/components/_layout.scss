@@ -1,0 +1,170 @@
+html {
+    height: 100%;
+    background-image: url('../images/adminbar-background.png');
+    background-repeat: repeat-x;
+    background-attachment: fixed;
+}
+
+html,
+body {
+    min-height: 100%;
+}
+
+.site {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+    body:not(.page-template-page-fullscreen) & {
+        overflow-x: hidden;/* Fixed horizontal scroll issue in mobile */
+    }
+}
+
+.site-header,
+.site-content,
+.bb-footer {
+    padding: 0 $grid-gutter / 2;
+}
+
+.site-content {
+    min-height: 70vh;
+}
+
+.site-main {
+    position: relative;
+}
+
+/* This will prevent jerk while page loading */
+.has-sidebar:not(.profile-sidebar):not(.group-sidebar):not(.llms-sidebar) #primary,
+body.buddypress.has-sidebar:not(.profile-sidebar):not(.group-sidebar):not(.llms-sidebar) #page #primary {
+    max-width: 900px;
+    width: 100%;
+}
+
+.content-area {
+    padding-top: rem-calc(30px);
+    padding-bottom: rem-calc(35px);
+
+    .my-messages & {
+        padding-top: rem-calc(25px);
+    }
+}
+
+@media screen and (max-width: $md) {
+    .content-area {
+        padding-bottom: rem-calc(20px);
+    }
+}
+
+body .widget-area:not(.widget-area-secondary) {
+    padding-top: rem-calc(30px);
+}
+
+.infinite-loading-container {
+    flex: 0 0 100%;
+    padding: 0;
+}
+
+.bb-buddypanel .site {
+    @media ( min-width: $md ) {
+        margin-left: $buddypanel-closed;
+        transition: margin-left 0.2s;
+    }
+}
+
+.bb-buddypanel.bb-buddypanel-right .site {
+    @media ( min-width: $md ) {
+        margin-right: $buddypanel-closed;
+        margin-left: 0;
+        transition: margin-right 0.2s;
+    }
+}
+
+/* 404 Page */
+.no-results.not-found,
+.error-404 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    .page-header {
+        margin-bottom: 60px;
+    }
+
+    .page-title {
+        margin-bottom: 10px;
+    }
+
+    .desc {
+        font-size: 18px;
+        font-weight: 300;
+        color: $color-small-text;
+        letter-spacing: -0.24px;
+        line-height: 1.5;
+    }
+
+    .button {
+        min-width: 140px;
+    }
+
+    .bb-img-404 {
+        margin: 0 auto 40px;
+    }
+}
+
+.no-results.not-found {
+    .search-form {
+        display: flex;
+        justify-content: center;
+
+        label {
+            min-width: 28%;
+        }
+
+        .search-field {
+            border-radius: 100px 0 0 100px;
+            border-right: 0;
+            width: 100%;
+        }
+
+        .search-submit {
+            border-radius: 0 100px 100px 0;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: -0.24px;
+        }
+    }
+
+    .no-results-img {
+        margin-bottom: 50px;
+    }
+}
+
+.avatar {
+    border-radius: 50%;
+}
+
+@media screen and (min-width: $md) {
+    .widget-area:not(.widget-area-secondary) {
+        flex: 0 0 $sidebar-width;
+        max-width: $sidebar-width;
+    }
+
+    .sidebar-left:not(.forums-sidebar) {
+        .site-content-grid {
+            flex-flow: row-reverse;
+        }
+    }
+}
+
+@media screen and (max-width: $md - 1 ) {
+    body.sidebar-right:not(.profile-sidebar) .widget-area:not(.widget-area-secondary) {
+        padding-top: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #wpadminbar {
+        position: fixed;
+    }
+}

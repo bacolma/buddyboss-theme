@@ -1,0 +1,1222 @@
+div.resumes {
+    .resume_filters {
+        background-color: transparent;
+        margin-bottom: 0;
+        
+        .search_resumes {
+            padding-left: 0;
+            padding-right: 0;
+            padding-top: 0;
+
+            .search_categories {
+                .chosen-container-multi .chosen-choices {
+                    border-radius: 4px;
+                    padding: 0 15px;
+                    border: $input-border-width solid $input-border-color;
+                    background-color: $input-background-color;
+                    background-image: none;
+                    height: $input-height !important;
+                    line-height: 38px;
+                }
+            }
+
+            .search_keywords {
+                position: relative;
+
+                &:before {
+                    content: '\e81f';
+                    font-family: "bb-icons";
+                    font-size: $font-size;
+                    color: $color-gray;
+                    text-rendering: auto;
+                    -webkit-font-smoothing: antialiased;
+                    position: absolute;
+                    top: 7px;
+                    left: 13px;
+                }
+
+                input {
+                    border-radius: 4px;
+                    padding: 0 15px 0 35px;
+                }
+            }
+
+            .search_location {
+                position: relative;
+
+                &:before {
+                    content: '\e817';
+                    font-family: "bb-icons";
+                    font-size: $font-size-large;
+                    color: $color-gray;
+                    text-rendering: auto;
+                    -webkit-font-smoothing: antialiased;
+                    position: absolute;
+                    top: 7px;
+                    left: 13px;
+                }
+
+                input {
+                    border-radius: 4px;
+                    padding: 0 15px 0 35px;
+                }
+            }
+
+            .chosen-container-single .chosen-single {
+                -webkit-appearance: none;
+                background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAiIGhlaWdodD0iNiIgdmlld0JveD0iMCAwIDEwIDYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayI+Cjx0aXRsZT5TdHJva2UgNzczPC90aXRsZT4KPGRlc2M+Q3JlYXRlZCB1c2luZyBGaWdtYTwvZGVzYz4KPGcgaWQ9IkNhbnZhcyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE5ODg2IDApIj4KPGcgaWQ9IlN0cm9rZSA3NzMiIG9wYWNpdHk9IjAuMjUiPgo8dXNlIHhsaW5rOmhyZWY9IiNwYXRoMF9zdHJva2UiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDE5ODg3IDEpIiBmaWxsPSIjMTIyQjQ2Ii8+CjwvZz4KPC9nPgo8ZGVmcz4KPHBhdGggaWQ9InBhdGgwX3N0cm9rZSIgZD0iTSA4LjYzNjQgMC42MzYzOTZDIDguOTg3ODcgMC4yODQ5MjQgOC45ODc4NyAtMC4yODQ5MjQgOC42MzY0IC0wLjYzNjM5NkMgOC4yODQ5MiAtMC45ODc4NjggNy43MTUwOCAtMC45ODc4NjggNy4zNjM2IC0wLjYzNjM5NkwgOC42MzY0IDAuNjM2Mzk2Wk0gNCA0TCAzLjM2MzYgNC42MzY0QyAzLjcxNTA4IDQuOTg3ODcgNC4yODQ5MiA0Ljk4Nzg3IDQuNjM2NCA0LjYzNjRMIDQgNFpNIDAuNjM2Mzk2IC0wLjYzNjM5NkMgMC4yODQ5MjQgLTAuOTg3ODY4IC0wLjI4NDkyNCAtMC45ODc4NjggLTAuNjM2Mzk2IC0wLjYzNjM5NkMgLTAuOTg3ODY4IC0wLjI4NDkyNCAtMC45ODc4NjggMC4yODQ5MjQgLTAuNjM2Mzk2IDAuNjM2Mzk2TCAwLjYzNjM5NiAtMC42MzYzOTZaTSA3LjM2MzYgLTAuNjM2Mzk2TCAzLjM2MzYgMy4zNjM2TCA0LjYzNjQgNC42MzY0TCA4LjYzNjQgMC42MzYzOTZMIDcuMzYzNiAtMC42MzYzOTZaTSA0LjYzNjQgMy4zNjM2TCAwLjYzNjM5NiAtMC42MzYzOTZMIC0wLjYzNjM5NiAwLjYzNjM5NkwgMy4zNjM2IDQuNjM2NEwgNC42MzY0IDMuMzYzNloiLz4KPC9kZWZzPgo8L3N2Zz4K);
+                background-repeat: no-repeat;
+                background-position: right 1rem center;
+                padding-right: 40px;
+
+                font-family: inherit;
+                font-size: $input-font-size;
+                height: $input-height;
+                outline: none;
+                vertical-align: middle;
+                background-color: $input-background-color;
+                border: $input-border-width solid $input-border-color;
+                border-radius: $input-border-radius;
+                box-shadow: $input-box-shadow;
+                padding: 0 $input-padding-rl;
+                color: $color-darkgray;
+
+                span {
+                    line-height: 40px;
+                }
+
+                div b {
+                    background-image: none;
+                }
+            }
+        }
+
+        .showing_resumes {
+            background: $color-white;
+            border-radius: 4px 4px 0 0;
+            border: 1px solid #E7EAEC;
+            border-bottom: 0;
+            padding: 1em 1em;
+            font-size: $font-size-smaller;
+
+            a {
+                color: $color-textgray;
+                font-size: 0;
+
+                &:hover {
+                    color: $color-link;
+                }
+            }
+
+            a:before {
+                font-size: 17px;
+                text-rendering: auto;
+                -webkit-font-smoothing: antialiased;
+                line-height: 1.6875rem;
+                position: relative;
+                top: 1px;
+                font-family: 'bb-icons';
+                margin-right: 7px;
+            }
+
+            a.reset {
+                padding-left: 5px;
+            }
+
+            a.reset:before {
+                font-family: 'bb-icons';
+                content: '\e828';
+                font-size: 24px;
+                top: 3px;
+                margin-right: 2px;
+                line-height: 1.3875rem;
+            }
+        }
+    }
+
+    ul.resumes {
+        border: 0;
+        margin-bottom: 0;
+    }
+
+    a.load_more_resumes {
+        width: 100%;
+        margin: 0 10px 0 0;
+        border-bottom: 0;
+        text-transform: uppercase;
+        font-size: $font-size-extra-small;
+        line-height: $base-line-smaller;
+        color: $color-link;
+
+        &:hover {
+            color: $color-link-hover;
+            border: 0;
+            background-color: transparent;
+        }
+
+        strong {
+            font-weight: normal;
+            color: $color-link;
+        }
+    }
+}
+
+ul.resumes .listing-bookmarked div.candidate-column h3:before {
+    display: none;
+}
+
+ul.resumes li.resume.listing-bookmarked a div.candidate-column {
+    position: relative;
+
+    &:after {
+        position: absolute;
+        content: "\e81e";
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        -webkit-font-smoothing: antialiased;
+        font-family: job-manager!important;
+        text-decoration: none;
+        font-weight: 400;
+        font-style: normal;
+        font-size: 16px;
+        line-height: 16px;
+        margin: 0;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        color: $color-link;
+    }
+}
+
+@media( max-width: $sm ) {
+    ul.resumes li.resume.listing-bookmarked a div.candidate-column:after {
+        display: none;
+    }
+}
+
+ul.resumes {
+    li.resume {
+        background-color: $color-white;
+        border: 1px solid #E7EAEC;
+        margin: 0 0 -1px;
+        width: 100%;
+
+        &:first-child {
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+        }
+
+        &:last-child {
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px;
+        }
+
+        a {
+            position: relative;
+            transition: all linear .2s;
+            padding: 1em;
+            font-size: $font-size-smaller;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            &:hover {
+                background-color: $color-white;
+                box-shadow: 0 3px 24px 0 rgba(18,43,70,0.08);
+                border-left-color: $color-white;
+                border-right-color: $color-white;
+                border-radius: 3px;
+                position: relative;
+                z-index: 1;
+            }
+
+            img {
+                border-radius: 100%;
+                width: 44px;
+                height: 44px;
+            }
+
+            div.candidate-column {
+                padding-left: 54px;
+
+                .candidate-title {
+                    color: $color-small-text;
+                    font-size: $font-size-smaller;
+                }
+
+                .candidate-title strong {
+                    font-weight: normal;
+                }
+
+                h3 {
+                    font-weight: 500;
+                }
+
+                h3:before {
+                    font-size: $font-size-smaller;
+                    color: $color-link;
+                }
+            }
+
+            .candidate-location-column {
+                color: $color-small-text;
+
+                span.candidate-location:before {
+                    font-family: "bb-icons";
+                    font-size: 18px;
+                    text-rendering: auto;
+                    -webkit-font-smoothing: antialiased;
+                    content: '\e817';
+                    margin: 0 3px 0 0;
+                }
+            }
+
+            .resume-posted-column {
+                color: $color-small-text;
+            }
+
+            @media( max-width: $sm ) {
+                .resume-posted-column {
+                    text-align: center;
+                }                
+            }
+
+            .resume-category {
+                font-size: 12px;
+
+                &:before {
+                    font-size: 12px;
+                    text-rendering: auto;
+                    -webkit-font-smoothing: antialiased;
+                    font-family: "bb-icons";
+                    margin-right: 2px;
+                    content: "\e8ec";
+                }
+            }
+        }
+
+        @media( max-width: $sm ) {
+            a {
+                flex-direction: column;
+
+                img {
+                    margin: 0 auto 10px;
+                    position: static;
+                    width: 64px;
+                    height: 64px;
+                }
+
+                div.candidate-column {
+                    width: 100%;
+                    float: none;
+                    text-align: center;
+                    padding: 0 0 5px;
+
+                    h3:before {
+                        display: none;
+                    }
+                }
+
+                .candidate-location-column {
+                    width: 100%;
+                    text-align: center;
+
+                    span.candidate-location:after {
+                        display: none;
+                    }
+                }
+
+                .resume-meta {
+                    width: 100%;
+                    text-align: center;   
+                }
+            }
+        }
+    }
+
+    &.loading {
+        border: 1px solid #E7EAEC;
+        background-color: $color-white;
+        border-radius: 4px;
+    }
+
+    li.no_resumes_found {
+        background-color: $color-white;
+        border: 1px solid #E7EAEC;
+        margin: 0 0 -1px;
+        width: 100%;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
+    }
+}
+
+ul.resumes li.resume a {
+    @media( min-width: $sm ) {
+        img { /* IE11 fix*/
+            top: 50%;
+            transform: translateY(-50%);
+        }
+    }
+}
+
+.resume-manager-resumes {
+    border-collapse: separate;
+
+    thead {
+        tr th {
+            border: 0;
+        }
+    }
+
+    tbody {
+        tr td {
+            border-bottom: 1px solid #E7EAEC;
+            background-color: $color-white;
+            font-size: $font-size-smaller;
+
+            &:first-child {
+                border-left: 1px solid #E7EAEC;
+                padding-left: 1rem;
+            }
+
+            &:last-child {
+                border-right: 1px solid #E7EAEC;
+                padding-right: 1rem;
+            }
+
+            &.resume-title > a {
+                font-size: $font-size-small;
+            }
+        }
+
+        tr:first-child {
+            td {
+                border-top: 1px solid #E7EAEC;       
+            }
+
+            td:first-child {
+                border-top-left-radius: 4px;
+            }
+
+            td:last-child {
+                border-top-right-radius: 4px;
+            }
+        }
+
+        tr:last-child {
+            td:first-child {
+                border-bottom-left-radius: 4px;
+            }
+
+            td:last-child {
+                border-bottom-right-radius: 4px;
+            }
+        }
+    }
+
+    tfoot {
+        tr td {
+            border: 0;
+        }
+    }
+}
+
+body.single-resume {
+    article.resume .entry-content-wrap {
+        padding-left: 0;
+        padding-right: 0;
+
+        .entry-header {
+            margin-bottom: 0.7rem;
+
+            h1 {
+                font-weight: 500;
+                font-size: $heading-font-size-1;
+                line-height: $heading-base-line-1;
+            }
+        }
+    }
+
+    .entry-meta {
+        margin-bottom: 25px;
+    }
+
+    .resume-aside {
+        box-shadow: none;
+        border: 0;
+        overflow: visible;
+        margin: 0;
+
+        .bb-candidate-photo {
+            position: relative;
+            text-align: center;
+
+            img.candidate_photo {
+                left: 0;
+                right: 0;
+                top: -5em;
+                margin: auto;
+                border-radius: 100%;
+                float: none;
+                width: 8em;
+                height: 8em;
+            }
+        }
+
+        .bb-candidate-data {
+            padding: 3.5em 0 0;
+
+            & > h3 {
+                text-align: left;
+                text-transform: uppercase;
+                font-size: $font-size-smaller;
+                font-weight: 500;
+                margin-bottom: 0.5em;
+            }
+
+            p {
+                font-size: $font-size-smaller;
+                line-height: $base-line-large;
+
+                a {
+                    color: $color-textgray;
+
+                    &:hover {
+                        color: $color-link;
+                    }
+                }
+            }
+
+            p.job-title {
+                padding: 0;
+                color: $color-textgray;
+                font-weight: normal;
+
+                &:before {
+                    content: '\e846';
+                    font-family: "bb-icons";
+                    font-size: 18px;
+                    text-rendering: auto;
+                    -webkit-font-smoothing: antialiased;
+                    margin-right: 7px;
+                }
+            }
+
+            p.resume-category {
+                padding: 0;
+                color: #939597;
+                font-weight: normal;
+                margin-bottom: 0;
+
+                &:before {
+                    font-size: 13px;
+                    text-rendering: auto;
+                    -webkit-font-smoothing: antialiased;
+                    font-family: "bb-icons";
+                    margin-right: 8px;
+                    margin-left: 3px;
+                    content: "\e8ec";
+                }
+            }
+
+            p.location {
+                padding: 0;
+
+                a:before {
+                    content: '\e817';
+                    font-family: "bb-icons" !important;
+                    font-size: 20px;
+                    text-rendering: auto;
+                    -webkit-font-smoothing: antialiased;
+                    margin-right: 5px;
+                }
+            }
+        }
+
+        ul.resume-links {
+            float: none;
+            max-width: 100%;
+
+            li {
+                float: none;
+                margin: 0;
+                font-size: $font-size-smaller;
+                line-height: $base-line-large;
+
+                &.resume-link {
+                    a:before {
+                        content: '\e809';
+                        font-family: "bb-icons";
+                        font-size: 18px;
+                        text-rendering: auto;
+                        -webkit-font-smoothing: antialiased;
+                        margin-right: 7px;
+                    }
+                } 
+
+                &.resume-link.resume-link-facebook {
+                    a:before {
+                        content: '\e83f';
+                    }
+                } 
+
+                &.resume-link.resume-link-twitter {
+                    a:before {
+                        content: '\e83e';
+                    }
+                } 
+
+                &.resume-link.resume-link-instagram {
+                    a:before {
+                        content: "\e8d3"; 
+                        font-size: 14px;
+                        text-rendering: auto;
+                        -webkit-font-smoothing: antialiased;
+                        font-family: "bb-icons";
+                        margin-right: 6px;
+                        margin-left: 2px;
+                    }
+                } 
+
+                &.resume-link.resume-link-github {
+                    a:before {
+                        content: "\e89c"; 
+                        font-size: 14px;
+                        text-rendering: auto;
+                        -webkit-font-smoothing: antialiased;
+                        font-family: "bb-icons";
+                        margin-right: 6px;
+                        margin-left: 2px;
+                    }
+                }
+
+                &.resume-file {
+                    a:before {
+                        font-size: 14px;
+                        text-rendering: auto;
+                        -webkit-font-smoothing: antialiased;
+                        font-family: "bb-icons";
+                        margin-right: 7px;
+                        margin-left: 1px;
+                        content: "\e8ee";
+                    }
+                }
+
+                a {
+                    color: $menu-link-color;
+
+                    &:hover {
+                        color: $color-link;
+                    }
+                }
+            }
+        }
+
+        form.wp-job-manager-bookmarks-form {
+            text-align: left;
+
+            a.bookmark-notice {
+                padding: 0 0 1em;
+                line-height: $base-line-large;
+
+                &:before {
+                    margin-right: 7px;
+                }
+            }
+        }
+
+        .resume_contact {
+            text-align: center;
+            padding-left: 0;
+            font-size: $font-size-small;
+
+            .resume_contact_button {
+                float: none;
+                padding: 10px 40px;
+                font-size: 15px;
+                width: 100%;
+                margin: 0;
+            }
+
+            .resume_contact_details {
+                float: none;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 1em;
+                width: 90%;
+                display: none;
+
+                &:before {
+                    margin: -20px auto 0 auto;
+                    right: 0;
+                    top: 0;
+                    border-right: 10px solid transparent;
+                    border-left: 10px solid transparent;
+                    border-bottom: 10px solid #eee;
+                }
+
+                &:after {
+                    margin: -18px auto 0 auto;
+                    right: 0;
+                    top: 0;
+                    border-right: 9px solid transparent;
+                    border-left: 9px solid transparent;
+                    border-bottom: 9px solid $color-white;
+                }
+
+                a {
+                    color: $color-link;
+                }
+            }
+        } 
+    }
+
+    ul.meta {
+        font-size: $font-size-smaller;
+
+        li {
+            padding: .5em .9em .5em 0;
+            color: $color-small-text;
+
+            &.date-posted:before {
+                content: '\e823';
+                font-family: "bb-icons" !important;
+                font-size: 18px;
+                text-rendering: auto;
+                -webkit-font-smoothing: antialiased;
+                margin-right: 7px;
+            }
+
+            &.resume-category:before {
+                content: '\e82b';
+                font-family: "bb-icons" !important;
+                font-size: 20px;
+                text-rendering: auto;
+                -webkit-font-smoothing: antialiased;
+                margin-right: 7px;
+                margin-top: 2px;
+                display: none;
+            }
+
+            &.candidate-location {
+                a {
+                    color: $menu-link-color;
+
+                    &:hover {
+                        color: $color-link;
+                    }
+                }
+            }
+
+            &.candidate-location:before {
+                content: '\e817';
+                font-family: "bb-icons" !important;
+                font-size: 19px;
+                text-rendering: auto;
+                -webkit-font-smoothing: antialiased;
+                margin-right: 4px;
+            }
+        }
+    }
+}
+
+.single-resume {
+    .candidate-video {
+        border-top: 0;
+        padding: 0;
+        margin: 0 0 1em 0;
+        position: relative;
+        padding-bottom: 56.25%;
+        height: 0;
+        overflow: hidden;
+
+        iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            display: block;
+        }
+    }
+}
+
+.single-resume-content {
+    background-color: $color-white;
+    border: 1px solid $color-border;
+    border-radius: 4px;
+    padding: 20px;
+
+    .resume-aside {
+        border: 0;
+        box-shadow: none;
+        padding: 0;
+    }
+
+    .resume_contact {
+        text-align: center;
+        padding-left: 0;
+        font-size: $font-size-small;
+
+        .resume_contact_button {
+            float: none;
+            padding: 10px 40px;
+            font-size: $button-font-size;
+        }
+
+        @media( max-width: $sm ) {
+            .resume_contact_button {
+                width: 85%;
+            }
+        }
+
+        .resume_contact_details {
+            float: none;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 1em;
+            display: none;
+
+            &:before {
+                margin: -20px auto 0 auto;
+                right: 0;
+                top: 0;
+                border-right: 10px solid transparent;
+                border-left: 10px solid transparent;
+                border-bottom: 10px solid #eee;
+            }
+
+            &:after {
+                margin: -18px auto 0 auto;
+                right: 0;
+                top: 0;
+                border-right: 9px solid transparent;
+                border-left: 9px solid transparent;
+                border-bottom: 9px solid $color-white;
+            }
+        }
+
+        @media( max-width: $sm ) {
+            .resume_contact_details {
+                width: 95%;
+            }
+        }
+    }
+
+    & > h2 {
+        margin-bottom: 0.5rem;
+        font-weight: 500;
+    }
+
+    .resume-manager-experience {
+        border-top: 0;
+
+        dt {
+            border-left: 0;
+        }
+
+        dd {
+            border-left: 0;
+        }
+
+        .sub-date {
+            font-size: $font-size-smaller;
+            color: #939597;
+            font-weight: 500;
+        }
+
+        h3 strong {
+            font-weight: 500;
+        }
+
+        h3:before {
+            margin-top: 1.3em;
+            background: $color-headings;
+        }
+    }
+
+    .resume-manager-education {
+        border-top: 0;
+
+        dt {
+            border-left: 0;
+        }
+
+        dd {
+            border-left: 0;
+        }
+
+        .sub-date {
+            font-size: $font-size-smaller;
+            color: #939597;
+            font-weight: 500;
+        }
+
+        h3 strong {
+            font-weight: 500;
+        }
+
+        h3:before {
+            margin-top: 1.3em;
+            background: $color-headings;
+        }
+    }
+
+    .resume-manager-skills {
+        li {
+            width: auto;
+            padding: 0 0 0 0.5em;
+            color: $color-headings;
+
+            &:first-child {
+                padding-left: 0;
+            }
+
+            &:after {
+                content: '|';
+                padding: 0 0 0 0.5em;
+            }
+
+            &:last-child {
+                &:after {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    @media( max-width: $sm ) {
+        .resume-manager-skills {
+            li {
+                width: 100%;
+                padding-left: 0;
+
+                &:after {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+#resume_preview .single-resume {
+    .entry-content-job {
+        display: block;
+        padding: 0;
+        margin: 0;
+
+        .entry-primary {
+            padding: 0;
+
+            .single-resume-content {
+                border: 0;
+                padding: 0;
+            }
+        }
+
+        .entry-secondary {
+            display: block;
+            width: 100%;
+            max-width: 100%;
+            padding-left: 0;
+            padding-right: 0;
+
+            .single-job-sidebar {
+                border: 0;
+
+                .resume-aside {
+                    margin-bottom: 1em;
+                    display: flex;
+                    align-items: center;
+
+                    .resume-links {
+                        .resume-link {
+                            a:bafore {
+                                content: '\e816';
+                                font-family: "bb-icons" !important;
+                                font-size: 18px;
+                                text-rendering: auto;
+                                -webkit-font-smoothing: antialiased;
+                                margin-right: 5px;
+                            }
+                        }
+                    }
+
+                    .bb-candidate-data {
+                        & > h3 {
+                            margin: 0;
+                            margin-left: 15px;
+                        }
+                    }
+                }
+
+                .bb-candidate-data {
+                    font-size: $font-size-smaller;
+
+                    p.location {
+                        float: right;
+                        padding-left: 1em;
+
+                        a:before {
+                            content: '\e817';
+                            font-family: "bb-icons" !important;
+                            font-size: 20px;
+                            text-rendering: auto;
+                            -webkit-font-smoothing: antialiased;
+                            margin-right: 5px;
+                        }
+                    }
+
+                    p.job-title {
+                        float: right;
+                        padding-left: 1em;  
+                        font-weight: normal; 
+
+                        &:before {
+                            content: '\e846';
+                            font-family: "bb-icons" !important;
+                            font-size: 18px;
+                            text-rendering: auto;
+                            -webkit-font-smoothing: antialiased;
+                            margin-right: 5px;
+                        }
+                    }
+
+                    ul.resume-links {
+                        float: none;
+                        max-width: 100%;
+
+                        li {
+                            &.resume-link {
+                                a:before {
+                                    content: '\e816';
+                                    font-family: "bb-icons";
+                                    font-size: 18px;
+                                    text-rendering: auto;
+                                    -webkit-font-smoothing: antialiased;
+                                    margin-right: 7px;
+                                }
+                            } 
+
+                            &.resume-link.resume-link-facebook {
+                                a:before {
+                                    content: '\e83f';
+                                }
+                            } 
+
+                            &.resume-link.resume-link-twitter {
+                                a:before {
+                                    content: '\e83e';
+                                }
+                            } 
+
+                            &.resume-link.resume-link-instagram {
+                                a:before {
+                                    content: "\e8d3"; 
+                                    font-size: 14px;
+                                    text-rendering: auto;
+                                    -webkit-font-smoothing: antialiased;
+                                    font-family: "bb-icons";
+                                    margin-right: 6px;
+                                    margin-left: 2px;
+                                }
+                            } 
+
+                            &.resume-link.resume-link-github {
+                                a:before {
+                                    content: "\e89c"; 
+                                    font-size: 14px;
+                                    text-rendering: auto;
+                                    -webkit-font-smoothing: antialiased;
+                                    font-family: "bb-icons";
+                                    margin-right: 6px;
+                                    margin-left: 2px;
+                                }
+                            }
+
+                            &.resume-file {
+                                a:before {
+                                    font-size: 14px;
+                                    text-rendering: auto;
+                                    -webkit-font-smoothing: antialiased;
+                                    font-family: "bb-icons";
+                                    margin-right: 7px;
+                                    margin-left: 1px;
+                                    content: "\e8ee";
+                                }
+                            }
+
+                            a {
+                                color: $menu-link-color;
+
+                                &:hover {
+                                    color: $color-link;
+                                }
+                            }
+                        }
+                    }
+
+                    p.resume-category {
+                        padding: 0;
+                        color: $color-textgray;
+                        font-weight: normal;
+                        margin-bottom: 0;
+
+                        &:before {
+                            font-size: 13px;
+                            text-rendering: auto;
+                            -webkit-font-smoothing: antialiased;
+                            font-family: "bb-icons";
+                            margin-right: 8px;
+                            margin-left: 3px;
+                            content: "\e8ec";
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    ul.meta {
+        font-size: $font-size-smaller;
+
+        li.resume-category {
+            &:before {
+                display: none;
+            }
+        }
+
+        li.date-posted {
+            &:before {
+                content: '\e823';
+                font-family: "bb-icons" !important;
+                font-size: 18px;
+                text-rendering: auto;
+                -webkit-font-smoothing: antialiased;
+                margin-right: 7px;
+            }
+        }
+
+        li.candidate-location {
+            a {
+                color: $menu-link-color;
+
+                &:hover {
+                    color: $color-link;
+                }
+            }
+        }
+
+        li.candidate-location:before {
+            content: '\e817';
+            font-family: "bb-icons" !important;
+            font-size: 19px;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            margin-right: 4px;
+        }
+    }
+}
+
+@media( max-width: $lg ) {
+    body.has-sidebar {
+        #resume_preview .single-resume {
+            .bb-candidate-data {
+                ul.resume-links {
+                    float: left;
+                    max-width: 100%;
+
+                    li {
+                        float: none;
+                        width: 100%;
+                        margin: 0 0.3em 0.3em 0;
+                    }
+                }
+
+                p.resume-category {
+                    clear: both;
+                }
+            }
+        }
+    }
+}
+
+@media( max-width: $md ) {
+    #resume_preview .single-resume {
+        .bb-candidate-data {
+            ul.resume-links {
+                float: left;
+                max-width: 100%;
+
+                li {
+                    float: none;
+                    width: 100%;
+                    margin: 0 0.3em 0.3em 0;
+                }
+            }
+
+            p.resume-category {
+                clear: both;
+            }
+        }
+    }
+}
+
+#submit-resume-form {
+    .fieldset-candidate_photo,
+    .fieldset-resume_file,
+    .fieldset-resume_category {
+        & > label {
+            pointer-events: none;
+            cursor: default;
+        }
+    }
+    
+    & > p:last-child {
+        text-align: right;
+    }
+
+    p input[type=submit] {
+        margin-left: 30%;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+} 
+
+@media( max-width: $md ) {
+    #submit-resume-form {
+        fieldset label {
+            width: 100%;
+            float: none;
+            margin-bottom: 5px;
+        }
+
+        fieldset div.field {
+            width: 100%;
+            float: none;
+        }
+    }
+}
+
+@media( max-width: $lg ) {
+    body.has-sidebar {
+        #submit-resume-form {
+            fieldset fieldset {
+                padding-bottom: 0;
+            }
+
+            fieldset fieldset label {
+                width: 100%;
+                float: none;
+                margin-bottom: 5px;
+            }
+
+            fieldset fieldset div.field {
+                width: 100%;
+                float: none;
+            }
+        }
+    }
+}

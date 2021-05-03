@@ -1,0 +1,223 @@
+/* Container */
+.container,
+.container-fluid {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: $grid-gutter / 2;
+    padding-right: $grid-gutter / 2;
+}
+
+.container {
+    max-width: $container-width;
+}
+
+.page-template-page-fullscreen,
+.page-template-page-fullwidth-content {
+    .site-content {
+        padding: 0;
+    }
+
+    .site-content > .container {
+        max-width: none;
+        padding: 0;
+    }
+
+    .content-area {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
+.page-template-page-fullwidth-content {
+    #content {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    #content #primary {
+        max-width: 100%;
+    }
+}
+
+.container-full {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+/* Grid Cell Wrapper */
+.bb-grid {
+    display: flex;
+    margin-left: -$grid-gutter / 2;
+    margin-right: -$grid-gutter / 2;
+    flex-wrap: wrap;
+}
+
+/* Grid Cell */
+.bb-grid > *,
+.bb-grid-cell {
+    flex: 1;
+    min-width: 1px; // Firefox-34-ignoring-max-width-for-flexbox
+    display: inline-block; // In IE 10, setting -ms-flex-flow: row wrap will not wrap unless display: inline-block is set on child elements.
+    list-style: none; // Need when added this class to li
+
+    &:not(.no-gutter) {
+        padding-left: $grid-gutter / 2;
+        padding-right: $grid-gutter / 2;
+    }
+}
+/*prevent style tag to display*/
+.site-content-grid > style {
+    display: none;
+}
+// ***** Alignment per row ***** //
+.grid-reverse {
+    flex-flow: row-reverse;
+}
+
+
+/* Alignment Top */
+.align-items-top {
+    align-items: flex-start;
+}
+
+/* Alignment Bottom */
+.align-items-bottom {
+    align-items: flex-end;
+}
+
+/* Alignment Center */
+.align-items-center {
+    align-items: center;
+}
+
+/* Alignment Center */
+.justify-center {
+    justify-content: center;
+}
+
+// ***** Alignment per cell ***** //
+
+/* Alignment Top */
+.align-self-top {
+    align-self: flex-start;
+}
+
+/* Alignment Bottom */
+.align-self-bottom {
+    align-self: flex-end;
+}
+
+/* Alignment Center */
+.align-self-center {
+    align-self: center;
+}
+
+.push-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.push-right {
+    margin-left: auto;
+}
+
+.push-middle {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.push-bottom {
+    margin-top: auto;
+}
+
+.push-top {
+    margin-bottom: auto;
+}
+
+/* Extra small screen / phone */
+@media( max-width: $sm - 1 ) {
+    .bb-grid {
+        flex-flow: row wrap;
+    }
+
+    .bb-grid > *,
+    .bb-grid-cell {
+        flex: 0 0 100%;
+        max-width: 100%; // IE11 Fix
+    }
+}
+
+/* Small screen / phone */
+@media ( min-width: $sm ) {
+    @for $i from 1 through 6 {
+        $width: percentage(1 / $i);
+        .sm-grid-1-#{$i} {
+            flex: 0 0 $width;
+            max-width: $width; // IE11 Fix
+        }
+    }
+
+    .sm-grid-2-3 {
+        flex: 0 0 66.66%;
+        max-width: 66.66%; // IE11 Fix
+    }
+
+    .sm-grid-3-4 {
+        flex: 0 0 75%;
+        max-width: 75%; // IE11 Fix
+    }
+}
+
+/* Medium screen / tablet */
+@media ( min-width: $md ) {
+    @for $i from 1 through 6 {
+        $width: percentage(1 / $i);
+        .md-grid-1-#{$i} {
+            flex: 0 0 $width;
+            max-width: $width; // IE11 Fix
+        }
+    }
+
+    .md-grid-2-3 {
+        flex: 0 0 66.66%;
+        max-width: 66.66%; // IE11 Fix
+    }
+
+    .md-grid-3-4 {
+        flex: 0 0 75%;
+        max-width: 75%; // IE11 Fix
+    }
+
+    .md-grid-reverse {
+        flex-flow: row-reverse;
+    }
+}
+
+/* Large screen / desktop */
+@media ( min-width: $lg ) {
+    @for $i from 1 through 6 {
+        $width: percentage(1 / $i);
+        .lg-grid-1-#{$i} {
+            flex: 0 0 $width;
+            max-width: $width; // IE11 Fix
+        }
+    }
+
+    .lg-grid-2-3 {
+        flex: 0 0 66.66%;
+        max-width: 66.66%; // IE11 Fix
+    }
+
+    .lg-grid-3-4 {
+        flex: 0 0 75%;
+        max-width: 75%; // IE11 Fix
+    }
+
+    .lg-grid-reverse {
+        flex-flow: row-reverse;
+    }
+}

@@ -1,0 +1,161 @@
+@import "functions/functions";
+
+//Global sections
+.bb-footer{
+    flex: auto;
+    &.style-2 .footer-bottom-right{
+        flex: 0 20%;
+    }
+}
+#buddypress .bp-list.groups-list li .list-wrap .item .item-block{
+    flex: auto;
+}
+#bbpress-forums .bb-modal.bb-modal-box{
+    max-width: inherit;
+    left: 25%;
+    width: 50%;
+    right: inherit;
+}
+.buddypress-wrap .filter select::-ms-expand, .buddypress-wrap #whats-new-post-in-box select::-ms-expand,
+.bb-courses-directory .sfwd-courses-filters .select-wrap select::-ms-expand,
+#buddypress .standard-form select::-ms-expand,.bb-album-actions select::-ms-expand,
+.ui-datepicker .ui-datepicker-title select::-ms-expand,
+#bbpress-forums fieldset.bbp-form select::-ms-expand,
+.bp-profile-search-widget select::-ms-expand,
+.header-search-wrap .search-field-top::-ms-clear{
+    display: none;
+}
+
+//Blog Page
+.single-post {
+    .site-content-grid .content-area{
+        flex: 1 100%;
+    }
+    .post-related-posts .slick-slider .slick-list{
+        display: block;
+    }
+    .post-grid .lg-grid-1-3 .entry-content-wrap{
+        flex: 0 0 auto;
+    }
+}
+
+//LearnDash
+.bb-course-items .grid-view .bb-course-item-wrap{
+    flex: none;
+    width: 25%;
+}
+.bb-card-list .bb-course-meta {
+    flex: none;
+    .item-avatar{
+        display: inline-block;
+        img{
+            width: 100%;
+        }
+    }
+}
+.learndash-wrapper #ld-profile{
+    .ld-profile-summary{
+        .ld-profile-stats{
+            bottom: 52px;
+        }
+        .ld-profile-edit-link{
+            top: -12px;
+        }
+    }
+    .ld-item-list .ld-section-heading .ld-item-list-actions .ld-search-prompt{
+        flex: none;
+    }
+}
+//Events Manager
+.em-events-search{
+    .em-search-advanced select::-ms-expand{
+        display: none;
+    }
+}
+
+//WooCommerce
+.woocommerce-checkout .woocommerce-checkout-review-order{
+    .shop_table{
+        table-layout: fixed;
+        th.product-name{
+            widows: 80%;
+        }
+        th.product-total{
+            width: 20%;
+        }
+    }
+}
+
+//Buddypress
+body.logged-in .bp-list li .item .item-block,
+.single-headers .followers-wrap,
+.single-headers .following-wrap{
+    flex: auto;
+}
+.bp-messages-content .single-message-thread-header,
+.messages-wrapper #subnav .subnav{
+    height: 64px;
+}
+.social-networks-wrap span.social a svg{
+    height: 32px;
+}
+.site-content-grid .site-main .bp-wrap .bp-navs.bp-navs{
+    overflow: visible;
+}
+.comment-respond .comment-form-cookies-consent label{
+    display: inline-block;
+}
+.buddypanel [data-balloon][data-balloon-pos='right']::after{
+    margin-left: 8px;
+    margin-top: 2px;
+}
+.buddypanel [data-balloon][data-balloon-pos='right']::before{
+    margin-top: 1px;
+}
+//media
+@media screen and (max-width: $lg){
+    #bbpress-forums .bb-modal.bb-modal-box{
+        max-width: inherit;
+        left: 5%;
+        width: 90%;
+    }
+}
+@media screen and (max-width: $md){
+    .bb-footer.style-2 .footer-bottom-right, .footer-bottom-left{
+        flex: auto;
+    }
+}
+//Elementor
+#content {
+    .elementor-widget-container li.product, 
+    .wp-block-woocommerce-handpicked-products li.product,
+    .wp-block-woocommerce-product-category li.product,
+    .wp-block-woocommerce-product-new li.product,
+    .wp-block-woocommerce-product-on-sale li.product,
+    .wp-block-woocommerce-product-top-rated li.product,
+    .wp-block-woocommerce-products-by-attribute li.product,
+    .wp-block-woocommerce-product-best-sellers li.product{
+        display: block;
+        padding-left: 0;
+        padding-right: 0;
+        width: calc(25% - 20px);
+        margin-right: 20px;
+        @media screen and (max-width: 1200px){
+            width: calc(33% - 20px);
+        }
+        @media screen and (max-width: 992px){
+            width: calc(50% - 20px);
+        }
+        @media screen and (max-width: 544px){
+            width: calc(100%);
+        }
+    }
+    .elementor-search-form__container{
+        input{
+            min-height: 50px;
+        }
+        .elementor-search-form__submit{
+            line-height: 50px;
+        }
+    } 
+}

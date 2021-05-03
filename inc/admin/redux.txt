@@ -1,0 +1,9 @@
+## Add redux in your project:
+
+Run following command on project root:
+git subtree add --prefix=inc/admin/framework --squash git@github.com:reduxframework/redux-framework.git master
+
+## Update redux in your project:
+
+Run following command on project root:
+git subtree pull --prefix=inc/admin/framework --squash git@github.com:reduxframework/redux-framework.git master

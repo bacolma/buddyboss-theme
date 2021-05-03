@@ -1,0 +1,311 @@
+// ld_course_list - Shortcode
+.ld-course-list-items {
+    display: flex;
+    margin-left: -$grid-gutter / 2 !important;
+    margin-right: -$grid-gutter / 2 !important;
+    flex-wrap: wrap;
+
+    .bb-course-item-wrap {
+        padding-left: $grid-gutter / 2;
+        padding-right: $grid-gutter / 2;
+
+        min-width: 20%;
+
+        @media screen and (min-width: 900px) and (max-width: 1200px) {
+            min-width: 25%;
+        }
+
+        @media screen and (min-width: 768px) and (max-width: 900px) {
+            min-width: 33.3333%;
+        }
+
+        @media screen and (min-width: 576px) and (max-width: 768px) {
+            width: 50%;
+            flex: 0 0 50%;
+        }
+
+        @media screen and (max-width: 576px) {
+            width: 100%;
+            flex: 0 0 100%;
+        }      
+    }
+
+    .has-sidebar & .bb-course-item-wrap {
+        min-width: 25%;
+
+        @media screen and (min-width: 576px) and (max-width: 1200px) {
+            min-width: 50%;
+        }
+
+        @media screen and (max-width: 576px) {
+            width: 100%;
+            flex: 0 0 100%;
+        }
+    }
+
+    .bb-cover-list-item {
+        background: $color-white;
+        border: 1px solid $color-border;
+        border-radius: 4px;
+        transition: 0.2s box-shadow;
+        position: relative;
+
+        &:hover {
+            box-shadow: 0 4px 32px 0 rgba(18,43,70,0.10);
+            z-index: 1;
+        }
+    }
+
+    .bb-cover-list-item:not(.bb-course-no-content) {
+        height: 100%;
+        padding-bottom: 15px;
+
+        .bb-cover-wrap {
+            padding-top: 52%;
+        }
+    }
+
+    .bb-cover-list-item.bb-course-paid {
+        padding-bottom: 45px;
+    }
+
+    .bb-course-item-wrap {
+        margin-bottom: 20px;
+    }
+
+    .bb-course-cover {
+        overflow: hidden;
+        position: relative;
+        /*height: 100%;*/
+    }
+
+    .bs-timestamp {
+        font-size: 14px;
+        color: #939597;
+        letter-spacing: -0.24px;
+        line-height: 22px;
+        position: absolute;
+        bottom: 20px;
+    }
+
+    .forums-meta span {
+        background: rgba(18,43,70,0.10);
+    }
+
+    .bb-cover-wrap:after {
+        display: none;
+    }
+
+    .forums-meta {
+        margin-bottom: 12px;
+    }
+
+    .bb-course-excerpt {
+        color: $color-small-text;
+    }
+
+    .course-progress-wrap {
+        position: relative;
+        z-index: 1;
+        margin: 0 0 10px;
+        line-height: 1.7;
+    }
+
+    .course-completion-rate {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 1;
+        letter-spacing: -0.24px;
+        display: block;
+        margin-top: 10px;
+        color: $color-small-text;
+
+        &.start-course-completion-rate {
+            opacity: 0.6;
+            font-size: 12px;
+            line-height: 1;
+            font-weight: 500;
+            color: $color-headings;
+            letter-spacing: -0.24px;
+            margin-top: 10px;
+        }
+    }
+
+    .ld-progress-stats {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 1;
+        letter-spacing: -0.24px;
+        display: block;
+        margin-top: 10px;
+        color: $color-small-text;
+
+        .ld-progress-steps {
+            margin-top: 5px;
+            display: block !important;
+        }
+    }
+
+    .course-progress {
+        margin: 0;
+        height: 3px;
+        background: $color-border;
+        border-radius: 50px;
+    }
+
+    .course-progress-bar {
+        background: $color-link;
+        height: 3px;
+        width: auto;
+    }
+
+    .bb-course-excerpt {
+        font-size: 13px;
+        color: #939597;
+        line-height: 1.384;
+        display: block;
+        display: -webkit-box;
+        max-height: 2.72em;
+        margin: -3px 0 0;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+.ld-course-list-content.grid-view {
+    .bb-cover-list-item:not(.bb-course-no-content) {
+        .bb-cover-wrap {
+            border-radius: 3px 3px 0 0;
+        }
+    }  
+}
+
+.ld-course-list-content {
+    margin-bottom: 30px;
+}
+
+.bb-ld-course-list-item {
+    margin-bottom: 20px;
+
+    .ld-entry-content {
+        .entry-img {
+            padding-top: 40.476%;
+            border-radius: 4px 4px 0 0;
+
+            & > img {
+                margin: 0;                
+            }
+        }
+
+        .entry-content h1 {
+            font-size: 1.5rem;
+            margin: 0 0 10px;
+        }
+    }
+
+    .ld-entry-title a {
+        color: $color-headings;
+
+        &:hover {
+            color: $color-link;
+        }
+    }
+}
+
+.ld-course-list-items.row {
+    .learndash-wrapper {
+        flex: 0 0 100%;
+
+        .ld-item-list {
+            margin: 0 0 20px;
+        }
+
+        .ld-item-list .ld-item-list-item {
+            background: $color-white;
+            border: 1px solid $color-border;
+            border-radius: 4px;
+            height: 100%;
+            padding-bottom: 0;
+            transition: 0.2s box-shadow;
+            position: relative;
+
+            &:hover {
+                box-shadow: 0 4px 32px 0 rgba(18,43,70,0.10);
+                z-index: 1;
+            }
+        }
+    }
+}
+
+.ld-course-list-content.list-view {
+    .ld-course-list-items {
+        .ld_course_grid {
+            flex: 0 0 100%;
+            max-width: 100%;
+        }
+    }
+
+    .bb-cover-list-item {
+        padding-bottom: 0;
+    }
+
+    .bb-cover-list-item {
+        display: flex;
+    }
+
+    .bb-card-course-details {
+        flex: 1;
+        display: flex !important;
+        flex-direction: column;
+        padding-bottom: 16px;
+    }
+
+    .bb-cover-wrap {
+        border-radius: 3px 0 0 3px;
+    }
+
+    .bb-course-cover {
+        flex: 0 0 240px;
+    }
+
+    .bb-cover-wrap {
+        padding-top: 70%;
+        height: 100%;
+    }
+
+    .course-progress-wrap {
+        max-width: 450px;
+    }
+
+    .bb-course-footer {
+        flex-flow: column-reverse;
+        bottom: auto;
+        top: 16px;
+        width: auto;
+        left: auto;
+        right: 0;
+    }
+}
+
+// Override plugin output for pagination
+.learndash-pager {
+    display: block;
+    color: inherit;
+    text-transform: none;
+    font-size: inherit;
+    font-weight: inherit;
+    background-color: inherit;
+    padding: 0;
+    border-radius: 0;
+    margin: 0;
+}
+
+// Max out at 5 items per grid column
+@media screen and (min-width: 768px) {
+    .ld-course-list-items .col-md-2 {
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}

@@ -1,0 +1,90 @@
+.users-header {
+	.gamipress-buddypress-points {
+		display: flex;
+		flex-flow: wrap;
+		align-items: center;
+		margin: 10px 0 0;
+
+		img.gamipress-points-thumbnail {
+			border-radius: 100%;
+			margin-right: 5px;
+		}
+
+		.gamipress-buddypress-user-points {
+			margin-right: 5px;
+		}
+	}
+
+	.gamipress-buddypress-points-type {
+		margin: 0 10px 10px 0;
+		display: flex;
+		align-items: center;
+	}
+
+	.gamipress-buddypress-achievements {
+		margin-bottom: 10px;
+
+		.gamipress-buddypress-achievement {
+			display: flex;
+			flex-flow: wrap;
+			align-items: center;
+			margin-bottom: 10px;
+		}
+
+		.gamipress-buddypress-achievement-type-label {
+			margin-right: 10px;
+			font-weight: 500;
+		}
+
+		img.gamipress-achievement-thumbnail {
+			border-radius: 100%;
+			margin-right: 5px;
+			margin-bottom: 5px;
+		}
+	}
+
+	.gamipress-buddypress-achievement-title {
+		margin-right: 10px;
+	}
+
+	.gamipress-buddypress-ranks	{
+		margin-bottom: 10px;
+
+		.gamipress-buddypress-rank {
+			display: flex;
+			flex-flow: wrap;
+			align-items: center;
+			margin-bottom: 10px;
+
+			a.activity {
+				font-size: $font-size-smaller;
+			}
+		}
+
+		.gamipress-buddypress-rank-label {
+			margin-right: 10px;
+			font-weight: 500;
+
+			#buddypress & {
+				color: $color-headings;
+			}
+		}
+
+		img.gamipress-rank-thumbnail {
+			border-radius: 100%;
+			margin-right: 5px;	
+		}
+	}
+
+	.gamipress-buddypress-rank-title {
+		margin-right: 10px;	
+	}
+
+	.item-meta {
+	.gamipress-buddypress-points, 
+	.gamipress-buddypress-achievements,
+	.gamipress-buddypress-ranks {
+			display: none;
+		} 
+	}
+}

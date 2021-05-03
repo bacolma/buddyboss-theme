@@ -1,0 +1,44 @@
+@mixin button($color-text, $color-back) {
+    color: $color-text;
+    background-color: $color-back;
+
+    &:hover {
+        color: $color-text;
+        background-color: darken($color-back, 5%);
+    }
+
+    &:active {
+        color: $color-text;
+        background-color: lighten($color-back, 9%);
+    }
+
+    &:disabled,
+        &.disabled {
+        color: $color-button-disabled-text;
+        background-color: $color-button-disabled;
+    }
+
+    &.outline {
+        background: none;
+        color: $color-back;
+        border-color: $color-back;
+
+        &:hover {
+            color: darken($color-back, 5%);
+            border-color: darken($color-back, 5%);
+        }
+
+        &:active {
+            color: lighten($color-back, 12%);
+            border-color: lighten($color-back, 12%);
+        }
+
+        &:disabled,
+            &.disabled {
+            background: #f5f5f5;
+            color: $color-button-outline-disabled-text;
+            border-color: $color-button-outline-disabled;
+            opacity: 1;
+        }
+    }
+}

@@ -1,0 +1,48 @@
+.bb-leandash-profile-page {
+    .bb-profile-card {
+        background: $color-white;
+        border: 1px solid $color-border;
+        border-bottom: 0;
+    }
+
+    .bb-profile-avatar {
+        margin-top: -45px;
+        margin-left: 30px;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    #content .bb-profile-avatar {
+        margin-top: -45px;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+}
+
+.bb-profile-items {
+    .profile-item {
+        .profile-title {
+            font-weight: 400;
+            font-size: 32px;
+            margin-top: 20px;
+            margin-bottom: 5px;
+
+            a {
+                color: $color-headings;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .bb-profile-items {
+        .profile-item {
+            .profile-title {
+                margin-top: 0;
+            }
+        }
+    }
+}

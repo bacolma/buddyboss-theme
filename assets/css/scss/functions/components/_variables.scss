@@ -1,0 +1,271 @@
+// BREAKPOINTS
+// ---------------------------------------------------------------------------
+$sm: 544px !default;
+$md: 800px !default;
+$lg: 992px !default;
+$xl: 1200px !default;
+
+// Conainer Widths
+$container-width: 1200px !default;
+
+// Z-INDEX
+// ---------------------------------------------------------------------------
+$z-over-content: 100 !default;
+$z-over-control: 200 !default;
+$z-over-page: 300 !default;
+$z-over-screen: 400 !default;
+$z-over-all: 500 !default;
+
+
+// GRID
+// ---------------------------------------------------------------------------
+$grid-gutter: 20px !default;
+
+
+// FONT FAMILY
+// ---------------------------------------------------------------------------
+$text-font-family: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$monospace-font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace !default;
+$headings-font-family: $text-font-family !default;
+$buttons-font-family: $text-font-family !default;
+$input-font-family: $text-font-family !default;
+
+
+// COLORS
+// ---------------------------------------------------------------------------
+// Background
+$background-body: #FAFBFD !default;
+$background-header: #FFF !default;
+$background-pre: #EEF0F3 !default;
+$background-hr: #E6EAF0 !default;
+$background-light: #FBFBFC !default;
+
+// Borders
+$color-border: #E7E9EC !default;
+
+// Text
+$color-text: #4D5C6D !default;
+$color-small-text: #A3A5A9 !default;
+$color-headings: #122B46 !default;
+
+// Links
+$color-link: #007CFF !default;
+$color-link-hover: #007CFF !default;
+$color-link-hover-button: #0F74E0 !default;
+
+// States
+$color-error: #EF3E46 !default;
+$color-success: #1CD991 !default;
+$color-warning: #f7ba45 !default;
+$color-focus: #1c86f2 !default;
+
+// Extra
+$color-white: #fff !default;
+$color-inverted: #fff !default;
+$color-highlight: #edf2ff !default; // color-focus 15% opacity
+$color-placeholder: #C3C6C9 !default;
+
+// Grayscale
+$color-black: #0d0d0e !default;
+$color-darkgray: #313439 !default;
+$color-midgray: #676b72 !default;
+$color-gray: #bdbdbd !default;
+$color-light: #EEF0F3 !default;
+$color-lightgray: #DEDFE2 !default;
+$color-textgray: #7F868F !default;
+$color-silver: #e0e1e1 !default;
+$color-aluminum: #f8f8f8 !default;
+
+// Button
+$color-button-primary: #007CFF !default;
+$color-button-primary-text: #fff !default;
+
+$color-button-secondary: #A1ABB5 !default;
+$color-button-secondary-text: #fff !default;
+
+$color-button-success: #28cf8b !default;
+$color-button-success-text: #fff !default;
+
+$color-button-error: $color-error !default;
+$color-button-error-text: #fff !default;
+
+$color-button-disabled: #F5F5F5 !default;
+$color-button-disabled-text: #C8CBCF !default;
+
+$color-button-outline-disabled: #DEDFE2 !default;
+$color-button-outline-disabled-text: #DEDFE2 !default;
+
+// TEXT
+// ---------------------------------------------------------------------------
+
+// Font Size - Please do not changed it.
+$rem-base: 16px !default;
+
+$font-size: 18px !default;
+$font-size-smaller: 14px !default;
+$font-size-small: 16px !default;
+$font-size-extra-small: 12px !default;
+$font-size-big: 20px !default;
+$font-size-large: 22px !default;
+
+// Baseline
+$base-line: 27px !default;
+$base-line-smaller: 20px !default;
+$base-line-small: 24px !default;
+$base-line-big: 28px !default;
+$base-line-large: 32px !default;
+
+// Margin
+$text-margin-bottom: $font-size !default;
+
+
+// HEADINGS
+// ---------------------------------------------------------------------------
+
+// Font Size
+// By default: 60, 48, 36, 24, 21, 18, 16
+$heading-font-size-title: 60px !default;
+$heading-font-size-1: 34px !default;
+$heading-font-size-2: 24px !default;
+$heading-font-size-3: 20px !default;
+$heading-font-size-4: 18px !default;
+$heading-font-size-5: 16px !default;
+$heading-font-size-6: 12px !default;
+
+// Baseline
+$heading-base-line-title: 64px !default;
+$heading-base-line-1: 42px !default;
+$heading-base-line-2: 32px !default;
+$heading-base-line-3: 28px !default;
+$heading-base-line-4: 24px !default;
+$heading-base-line-5: 21px !default;
+$heading-base-line-6: 21px !default;
+
+// Margin
+$heading-margin-bottom: $font-size !default;
+
+
+// TABLES
+// ---------------------------------------------------------------------------
+
+// Font Size
+$table-font-size: $font-size - 1px !default;
+
+// Baseline
+$table-base-line: 24px !default;
+
+// Padding
+$table-padding-tb: 1rem !default;
+$table-padding-rl: 1rem !default;
+
+// Border
+$table-border: 1px solid rgba(0, 0, 0, .05) !default;
+
+// Striped
+$table-background-striped: $color-aluminum !default;
+
+
+// BUTTONS
+// ---------------------------------------------------------------------------
+
+// Font Size
+$button-font-size: 15px !default;
+$button-font-size-smaller: 12px !default;
+$button-font-size-small: 14px !default;
+$button-font-size-large: 16px !default;
+$button-font-size-big: 16px !default;
+
+// Baseline
+$button-base-line: 1.3 !default;
+
+// Height
+$button-height: 40px !default;
+$button-height-small: 34px !default;
+$button-height-large: 50px !default;
+$button-height-big: 62px !default;
+
+// Padding
+$button-padding-tb: 10px !default;
+$button-padding-rl: 20px !default;
+
+$button-padding-small-tb: 6px !default;
+$button-padding-small-rl: 20px !default;
+
+$button-padding-large-tb: 14px !default;
+$button-padding-large-rl: 30px !default;
+
+$button-padding-big-tb: 20px !default;
+$button-padding-big-rl: 40px !default;
+
+// Weight
+$button-font-weight: 500 !default;
+
+// Radius
+$button-border-radius: 100px !default;
+
+
+// INPUTS
+// ---------------------------------------------------------------------------
+
+// Font Size
+$input-font-size: 15px !default;
+$input-font-size-smaller: $input-font-size - 4px !default;
+$input-font-size-small: $input-font-size - 2px !default;
+$input-font-size-big: $input-font-size + 2px !default;
+$input-font-size-large: $input-font-size + 4px !default;
+
+// Baseline
+$textarea-base-line: $base-line !default;
+
+// Height
+$input-height: 40px !default;
+$input-height-small: 34px !default;
+$input-height-big: 48px !default;
+$input-height-large: 56px !default;
+
+// Padding
+$input-padding-rl: 12px !default;
+$input-padding-small-rl: 12px !default;
+$input-padding-big-rl: 12px !default;
+$input-padding-large-rl: 12px !default;
+$input-textarea-padding-tb: 8px !default;
+
+// States
+$input-border-width: 1px !default;
+$input-border-color: $color-lightgray !default;
+$input-background-color: #fff !default;
+$input-box-shadow: none !default;
+
+$input-focus-background-color: #fff !default;
+$input-focus-border-color: rgba(0, 0, 0, 0.25) !default;
+$input-focus-box-shadow: none !default;
+
+$input-error-background-color: $color-error !default;
+$input-error-border-color: $color-error !default;
+$input-error-focus-box-shadow: none !default;
+
+$input-success-background-color: $color-success !default;
+$input-success-border-color: $color-success !default;
+$input-success-focus-box-shadow: none !default;
+
+$input-disabled-opacity: .6;
+$input-disabled-color: rgba(0, 0, 0, .5);
+
+// Radius
+$input-border-radius: 3px !default;
+
+
+// OVERLAY
+// ---------------------------------------------------------------------------
+$overlay-background-color: rgba(#fff, .95);
+
+
+// HEADER
+// ---------------------------------------------------------------------------
+$header-height: 76px;
+$menu-link-color: #939597;
+$menu-active-color: #122B46;
+
+$buddypanel-closed: 68px;
+$buddypanel-open: 220px;
+$sidebar-width: 300px;

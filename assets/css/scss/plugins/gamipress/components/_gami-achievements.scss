@@ -1,0 +1,245 @@
+.gamipress-achievement-congratulations {
+	padding: 20px;
+	background-color: $color-white;
+	border: 1px solid $color-border;
+	font-size: $font-size-smaller;
+	line-height: $base-line-small;
+
+	p:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.gamipress-achievement-image {
+	img.gamipress-achievement-thumbnail {
+		border-radius: 4px;
+	}
+}
+
+.gamipress-achievement-description {
+	.gamipress-achievement-title {
+		body.buddypress & {
+			margin-bottom: 15px;
+		}
+
+		a {
+			color: $color-headings;
+
+			&:hover {
+				color: $color-link;
+			}
+		}
+	}
+
+	.gamipress-achievement-title + .gamipress-achievement-excerpt {
+		margin-top: 15px;
+	}
+
+	.gamipress-achievement-points {
+            font-weight: 400;
+            font-size: $font-size-smaller;
+	    line-height: $base-line-small;
+	    margin-bottom: 15px;
+	    color: $color-small-text;
+	}
+
+	ol.gamipress-required-achievements {
+		li {
+			font-size: $font-size-smaller;
+			color: $color-small-text;
+
+			&.user-has-not-earned {
+				.gamipress-achievements-list & {
+					text-decoration: none;
+				}
+			}
+		}		
+	}
+
+	ul.gamipress-required-achievements {
+		list-style: none;
+		margin-left: 0;
+
+		li {
+			font-size: $font-size-smaller;
+			color: $color-small-text;
+
+			&.user-has-not-earned {
+				.gamipress-achievements-list & {
+					text-decoration: none;
+				}
+			}
+		}
+
+		li:before {
+			content: '\e841';
+			font-family: "bb-icons";
+		    display: inline-block;
+		    line-height: 1;
+		    font-weight: normal;
+		    font-style: normal;
+		    speak: none;
+		    text-decoration: inherit;
+		    text-transform: none;
+		    text-rendering: auto;
+		    -webkit-font-smoothing: antialiased;
+		    -moz-osx-font-smoothing: grayscale;
+		    width: 20px;
+		    height: 20px;
+		    line-height: 20px;
+		    font-size: 14px;
+		    vertical-align: top;
+		    text-align: center;
+		    text-decoration: none;
+		    margin-right: 10px;
+		    position: relative;
+		    top: 3px;
+			background-color: #EEF0F3;
+			border-radius: 100%;
+		}
+
+		li.user-has-earned:before {
+			content: '\e842';
+		}
+	}
+}
+
+.single-achievement {
+	&.gamipress-layout-none {
+		.gamipress-achievement-image {
+			margin-bottom: 20px;
+		}
+	}
+}
+
+.gamipress-achievements-list .gamipress-achievements-container {
+	&.gamipress-columns-1 > .gamipress-achievement {
+		width: calc(100% - 20px);
+	}
+
+	@media screen and (min-width: $md) {
+		&.gamipress-columns-2 > .gamipress-achievement {
+			width: calc(50% - 20px);
+		}
+
+		&.gamipress-columns-3 > .gamipress-achievement {
+			width: calc(33.333% - 20px);
+		}
+
+		&.gamipress-columns-4 > .gamipress-achievement {
+			width: calc(25% - 20px);
+		}
+
+		&.gamipress-columns-5 > .gamipress-achievement {
+			width: calc(20% - 20px);
+		}
+
+		&.gamipress-columns-6 > .gamipress-achievement {
+			width: calc(16.666% - 20px);
+		}
+	}
+
+	h2.gamipress-achievement-title {
+		font-size: 18px;
+		font-weight: 500;
+    	line-height: 1.4em;
+    	margin-bottom: 5px;
+	}
+
+	.gamipress-achievement-excerpt {
+		font-size: $font-size-smaller;
+		line-height: $base-line-small;
+	}
+
+	.gamipress-achievement-times-earned {
+		font-size: $font-size-smaller;
+		line-height: $base-line-small;	
+	}
+
+	.gamipress-achievement-description {
+		display: flex;
+		flex-direction: column;
+		flex: 1;
+
+		& > h4 {
+			margin-top: auto;
+			margin-bottom: 5px;
+			font-size: $font-size-smaller;
+		}
+	}
+
+	.gamipress-achievement-unlock-with-points-button {
+		width: 100%;
+		margin: 0 0 15px;
+	}
+}
+
+.gamipress-achievement-unlock-with-points-response {
+	font-size: $font-size-smaller;
+	line-height: $base-line-small;
+	margin-bottom: 15px;
+	color: $color-small-text;
+}
+
+button.gamipress-achievement-unlock-with-points-button {
+	font-size: $font-size-smaller;
+
+	.buddypress .buddypress-wrap & {
+		font-size: $font-size-smaller;
+	}
+}
+
+@media screen and (min-width: $lg) {
+	body:not(.has-sidebar) .gamipress-achievements-list {
+		.gamipress-achievements-container.gamipress-columns-1 {
+			width: 80%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+}
+
+.gamipress-achievements-list #gamipress-achievements-container[class*="gamipress-columns"] {
+	margin-left: auto;
+	margin-right: auto;
+
+	& > .gamipress-achievement {
+		background-color: $color-white;
+		border: 1px solid $color-border;
+		border-radius: 4px;
+		margin-left: 10px;
+		margin-right: 10px;
+		align-self: normal;
+
+		@media screen and (max-width: $md) {
+			margin-left: 0;
+			margin-right: 0;
+			padding: 20px;
+		}
+
+		&.gamipress-layout-top {
+			flex-flow: nowrap;
+			flex-direction: column;
+		}
+
+		&.gamipress-layout-none {
+			margin-bottom: 20px;
+		}
+	}	
+}
+
+.entry-content > .gamipress-achievement {
+	padding: 20px;
+	background-color: $color-white;
+	border: 1px solid $color-border;
+	font-size: $font-size-smaller;
+	line-height: $base-line-small;
+	border-radius: 4px;
+	max-width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+
+	@media screen and (max-width: $md) {
+		max-width: 100%;
+	}
+}

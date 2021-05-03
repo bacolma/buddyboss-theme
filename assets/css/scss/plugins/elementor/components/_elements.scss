@@ -1,0 +1,861 @@
+.elementor {
+
+    font-family: inherit;
+
+    /**
+     * Diveder
+     */
+
+    .elementor-element .elementor-widget-container .elementor-divider .elementor-divider-separator {
+        border-color: transparent;
+        height: 1px;
+        border-bottom: 0;
+        background-color: $color-lightgray;
+    }
+
+    /**
+     * Acccordion
+     */
+
+    .elementor-widget-accordion .elementor-accordion .elementor-tab-title {
+        font-family: inherit;
+        font-weight: 400;
+        font-size: 18px;
+        color: $color-small-text;
+        border: 2px solid $color-lightgray;
+        border-radius: 5px;
+
+        a {
+            &:hover {
+                color: $color-white;
+            }
+        }
+    }
+
+    .elementor-accordion .elementor-accordion-item {
+        border: none;
+        margin-bottom: 20px;
+    }
+
+    .elementor-widget-accordion .elementor-accordion .elementor-tab-title.elementor-active {    
+        color: $color-white;
+        background: $color-link;
+        border: none;
+    }
+
+    .elementor-widget-accordion .elementor-accordion .elementor-tab-content {
+        font-family: inherit;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 27px;
+       
+    }
+
+    .elementor-accordion .elementor-tab-content {
+        padding: 15px 0;
+        border: none;
+    }
+
+    /**
+     * Alert
+     */
+
+    .elementor-alert {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .elementor-alert-info {
+        .elementor-alert-dismiss {
+            span {
+                display: flex;
+                margin-top: 10px;
+                height: 100%;
+                justify-content: center;
+            }
+        }
+    }
+
+    .elementor-alert-dismiss {
+        span {
+            display: flex;
+            margin-top: 12px;
+            height: 100%;
+            justify-content: center;
+        }
+    }
+
+    .elementor-alert.elementor-alert-info {
+        color: $color-text;
+        background-color: transparent;
+        border: 2px solid $color-lightgray;
+        border-radius: 5px;
+
+        .elementor-alert-dismiss {
+            font-size: 33px;
+            width: 33px;
+            height: 33px;
+            line-height: 0;
+            background: $color-white;
+            color: $color-lightgray;
+            border: solid 2px $color-lightgray;
+        }
+
+    }
+
+    .elementor-alert.elementor-alert-success {
+        color: $color-white;
+        background-color: $color-success;
+        border: 2px solid none;
+        border-radius: 5px;
+
+        .elementor-alert-dismiss {
+            font-size: 33px;
+            width: 33px;
+            height: 33px;
+            line-height: 0;
+            background: $color-white;
+            color: $color-success;
+            border: none;
+        }
+
+    }
+
+    .elementor-alert.elementor-alert-danger {
+        color: $color-white;
+        background-color: $color-error;
+        border: 2px solid none;
+        border-radius: 5px;
+
+        .elementor-alert-dismiss {
+            font-size: 33px;
+            width: 33px;
+            height: 33px;
+            line-height: 0;
+            background: $color-white;
+            color: $color-error;
+            border: none;
+        }
+    }
+
+    .elementor-alert.elementor-alert-warning {
+        color: $color-white;
+        background-color: $color-link;
+        border: 2px solid none;
+        border-radius: 5px;
+
+        .elementor-alert-dismiss {
+            font-size: 33px;
+            width: 33px;
+            height: 33px;
+            line-height: 0;
+            background: $color-white;
+            color: $color-link;
+            border: none;
+        }
+    }
+
+    .elementor-widget-alert .elementor-alert-title {
+        font-family: inherit;
+        font-size: 22px;
+        font-weight: 400;
+    }
+
+    .elementor-widget-alert .elementor-alert-description {
+        font-family: inherit;
+        font-size: 18px;
+        font-weight: 400;
+        opacity: .8;
+    }
+
+    .elementor-alert button.elementor-alert-dismiss {
+        top: 10px;
+    }
+
+    /**
+     * Author
+     */
+
+    .elementor-widget-author-box .elementor-author-box__bio {
+        
+        font-family: inherit;
+        color: $color-textgray;
+       
+        p {
+            font-family: inherit;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 27px;
+        }
+
+    }
+
+    .elementor-widget-author-box .elementor-author-box__name {
+        color: $color-headings;
+        font-family: inherit;
+        font-weight: 600;
+
+        h4 {
+            margin-bottom: 10px;
+        }
+    }
+
+    /**
+     * Blockquate
+     */
+
+    .elementor-widget-blockquote blockquote {
+        font-family: inherit;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 27px;
+
+        p {
+            color: $color-textgray;
+            font-style: italic !important;
+        }
+    }
+
+    .elementor-blockquote--skin-quotation .elementor-blockquote:before {
+        content: "“";
+        font-size: 100px;
+        color: inherit;
+        font-family: Times New Roman,Times,serif;
+        font-weight: 900;
+        line-height: 1;
+        display: block;
+        height: .6em;
+        color: $color-white;
+        width: max-content;
+    }
+
+    .elementor-widget-blockquote .elementor-blockquote__author {
+        color: $color-white;
+    }
+
+    /**
+     * Card
+     */
+
+    .elementor-widget-posts .elementor-post__title, .elementor-widget-posts .elementor-post__title a {
+        color: $color-headings;
+        font-family: inherit;
+        font-weight: 400;
+    }
+
+    .elementor-posts .elementor-post__card .elementor-post__title {
+        font-size: 20px;
+    }
+
+    .elementor-widget-posts .elementor-post__excerpt p {
+        font-family: inherit;
+        font-weight: 400;
+    }
+
+    .elementor-posts .elementor-post__excerpt p {
+        font-size: 16px;
+        line-height: 27px;
+        color: #7a7a7a;
+    }
+
+    .elementor-widget-posts .elementor-post__read-more {
+        color: $color-link;
+        font-family: inherit;
+        font-weight: 400;
+    }
+
+    .elementor-widget-posts .elementor-post__meta-data {
+        font-family: inherit;
+        font-weight: 400;
+    }
+
+    /**
+     * Slider
+     */
+
+    .elementor-widget-slides .elementor-slide-heading {
+        font-family: inherit;
+        font-weight: 600;
+    }
+
+    .elementor-slides .slick-slide-inner .elementor-slide-heading {
+        font-size: 35px;
+        font-weight: 600;
+        line-height: 1;
+    }
+
+    .elementor-widget-slides .elementor-slide-description {
+        font-family: inherit;
+        font-weight: 400;
+    }
+
+    .elementor-slide-content .elementor-button.elementor-size-sm {
+        height: 100%;
+    }
+
+    .elementor-widget-slides .elementor-slide-button {
+        font-family: inherit;
+        font-weight: 500;
+    }
+
+    /**
+     * Call to Action
+     */
+
+    .elementor-widget-call-to-action .elementor-cta__title {
+        font-family: inherit;
+        font-weight: 600;
+        color: $color-headings;
+    }
+
+    .elementor-widget-call-to-action .elementor-cta__description {
+        font-family: inherit;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 27px;
+        color: #7a7a7a;
+    }
+
+    .elementor-cta__button-wrapper .elementor-button.elementor-size-sm {
+        height: 100%;
+    }
+
+    .elementor-widget-call-to-action .elementor-cta__button {
+        font-family: inherit;
+        border: 1px solid #c8cbcf;
+        border-radius: 30px;
+    }
+
+    /**
+     * Counter
+     */
+
+    .elementor-widget-counter .elementor-counter-number-wrapper {
+        color: $color-headings;
+        font-family: inherit;
+        font-weight: 600;
+    }
+
+    .elementor-widget-counter .elementor-counter-title {
+        color: #7a7a7a;
+        font-family: inherit;
+    }
+
+
+    /**
+     * Price table
+     */
+
+    .elementor-widget-price-list .elementor-price-list-header {
+        color: $color-headings;
+        font-family: inherit;
+        font-weight: 600;
+    }
+
+    .elementor-widget-price-list .elementor-price-list-description {
+        color: #7a7a7a;
+        font-family: inherit;
+        font-weight: 400;
+    }
+
+    .elementor-widget-price-table .elementor-price-table__ribbon-inner {
+        font-family: inherit;
+        font-weight: 500;
+        background-color: #61ce70;
+    }
+
+    /**
+     * Proggress Bar
+     */
+
+    .elementor-progress-wrapper {
+        border-radius: 20px;
+    }
+
+    .elementor-widget-progress .elementor-progress-wrapper .elementor-progress-bar {
+        background-color: #05d786;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+    }
+
+    .elementor-widget-progress .elementor-title {
+        color: #7a7a7a;
+        font-family: inherit;
+        font-weight: 400;
+    }
+
+    /**
+     * Form
+     */
+
+    .elementor-field-group input {
+        display: inline-block;
+        font-family: inherit;
+        font-style: inherit;
+        font-size: 15px;
+        height: 40px;
+        outline: 0;
+        vertical-align: middle;
+        background-color: $color-white;
+        border: 1px solid $color-lightgray;
+        border-radius: 3px;
+        box-shadow: none;
+        padding: 0 12px;
+    }
+
+    .elementor-widget-form .elementor-field-group > label {
+        font-family: inherit;
+        font-weight: 400;
+    }
+
+    .elementor-widget-form .elementor-field-group .elementor-field, .elementor-widget-form .elementor-field-subgroup label {
+        font-family: inherit;
+        font-weight: 400;
+    }
+
+    .elementor-field-group .elementor-field-textual {
+        background-color: $color-white;
+        border: 1px solid $color-lightgray;
+        border-radius: 3px;
+        box-shadow: none;
+    }
+
+    .elementor-widget-form .elementor-button {
+        background-color: $color-link;
+        font-family: inherit;
+        font-weight: 500;
+        border-radius: 50px;
+    }
+
+    .elementor-widget-login .elementor-button {
+        font-family: inherit;
+        font-weight: 500;
+        background-color: $color-link;
+        border-radius: 26px;
+    }
+
+    .icheckbox_minimal {
+        background-color: $color-white;
+        border: 1px solid $color-lightgray;
+        border-radius: 3px;
+    }
+
+    .elementor-widget-login .elementor-form-fields-wrapper label {
+        color: #7a7a7a;
+        font-family: inherit;
+        font-weight: 400;
+    }
+
+    /**
+     * Tab
+     */
+
+
+    .elementor-tabs-wrapper {
+
+        position: relative;
+        z-index: 5;
+
+        &::after {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            content: '';
+            display: block;
+            height: 2px;
+            width: 100%;
+            background: $color-light;
+        }
+    }
+
+    .elementor-active {
+        z-index: 10;
+    }
+
+    .elementor-widget-tabs .elementor-tab-title.elementor-active {
+        a {
+            color: $color-headings !important;
+        }
+    }
+
+    .elementor-tabs-wrapper {
+        .elementor-tab-title {
+            a {
+                color: #939597;
+            }
+        }
+    }
+
+    .elementor-tab-content {
+        border: none !important;
+    }
+
+    .elementor-widget-tabs .elementor-tabs-content-wrapper {
+        border: none !important;
+    }
+
+    .elementor-active:before {
+        display: none !important;
+    }
+
+    .elementor-active:after {
+        display: none !important;
+    }
+
+    .elementor-widget-tabs.elementor-tabs-view-horizontal .elementor-tab-desktop-title.elementor-active {
+        border: none;
+        border-bottom-style: solid;
+        border-bottom: solid 2px $color-link; 
+    }
+
+    .elementor .elementor-widget-tabs.elementor-tabs-view-horizontal .elementor-tab-desktop-title {
+        border: none;
+        border-bottom-style: solid;
+        border-bottom: solid 2px $color-success;
+    }
+
+    .elementor-widget-tabs .elementor-tab-content {
+        color: #7a7a7a;
+        font-family: inherit;
+        font-weight: 400;
+    }
+
+    .elementor-tab-title .elementor-tab-desktop-title {
+        border-width: 0;
+    }
+
+    .elementor-1176 .elementor-element.elementor-element-b8a6738 .elementor-tab-content {
+        border-width: 0;
+    }
+
+    /**
+     * Image Box
+    */
+
+    .elementor-widget-image-box .elementor-image-box-content .elementor-image-box-title {
+        font-family: inherit;
+        font-weight: 600;
+        color: $color-headings;
+    }
+
+    .elementor-widget-image-box .elementor-image-box-content .elementor-image-box-description {
+        font-family: inherit;
+        font-weight: 400;
+        color: #7a7a7a;
+    }
+
+    /**
+     * Icon Box
+    */
+
+   .elementor-widget-icon-box .elementor-icon-box-content .elementor-icon-box-title {
+        font-family: inherit;
+        font-weight: 600;
+        color: $color-headings;
+    }
+
+    .elementor-widget-icon-box .elementor-icon-box-content .elementor-icon-box-description {
+        font-family: inherit;
+        font-weight: 400;
+        color: #7a7a7a;
+    }
+
+    .elementor-widget-icon-box.elementor-view-default .elementor-icon {
+        color: $color-link;
+        border-color: $color-link; 
+    }
+
+    /**
+     * Icon List
+    */
+
+   .elementor-widget-icon-list .elementor-icon-list-item {
+        font-family: inherit;
+        font-weight: 400;
+    }
+
+    .elementor-widget-icon-list .elementor-icon-list-icon i {
+        color: $color-link;
+    }
+
+    /**
+     * Toggle
+    */
+
+   .elementor-widget-toggle .elementor-toggle .elementor-tab-title {
+        font-family: inherit;
+        font-weight: 600;
+        color: $color-link;
+    }
+
+    .elementor-widget-toggle .elementor-toggle .elementor-tab-content {
+        font-family: inherit;
+        font-weight: 400;
+        color: #7a7a7a;
+    }
+
+    .elementor-widget-toggle a:hover {
+        color: inherit;
+    }
+
+    /**
+     * Widget Tab
+    */
+
+   .elementor-widget-tabs .elementor-tab-title {
+        font-family: inherit;
+        font-weight: 600;
+        color: $color-link;
+    }
+
+    .elementor-tab-title a:hover {
+        color: inherit;
+    }
+
+    /**
+     * Testimonial
+    */
+
+    .elementor-widget-testimonial .elementor-testimonial-content {
+        font-family: inherit;
+        font-weight: 400;
+        color: #7a7a7a;
+    }
+
+    .elementor-widget-testimonial .elementor-testimonial-name {
+        font-family: inherit;
+        font-weight: 600;
+        color: $color-link;
+    }
+
+    .elementor-widget-testimonial .elementor-testimonial-job {
+        font-family: inherit;
+        font-weight: 400;
+        color: #54595f;
+    }
+
+    /**
+     * Portfolio
+    */
+
+    .elementor-widget-portfolio a .elementor-portfolio-item__overlay {
+        background-color: $color-link;
+    }
+
+    .elementor-widget-portfolio .elementor-portfolio-item__title {
+        font-family: inherit;
+        font-weight: 600;
+    }
+
+    /**
+     * Text editor
+    */
+
+   .elementor-widget-text-editor {
+        font-family: inherit;
+        font-weight: 400;
+        color: #7a7a7a;
+    }
+
+    /**
+     * Testimonial carousel
+    */
+
+    .elementor-widget-testimonial-carousel .elementor-testimonial__text {
+        font-family: inherit;
+        font-weight: 400;
+        color: #7a7a7a;
+    }
+
+    .elementor-widget-testimonial-carousel .elementor-testimonial__name {
+        font-family: inherit;
+        font-weight: 600;
+        color: $color-link;
+    }
+
+    .elementor-widget-testimonial-carousel .elementor-testimonial__title {
+        font-family: inherit;
+        font-weight: 400;
+        color: #7a7a7a;
+    }
+
+    /**
+     * Countdown
+    */
+
+   .elementor-widget-countdown .elementor-countdown-item {
+        background-color: $color-link;
+    }
+
+    .elementor-widget-countdown .elementor-countdown-label {
+        font-family: inherit;
+        font-weight: 400;
+    }
+
+    .elementor-widget-countdown .elementor-countdown-digits {
+        font-family: inherit;
+        font-weight: 400;
+    }
+
+    /**
+     * Animated headline
+    */
+
+    .elementor-widget-animated-headline .elementor-headline {
+        font-family: inherit;
+        font-weight: 600;
+    }
+
+    .elementor-widget-animated-headline .elementor-headline-dynamic-wrapper path {
+        stroke: $color-link;
+    }
+
+    .elementor-widget-animated-headline .elementor-headline-dynamic-text {
+        font-family: inherit;
+        font-weight: 600;
+        color: #54595f;
+    }
+
+    /**
+     * Flip box
+    */
+
+   .elementor-flip-box__back {
+        background-color: $color-link;
+        display: block;
+    }
+
+    .elementor-flip-box__front {
+        background-color: #61ce70;
+    }
+
+    .elementor-widget-flip-box .elementor-flip-box__back .elementor-flip-box__layer__title {
+        font-family: inherit;
+        font-weight: 600;
+    }
+
+    .elementor-widget-flip-box .elementor-flip-box__back .elementor-flip-box__layer__description {
+        font-family: inherit;
+        font-weight: 400;
+    }
+
+    .elementor-widget-flip-box .elementor-flip-box__back .elementor-flip-box__layer__title {
+        font-family: inherit;
+        font-weight: 600;
+    }
+
+    .elementor-widget-flip-box .elementor-flip-box__front .elementor-flip-box__layer__description {
+        font-family: inherit;
+        font-weight: 400;
+    }
+
+    .elementor-widget-flip-box .elementor-flip-box__button {
+        font-family: inherit;
+        font-weight: 500;
+    }
+
+    .elementor-flip-box__button.elementor-button {
+        border: solid 1px $color-white;
+        border-radius: 50px;
+        height: auto;
+    }
+
+    /**
+     * Price table
+    */
+
+   .elementor-widget-price-table .elementor-price-table__heading {
+        font-family: inherit;
+        font-weight: 600;
+    }
+
+    .elementor-widget-price-table .elementor-price-table__subheading {
+        font-family: inherit;
+        font-weight: 400;
+    }
+
+    .elementor-widget-price-table .elementor-price-table__price {
+        font-family: inherit;
+        font-weight: 600;
+    }
+
+    .elementor-widget-price-table .elementor-price-table__features-list li {
+        font-family: inherit;
+        font-weight: 400;
+    }
+
+    .elementor-price-table .elementor-price-table__price .elementor-typo-excluded {
+        font-family: inherit;
+        font-weight: 400;
+    }
+
+    .elementor-widget-price-table .elementor-price-table__button {
+        font-family: inherit;
+        font-weight: 500;
+        background-color: #61ce70;
+        border-radius: 50px;
+    }
+
+    .elementor-price-table__button {
+        height: auto;
+    }
+
+    .elementor-widget-price-table .elementor-price-table__additional_info {
+        font-family: inherit;
+        font-weight: 400;
+        color: #7a7a7a;
+    }
+
+    /**
+     * Elementor Nav Menu
+    */
+
+   .elementor-widget-nav-menu .elementor-nav-menu--main {
+        font-family: inherit;
+        font-weight: 600;
+    }
+
+    /**
+     * Elementor Slide
+    */
+
+    .elementor .elementor-slide-content .elementor-button.elementor-size-sm {
+        height: 100%;
+        border: solid 1px $color-white;
+        border-radius: 50px;
+    }
+
+    /**
+     * 
+    */
+
+   .elementor-widget-posts .elementor-post__card .elementor-post__badge {
+        background-color: #61ce70;
+        font-family: inherit;
+        font-weight: 500;
+    }
+
+    /**
+     * Elementor Slick Slider 
+    */
+
+    .elementor .elementor-slick-slider .slick-arrows-inside .slick-next {
+        left: auto !important;
+        right: 20px !important;
+    }
+
+    .elementor-slick-slider .slick-arrows-inside .slick-next {
+        left: auto !important;
+        right: 20px !important;
+    }
+
+    .elementor-slick-slider .slick-arrow {
+        box-shadow: none;
+    }
+
+    .elementor-slides .slick-slide-inner .elementor-slide-button, .elementor-slides .slick-slide-inner .elementor-slide-button:hover {
+        border-radius: 50px;
+        border: solid 1px $color-white;
+    }
+    
+}

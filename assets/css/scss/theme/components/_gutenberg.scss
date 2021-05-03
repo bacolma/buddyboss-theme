@@ -1,0 +1,231 @@
+body.page-template-page-fullwidth {
+    .wp-block-cover-image {
+        width: 100vw;
+        margin-left: calc(-50vw + 50%);
+    }   
+
+    .wp-block-code {
+        max-width: $container-width;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+pre.wp-block-code,
+pre.wp-block-verse,
+pre.wp-block-preformatted {
+    max-width: $container-width;
+    width: 100%;
+}
+
+.wp-block-media-text,
+figure.wp-block-audio {
+    margin: rem-calc(0 0 $base-line);
+}
+
+ul.wp-block-gallery {
+    margin-left: 0;
+}
+
+blockquote.wp-block-pullquote {
+    color: $color-text;
+    border-top: 1px solid rgba(0, 0, 0, .05);
+    border-bottom: 1px solid rgba(0, 0, 0, .05);
+    padding: 2em 0;
+
+    p {
+        font-size: 24px;
+        line-height: 1.4;
+        font-weight: inherit;
+        margin-bottom: 0;  
+    }
+
+    cite {
+        font-style: italic;
+        font-weight: inherit;
+        font-size: 15px;
+        margin-top: 1.25em;
+        text-transform: none;
+        display: inline-block;
+    }
+}
+
+p.has-background {
+    padding: 30px;
+}
+
+figure.wp-block-audio {
+    audio {
+        width: 100%;
+    }
+
+    figcaption {
+        color: #939597;
+    }
+}
+
+figure.wp-block-video {
+    video {
+        width: 100%;
+    }
+
+    figcaption {
+        color: #939597;
+    }
+}
+
+pre.wp-block-code {
+    padding: 0.75em 1.25em;
+
+    code {
+        font-size: 14px;
+        line-height: 1.5;
+    }
+}
+
+table.wp-block-table {
+    display: table;
+}
+
+.wp-block-button {
+    a.wp-block-button__link {
+        background-color: $color-link;
+        color: $color-white;
+        font-size: 15px;
+        border-radius: 100px;
+        padding: 10px 20px;
+    }
+}
+
+.wp-block-columns {
+    margin-left: -10px;
+    margin-right: -10px;
+
+    p {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
+hr.wp-block-separator {
+    border-color: transparent;
+    height: 1px;
+    border-bottom: 0;
+    background-color: $color-lightgray;
+}
+
+.wp-block-categories {
+    &.aligncenter {
+        text-align: inherit;
+    }
+
+    ul {
+        list-style: none;
+        text-align: left;
+        margin-left: 0;
+
+        li.cat-item {
+            font-size: $font-size-smaller;
+
+            a {
+                color: #939597;
+
+                &:hover {
+                    color: $color-headings;
+                }
+            }  
+
+            ul {
+                padding-left: 2em;
+            }
+        } 
+    }
+}
+
+ul.wp-block-latest-posts {
+    list-style: none;
+    margin-left: 0;
+
+    li {
+        text-align: left;
+
+        a {
+            color: #939597;
+            font-size: $font-size-smaller;
+
+            &:hover {
+                color: $color-headings;
+            }
+        }
+
+        .wp-block-latest-posts__post-date {
+            font-size: $font-size-extra-small;
+            color: $color-gray;
+        }
+    }
+}
+
+figure.wp-block-embed {
+    margin: 0;
+}
+
+.entry-content .wp-block-embed .fluid-width-video-wrapper {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.wp-block-table td, 
+.wp-block-table th {
+    border-color: rgba(0,0,0,0.05);
+}
+
+.wp-block-table th:first-child, 
+.wp-block-table td:first-child {
+    padding-left: 0.5em;
+}
+
+.wp-block-table th:last-child, 
+.wp-block-table td:last-child {
+    padding-right: 0.5em;
+}
+
+table.wp-block-table.is-style-regular {
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.entry-content {
+    img {
+        vertical-align: bottom;
+    }
+
+    .emoji,
+    .emojioneemoji {
+        vertical-align: middle;
+    }
+}
+
+body .wp-block-cover-image h2,
+body .wp-block-cover-image .wp-block-cover-image-text,
+body .wp-block-cover-image .wp-block-cover-text,
+body .wp-block-cover h2,
+body .wp-block-cover .wp-block-cover-image-text,
+body .wp-block-cover .wp-block-cover-text {
+    font-size: 2.5em;
+    font-weight: 600;
+}
+
+.wp-block-embed-wordpress-tv {
+    .wp-block-embed__wrapper {
+        width: 100%;
+        position: relative;
+        padding-top: 56.25%;
+    }
+
+    iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}

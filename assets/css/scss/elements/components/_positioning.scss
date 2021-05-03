@@ -1,0 +1,38 @@
+// Push
+.push-left  { margin-right: auto; }
+.push-right  { margin-left: auto; }
+.push-center { margin-left: auto; margin-right: auto; }
+.push-middle { margin-top:  auto; margin-bottom: auto; }
+.push-bottom { margin-top:  auto; }
+
+@include breakpoint(sm) {
+    .push-left-sm   { margin-left: 0; }
+    .push-center-sm { margin-left: auto; margin-right: auto;}
+    .push-top-sm    { margin-top: 0;  }
+}
+
+// Flex Alignment
+.align-middle {
+    @include flex-items-middle;
+}
+
+.align-right {
+    @include flex-items-right;
+}
+
+.align-center {
+    @include flex-items-center;
+}
+
+@include breakpoint(sm) {
+    .align-left-sm { @include flex-items-left; }
+}
+
+// Fixed
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: $z-over-content;
+    width: 100%;
+}

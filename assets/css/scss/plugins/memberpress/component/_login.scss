@@ -1,0 +1,220 @@
+.mp_wrapper.mp_login_form {
+    #mepr_loginform {
+        width: 100%;
+    }
+
+    #wp-submit {
+        width: 100%;
+
+        &:hover {
+            background: #007CFF;
+        }
+    }
+
+    input[type=text],
+    input[type=url],
+    input[type=email],
+    input[type=tel],
+    input[type=number],
+    input[type=password] {
+        position: relative;
+        background-color: #fff;
+        border: 1px solid #e7e9ec;
+        box-shadow: none;
+        border-radius: 3px;
+        font-size: 16px;
+    }
+
+    input[type=text],
+    input[type=password] {
+        padding: 0 5px 0 40px !important;
+    }
+
+    .mepr_username,
+    .mepr_password {
+        position: relative;
+        margin-bottom: 18px;
+
+        &:before {
+            font-family: "bb-icons";
+            font-style: normal;
+            font-weight: normal;
+            speak: none;
+            display: inline-block;
+            text-decoration: inherit;
+            width: 1em;
+            margin-right: .2em;
+            text-align: center;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1em;
+            margin-left: .2em;
+            position: absolute;
+            top: 12px;
+            left: 10px;
+            z-index: 9;
+            color: #72777c;
+        }
+    }
+
+    .mepr_username {
+        .mp-form-label {
+            display: none;
+        }
+        &:before {
+            content: '\e825';
+            font-size: 16px;
+        }
+    }
+
+    .mepr_password{
+        .mp-form-label {
+            display: none;
+        }
+        &:before {
+            content: '\e829';
+            font-size: 20px;
+        }
+    }
+
+    label {
+        font-weight: 400;
+        font-size: 14px;
+        color: #122b46;
+
+        .icheckbox_minimal {
+            border-width: 1px;
+            border-radius: 2px;
+            margin-right: 6px;
+        }
+    }
+
+    #rememberme {
+        width: 17px;
+        height: 17px;
+        background: #fff;
+    }
+
+    .mepr-login-actions {
+        font-size: 14px;
+        position: absolute;
+        top: 115px;
+        right: 20px;
+    }
+
+    .mp-spacer {
+        line-height: 10px;
+    }
+
+    .submit {
+        margin-top: 5px;
+    }
+
+}
+
+.mp_wrapper {
+    .mepr_error {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.65;
+        max-width: 320px;
+        margin: auto;
+        background: #ef3e46 !important;
+        color: #fff;
+        border: none !important;
+        border-radius: 3px;
+        padding: 12px !important;
+    }
+    ul {
+        padding: 0 !important;
+    }
+
+    input[type=text],
+    input[type=url],
+    input[type=email],
+    input[type=tel],
+    input[type=number],
+    input[type=password] {
+        position: relative;
+        background-color: #fff;
+        border: 1px solid #e7e9ec;
+        box-shadow: none;
+        border-radius: 3px;
+        font-size: 16px;
+    }
+
+    label {
+        font-size: 14px;
+        color: $color-headings;
+    }
+}
+
+.mepr-login-page,
+.mepr-thankyou-page {
+    .entry-header {
+        margin: 30px 0;
+    }
+
+    .entry-title {
+        font-size: 22px;
+        text-align: center;
+    }
+    
+    .mp_wrapper {
+        margin: auto;
+        max-width: 360px;
+        padding: 0 20px;
+        position: relative;
+    }
+}
+
+.mepr-account-page {
+    .mp_login_form {
+        padding: 0;
+    }
+}
+
+.mepr-forgot-password-page .mp_wrapper {
+    max-width: 360px;
+    margin: auto;
+}
+
+.mp_wrapper .mp-form-row label {
+    display: block !important;
+    margin-bottom: 10px;
+}
+
+.mp-spacer {
+    line-height: 15px;
+}
+
+.mepr-forgot-password-page {
+    .entry-header {
+        display: none;
+    }
+
+    .mp_wrapper {
+        margin-top: 30px;
+    }
+}
+
+.mepr-login-page {
+    .mp_wrapper.mp_login_form {
+        padding: 0;
+    }
+
+    .mepr-unauthorized-message {
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    .entry-header {
+        margin: 30px auto;
+        max-width: 360px;
+        padding: 0 20px;
+    }
+
+    .entry-title {
+        line-height: 1.3;
+    }
+}

@@ -1,0 +1,193 @@
+$jade: #33939B;
+$blue: #25335A;
+$jadeBackground: #44B4B8;
+$gray: #D7D9DF;
+$grayDark: #9CA2B3;
+
+$red: #EB4745;
+
+.modal-help-crisis {
+  .hidden {
+    display: none;
+  }
+
+  .modal-title {
+    span {
+      color: $blue;
+      text-align: center;
+    }
+  }
+
+  .modal-body {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+
+    .list-title {
+      font-size: 26px;
+      font-weight: bold;
+      opacity: 0.9;
+      position: relative;
+      margin-bottom: 10px;
+
+      &:before {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 40%;
+        height: 4px;
+        opacity: 0.4;
+        border-radius: 3px;
+      }
+
+      &.focus_area {
+        color: $jade;
+
+        &:before {
+          background-color: $jade;
+        }
+      }
+
+      &.goal {
+        color: $blue;
+
+        &:before {
+          background-color: $blue;
+        }
+      }
+
+      &.task {
+        color: $red;
+
+        &:before {
+          background-color: $red;
+        }
+      }
+    }
+
+    .list-items {
+      margin-top: 10px;
+
+      &__item {
+        padding: 15px 20px;
+        color: $blue;
+        border-radius: 5px;
+        font-size: 22px;
+        transition: background .3s;
+        user-select: none;
+        font-weight: bold;
+
+        &:not(:last-child) {
+          margin-bottom: 15px;
+        }
+
+        &.focus_area,
+        &.goal {
+          background: rgba($jadeBackground, .4);
+
+          &:hover,
+          &.active{
+            background: $jadeBackground;
+            color: #F6F6F6;
+            cursor: pointer;
+          }
+        }
+
+        &.checkin {
+          background: rgba($jadeBackground, .4);
+
+          &:hover,
+          &.active{
+            background: $jadeBackground;
+            color: #F6F6F6;
+            cursor: pointer;
+          }
+          &.span{
+            text-align: center;
+          }
+        }
+
+        &.task {
+          background: rgba($red, .4);
+
+          &:hover,
+          &.active{
+            background: $red;
+            color: #F6F6F6;
+            cursor: pointer;
+          }
+        }
+
+        &.frequency {
+          background: rgba($jadeBackground, .4);
+
+          &:hover,
+          &.active{
+            background: $jadeBackground;
+            color: #F6F6F6;
+            cursor: pointer;
+          }
+        }
+      
+        &.frequenc {
+          background: rgba($jadeBackground, .4);
+
+          &:hover,
+          &.active{
+            background: $jadeBackground;
+            color: #F6F6F6;
+            cursor: pointer;
+          }
+        }
+
+        &.disabled {
+          background: $grayDark;
+
+          span {
+            display: block;
+            color: white;
+            text-transform: uppercase;
+            font-size: 11px;
+            line-height: 8px;
+          }
+        }
+      }
+
+    }
+  }
+
+  .text-time{
+      text-align: center;
+  }
+  
+  .container{
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1rem;
+  }
+  .modal-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 1rem;
+
+    button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 50px;
+      border-radius: 30px;
+      text-transform: uppercase;
+      background: $gray;
+      color: white;
+      cursor: default;
+
+      &.active {
+        background: $jade;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+

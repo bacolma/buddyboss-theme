@@ -1,0 +1,399 @@
+/*------------------------------------------------------------------------------
+
+Loaded in wp-admin for query string `hello=theme`.
+
+--------------------------------------------------------------------------------
+TABLE OF CONTENTS:
+--------------------------------------------------------------------------------
+1.0 - Typography and colour
+2.0 - Icons
+2.1 - Social Icons
+3.0 - Elements
+3.1 - Backdrop and container
+3.2 - Modal footer
+3.3 - Modal header
+3.4 - Modal content
+4.0 - Content styles
+4.1 - Backdrop and container
+4.2 - Footer content
+4.3 - Header content
+4.4 - Content content
+6.0 - Media Queries
+6.1 - Mobile
+6.2 - Desktop Small
+6.3 - Desktop Medium
+6.4 - Desktop Large
+------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------
+* 1.0 - Typography and colour
+*----------------------------------------------------------------------------*/
+:root {
+  --bp-hello-color-primary: #0071a1;
+  --bp-hello-color-secondary: #e5e5e5;
+  --bp-hello-container-size: 15%;
+}
+
+#theme-hello-container a:hover {
+  -webkit-transition: all 0.1s ease-in-out;
+  transition: all 0.1s ease-in-out;
+  color: black;
+}
+
+#theme-hello-container .theme-hello-header h1 {
+  line-height: 1.7;
+  font-size: 21px;
+  font-weight: 400;
+}
+
+.theme-hello-content p {
+  font-size: 16px;
+}
+
+.theme-hello-content .video-wrapper {
+  margin: 0 auto;
+  height: -webkit-calc(100%);
+  height: calc(100%);
+}
+
+.theme-hello-content .video-wrapper .video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 0;
+  height: 0;
+  overflow: hidden;
+}
+
+.theme-hello-content .video-wrapper .video-container iframe,
+.theme-hello-content .video-wrapper .video-container object,
+.theme-hello-content .video-wrapper .video-container embed {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*------------------------------------------------------------------------------
+* 2.0 - Icons
+*----------------------------------------------------------------------------*/
+/*
+* 2.1 - Social Icons
+*/
+.theme-hello-social li a:before {
+  color: #23282d;
+  /* wp toolbar */
+  display: inline-block;
+  content: " ";
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f6f6f6;
+  height: 38px;
+  width: 38px;
+  border-radius: 50px;
+  vertical-align: middle;
+}
+
+.theme-hello-social li a:hover:before {
+  background-color: #eee;
+}
+
+.theme-hello-social li a.youtube:before {
+  background-image: url(../images/svg/youtube.svg);
+}
+
+.theme-hello-social li a.twitter:before {
+  background-image: url(../images/svg/twitter.svg);
+}
+
+.theme-hello-social li a.facebook:before {
+  background-image: url(../images/svg/facebook-square.svg);
+}
+
+/*------------------------------------------------------------------------------
+* 3.0 - Elements
+*----------------------------------------------------------------------------*/
+/*
+* 3.1 - Backdrop and container
+*/
+#theme-hello-backdrop {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 9998;
+  display: none;
+}
+
+#theme-hello-container {
+  position: fixed;
+  top: 0;
+  bottom: 80px;
+  z-index: 99999;
+}
+
+.theme-disable-scroll {
+  overflow: hidden;
+}
+
+/*
+* 3.2 - Modal footer
+*/
+.theme-hello-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  height: 58px;
+  max-height: 58px;
+}
+
+.theme-hello-social-cta,
+.theme-hello-social-links {
+  -ms-flex-preferred-size: 50%;
+  flex-basis: 50%;
+}
+
+.theme-hello-social-links ul {
+  display: inline-block;
+  margin: 2px 0 0;
+}
+
+.theme-hello-social li {
+  position: relative;
+  bottom: -5px;
+  display: inline-block;
+  list-style-type: none;
+  margin-bottom: 0;
+  margin-right: 5px;
+}
+
+/*
+* 3.3 - Modal header
+*/
+.theme-hello-header {
+  height: 58px;
+  max-height: 58px;
+}
+
+/*
+* 3.4 - Modal content
+*/
+.theme-hello-content {
+  padding: 0 25px;
+  height: -webkit-calc(100% - 58px);
+  height: calc(100% - 58px);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/*------------------------------------------------------------------------------
+* 4.0 - Content styles
+*----------------------------------------------------------------------------*/
+/*
+* 4.1 - Backdrop and container
+*/
+#theme-hello-backdrop {
+  background-color: rgba(0, 0, 0, 0.8);
+  -webkit-transition: opacity 0.15s ease-out;
+  transition: opacity 0.15s ease-out;
+}
+
+#theme-hello-container {
+  background-color: white;
+}
+
+/*
+* 4.2 - Footer content
+*/
+.theme-hello-footer {
+  border-radius: 0 0 3px 3px;
+  background-color: white;
+  border-top: 1px solid var(--theme-hello-color-secondary);
+  padding: 6px 25px;
+}
+
+.theme-hello-footer p {
+  font-size: 15px;
+}
+
+.theme-hello-appboss .theme-hello-footer {
+  border-top: none;
+}
+
+.theme-hello-social-cta {
+  text-align: right;
+}
+
+.theme-hello-social-links {
+  text-align: left;
+}
+
+.theme-hello-social li a {
+  text-decoration: none;
+}
+
+/*
+* 4.3 - Header content
+*/
+.theme-hello-header {
+  padding: 6px 25px;
+}
+
+.theme-hello-header h1 {
+  width: -webkit-calc(100% - 51px);
+  width: calc(100% - 51px);
+}
+
+#theme-hello-container .theme-hello-header {
+  border-bottom: 1px solid var(--theme-hello-color-secondary);
+}
+
+.theme-hello-title {
+  text-align: right;
+}
+
+.theme-hello-close {
+  position: absolute;
+  top: 15px;
+  left: 25px;
+  text-align: left;
+}
+
+/*
+* 4.4 - Content content
+*/
+.theme-hello-content {
+  background-color: white;
+}
+
+.theme-hello-appboss .theme-hello-content {
+  padding: 0;
+}
+
+.theme-hello-content img {
+  border-radius: 2px;
+  max-width: 100%;
+}
+
+/*------------------------------------------------------------------------------
+* 6.0 - Media Queries
+*----------------------------------------------------------------------------*/
+/**
+* 6.1 - Mobile
+*/
+@media screen and (max-width: 500px) {
+  .theme-hello-social-cta p span {
+    display: none;
+  }
+}
+/**
+* 6.2 - Desktop Small
+*/
+@media screen and (max-width: 1024px) {
+  #theme-hello-container {
+    width: 100%;
+  }
+}
+/*
+* 6.3 - Desktop Medium
+*/
+@media only screen and (min-width: 1024px) {
+  #theme-hello-backdrop {
+    display: block;
+  }
+
+  #theme-hello-container {
+    position: fixed;
+    top: 60px;
+    right: var(--theme-hello-container-size);
+    left: var(--theme-hello-container-size);
+    bottom: 23px;
+    z-index: 9999;
+    border-radius: 3px;
+  }
+
+  #theme-hello-container .theme-hello-header h1 {
+    line-height: inherit;
+  }
+
+  #theme-hello-container.theme-hello-appboss {
+    bottom: auto;
+    width: 105vmin;
+    max-width: 900px;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+
+  #theme-hello-container.theme-hello-appboss .theme-hello-footer {
+    height: 60px;
+    position: static;
+  }
+
+  .theme-hello-header {
+    height: auto;
+    max-height: inherit;
+    padding: 6px 23px;
+  }
+
+  .theme-hello-close {
+    left: 23px;
+  }
+
+  .theme-hello-close .close-modal:before {
+    line-height: 0.7;
+  }
+
+  .theme-hello-footer {
+    position: fixed;
+    right: var(--theme-hello-container-size);
+    left: var(--theme-hello-container-size);
+    bottom: 23px;
+    z-index: 10000;
+    height: auto;
+    max-height: inherit;
+    padding: 6px 23px;
+  }
+
+  .theme-hello-content {
+    height: -webkit-calc(100% - 90px);
+    height: calc(100% - 90px);
+    padding: 0 23px;
+  }
+
+  .theme-hello-appboss .theme-hello-content {
+    height: -webkit-calc(100% - 120px);
+    height: calc(100% - 120px);
+    padding: 0;
+  }
+
+  #theme-hello-container p {
+    font-size: 14px;
+  }
+}
+/**
+* 6.4 - Desktop Large
+*/
+@media screen and (min-width: 1280px) {
+  #theme-hello-container,
+  .theme-hello-footer {
+    right: -webkit-calc((100% - 896px) / 2);
+    right: calc((100% - 896px) / 2);
+    left: -webkit-calc((100% - 896px) / 2);
+    left: calc((100% - 896px) / 2);
+  }
+
+  .theme-hello-appboss .theme-hello-content {
+    height: -webkit-calc(100% - 120px);
+    height: calc(100% - 120px);
+    padding: 0;
+  }
+}

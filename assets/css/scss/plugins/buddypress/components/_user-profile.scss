@@ -1,0 +1,361 @@
+#object-nav {
+    .sub-menu {
+        background: $color-white;
+        box-shadow: 0 2px 7px 1px rgba(0,0,0,0.05), 0 6px 32px 0 rgba(18,43,70,0.1);
+        border-radius: 4px;
+        list-style: none;
+        padding: 10px 0;
+        position: absolute;
+        right: -20px;
+        top: 50px;
+        margin: 0;
+        min-width: 168px;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 100;
+
+        &.active {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    .more-button {
+        padding: 14px 0;
+        line-height: 1.1;
+
+        i {
+            font-size: rem-calc(20px);
+        }
+    }
+}
+
+body.buddypress.bp-user #page #primary .entry-header {
+    display: flex;
+}
+
+.bp-dir-hori-nav {
+    nav#object-nav {
+        background: $color-white;
+    }
+
+    nav.horizontal {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+}
+
+.bb-user-content-wrap {
+    flex: 1;
+}
+
+.bb-user-content-wrap .member-social {
+    flex-flow: row wrap;   
+
+    & > .flex {
+        margin-bottom: 10px;
+    }
+}
+
+.social-networks-wrap {
+    white-space: nowrap;
+
+    svg path {
+        fill: $menu-link-color;
+    }
+}
+
+.member-title-wrap {
+    margin: 30px 0 5px 0;
+}
+
+.users-header .bp-member-type {
+    background: #D94C61;
+    border-radius: 100px;
+    font-size: 11px;
+    font-weight: 600;
+    color: $color-white;
+    letter-spacing: 0.25px;
+    text-align: center;
+    display: inline-block;
+    padding: 4px 10px 4px;
+    line-height: 1;
+}
+
+.single-headers .member-header-actions > .generic-button {
+    margin: 5px 0 10px 10px;
+}
+
+body #buddypress .member-header-actions {
+    padding-left: 20px;
+    margin: 15px 0 0;
+    text-align: right;
+    overflow: visible;
+
+    a,
+    button {
+        font-weight: 500;
+    }
+
+    .friendship-button i {
+        font-size: 15px;
+    }
+}
+
+#buddypress div#item-header-cover-image .user-nicename a,
+#buddypress div#item-header-cover-image .user-nicename {
+    margin: 0 10px 0 0;
+    word-break: break-word;
+}
+
+.single-headers {
+    .followers-wrap,
+    .following-wrap {
+        flex: initial;
+        margin-right: 20px;
+        
+        b {
+            font-weight: 500;
+        }
+    }
+}
+
+#member-front-widgets {
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 -10px;
+
+    .widget {
+        margin: 10px;
+        flex: 0 0 calc(25% - 20px);
+    }
+    
+    ul.item-list {
+        margin: 0;
+    }
+}
+
+#buddypress .bb-bp-invites-content {
+    flex: 1;
+    padding: 55px 80px;
+
+    .screen-heading {
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 1.1;
+    }
+
+    .invite-info {
+        font-size: 16px;
+        color: $color-small-text;
+        letter-spacing: -0.27px;
+        line-height: 1.2;
+    }
+
+    label {
+        display: block;
+        font-size: 16px;
+        font-weight: 400;
+        color: $color-small-text;
+        letter-spacing: -0.27px;
+        line-height: 1.2;
+        margin: 15px 0;
+    }
+    
+    textarea {
+        height: 120px;
+        margin-bottom: 15px;
+        padding: 10px 15px;
+    }
+
+    .bp-feedback {
+        margin: 0 0 30px;
+    }
+}
+
+#member-invites-table {
+    th,
+    td {
+        padding: 12px 20px;
+    }
+}
+
+.bp-invitee-status {
+    a {
+        display: flex;
+        align-items: center;
+    }
+    
+    span {
+        font-size: 20px;
+        margin-right: 5px;
+    }
+
+    .registered {
+        color: inherit;
+    }
+}
+
+#buddypress #invites-send-invite-personal-li a:before {
+    content: '\E910';
+}
+
+#buddypress #invites-sent-invites-personal-li a:before {
+    content: '\E8AE';
+}
+
+td.field-name span,
+td.field-email span {
+    word-break: break-word;
+}
+
+body.invites.has-sidebar {
+    #buddypress .bp-settings-container .bp-navs {
+        flex: 0 0 100%;
+        min-height: 10px;
+        border-right: 0;
+        border-radius: 4px 4px 0 0;
+        padding: 0;
+    }
+
+    #buddypress .bp-settings-container .bp-navs li {
+        float: left;
+    }
+
+    #buddypress .bb-bp-invites-content {
+        flex: 1;
+        padding: 30px 50px;
+    }
+}
+
+.member-header-actions.action:empty {
+    display: none;
+}
+
+@media only screen and ( min-width: 1081px ) {
+    #user-activity,
+    #group-activity {
+        order: -1;
+        padding-top: 0;
+    }
+}
+
+#secondary.no-padding-top {
+    padding-top: 0;
+}
+
+.bp-single-vert-nav .bb-profile-grid #subnav {
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+    #member-front-widgets {
+        .widget {
+            flex: 0 0 calc(33.33% - 20px);
+        }
+    }
+}
+
+@media screen and (min-width: 981px) {
+    body #buddypress .member-header-actions {
+        /*display: flex;*/
+        /*flex-flow: row wrap;*/
+        margin: 30px 0 0;
+    }
+}
+
+@media screen and (max-width: 1080px) {
+    #buddypress .bb-bp-invites-content {
+        padding: 30px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    #buddypress .bb-bp-invites-content {
+        padding: 20px;
+    }
+
+    body.invites.has-sidebar {
+        #buddypress .bb-bp-invites-content {
+            padding: 20px;
+        }
+    }
+}
+
+@media screen and (max-width: 980px) {
+    div#item-header-content .flex {
+        flex-flow: row wrap;
+    }
+
+    body #buddypress .member-header-actions {
+        flex: 0 0 100%;
+        padding: 0;
+        text-align: left;
+
+        > .generic-button {
+            float: left;
+            margin-left: 0;
+            margin-right: 10px;
+        }
+    }
+
+    #member-front-widgets {
+        .widget {
+            flex: 0 0 calc(50% - 20px);
+        }
+    }
+}
+
+@media screen and (max-width: 782px) {
+    div#item-header-content .flex {
+        justify-content: center;
+        /*margin-top: 10px;*/
+    }
+
+    .social-networks-wrap {
+        width: 100%;
+    }
+    
+    .member-title-wrap {
+        margin-top: 5px;
+    }
+    
+    .single-headers .following-wrap {
+        margin-right: 0;
+    }
+
+     body #buddypress .member-header-actions {
+        text-align: center;
+
+        > .generic-button {
+            float: none;
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+    }
+    
+    .single-headers {
+        .followers-wrap,
+        .following-wrap {
+            justify-content: center;
+        }
+    }
+    
+    #buddypress div#item-header-cover-image .user-nicename {
+        margin: 0 0 5px;
+        flex: 0 0 100%;
+    }
+    
+    .single-headers .activity {
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    #member-front-widgets {
+        .widget {
+            flex: 0 0 calc(100% - 20px);
+        }
+    }
+}

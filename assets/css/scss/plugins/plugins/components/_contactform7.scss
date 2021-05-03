@@ -1,0 +1,81 @@
+div.wpcf7-validation-errors,
+div.wpcf7-mail-sent-ng {
+    border: 1px solid $color-error;
+    background-color: $color-error;
+    color: $color-white;
+    line-height: 1.3;
+    padding: 1em;
+    border-radius: 3px;
+    font-size: $font-size-smaller;
+}
+
+div.wpcf7-mail-sent-ok {
+    border: 1px solid $color-button-success;
+    border-radius: 3px;
+    font-size: $font-size-small;
+}
+
+div.wpcf7-spam-blocked {
+    border: 1px solid #ffa500;
+}
+
+.use-floating-validation-tip span.wpcf7-not-valid-tip {
+    border: 1px solid $color-error;
+    border-radius: 3px;
+    font-size: $font-size-small;
+    color: $color-error;
+}
+
+span.wpcf7-not-valid-tip {
+    color: $color-error;
+}
+
+div.wpcf7 .ajax-loader {
+    background-image: url(../images/svg/loader.svg);
+    width: 28px;
+    height: 24px;
+    background-repeat: no-repeat;
+    background-color: $color-white;
+}
+
+div.wpcf7 input[type="submit"] + .ajax-loader {
+    background-color: transparent;
+}
+
+.wpcf7-form-control-wrap input, 
+.wpcf7-form-control-wrap textarea, 
+.wpcf7-form-control-wrap select {
+    width: 100%;
+}
+
+input[type=date].wpcf7-form-control {
+    padding: 8px 12px;
+}
+
+.wpcf7-form input[type=date]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    display: none;
+}
+
+.wpcf7-form input[type=date]:hover {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='#939597' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='bb-icon-calendar'%3E%3Crect x='3' y='4' width='18' height='18' rx='2' ry='2'%3E%3C/rect%3E%3Cline x1='16' y1='2' x2='16' y2='6'%3E%3C/line%3E%3Cline x1='8' y1='2' x2='8' y2='6'%3E%3C/line%3E%3Cline x1='3' y1='10' x2='21' y2='10'%3E%3C/line%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    background-size: 15px 15px;
+}
+
+.wpcf7-form input[type=date]::-webkit-calendar-picker-indicator {
+    -webkit-appearance: none;
+    color: $color-white;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.wpcf7-form input[type=date]::-webkit-clear-button {
+    position: relative;
+    right: 5px;
+}
+
+.wpcf7-form label {
+    font-size: 16px;
+}

@@ -1,0 +1,228 @@
+.gamipress-rank-congratulations {
+	padding: 20px;
+	background-color: $color-white;
+	border: 1px solid $color-border;
+	font-size: $font-size-smaller;
+	line-height: $base-line-small;
+
+	p:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.gamipress-rank-description {
+	.gamipress-rank-title {
+		body.buddypress & {
+			margin-bottom: 15px;
+		}
+
+		a {
+			color: $color-headings;
+
+			&:hover {
+				color: $color-link;
+			}
+		}
+	}
+
+	ul.gamipress-required-requirements {
+		list-style: none;
+		margin-left: 0;
+
+		li {
+			font-size: $font-size-smaller;
+			color: $color-small-text;
+
+			&.user-has-not-earned {
+				.gamipress-achievements-list & {
+					text-decoration: none;
+				}
+			}
+		}
+
+		li:before {
+			content: '\e841';
+			font-family: "bb-icons";
+		    display: inline-block;
+		    line-height: 1;
+		    font-weight: normal;
+		    font-style: normal;
+		    speak: none;
+		    text-decoration: inherit;
+		    text-transform: none;
+		    text-rendering: auto;
+		    -webkit-font-smoothing: antialiased;
+		    -moz-osx-font-smoothing: grayscale;
+		    width: 20px;
+		    height: 20px;
+		    line-height: 20px;
+		    font-size: 14px;
+		    vertical-align: top;
+		    text-align: center;
+		    text-decoration: none;
+		    margin-right: 10px;
+		    position: relative;
+		    top: 3px;
+			background-color: #EEF0F3;
+			border-radius: 100%;
+		}
+
+		li.user-has-earned:before {
+			content: '\e842';
+		}
+	}
+}
+
+.gamipress-ranks-list .gamipress-ranks-container {
+	&.gamipress-columns-1 > .gamipress-rank {
+		width: 100%;
+	}
+
+	@media screen and (min-width: $md) {
+		&.gamipress-columns-2 > .gamipress-rank {
+			width: calc(50% - 20px);
+		}
+
+		&.gamipress-columns-3 > .gamipress-rank {
+			width: calc(33.333% - 20px);
+		}
+
+		&.gamipress-columns-4 > .gamipress-rank {
+			width: calc(25% - 20px);
+		}
+
+		&.gamipress-columns-5 > .gamipress-rank {
+			width: calc(20% - 20px);
+		}
+
+		&.gamipress-columns-6 > .gamipress-rank {
+			width: calc(16.666% - 20px);
+		}
+	}
+
+	h2.gamipress-rank-title {
+		font-size: 18px;
+		font-weight: 500;
+    	line-height: 1.4em;
+	}
+
+	.gamipress-rank-excerpt {
+		font-size: $font-size-smaller;
+		line-height: $base-line-smaller;
+	}
+
+	.gamipress-rank-description {
+		display: flex;
+		flex-direction: column;
+		flex: 1;
+
+		& > h4 {
+			margin-top: auto;
+			margin-bottom: 5px;
+			font-size: 16px;
+		}
+	}
+}
+
+.gamipress-ranks-list {
+	.gamipress-rank-type {
+		margin-bottom: 30px;
+	}
+
+	.gamipress-rank-type:last-of-type {
+		margin-bottom: 0;
+	}
+}
+
+@media screen and (min-width: $lg) {
+	body:not(.has-sidebar) .gamipress-ranks-list {
+		width: 80%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.gamipress-ranks-list .gamipress-ranks-container[class*="gamipress-columns"] {
+	margin-left: -10px;
+	margin-right: -10px;
+
+	.gamipress-rank {
+		background-color: $color-white;
+		border: 1px solid $color-border;
+		border-radius: 4px;
+		margin-left: 10px;
+		margin-right: 10px;
+		align-self: normal;
+		padding: 30px 20px;
+
+		@media screen and (max-width: $md) {
+			margin-left: 0;
+			margin-right: 0;
+			padding: 20px;
+		}
+
+		&.gamipress-layout-top {
+			flex-flow: nowrap;
+			flex-direction: column;
+		}
+
+		&.gamipress-layout-none {
+			margin-bottom: 20px;
+		}
+	}
+}
+
+.gamipress-user-ranks {
+	margin-left: -10px;
+	margin-right: -10px;
+
+	.gamipress-rank {
+		padding: 20px;
+		background-color: $color-white;
+		border: 1px solid $color-border;
+		font-size: $font-size-smaller;
+		line-height: $base-line-small;
+		border-radius: 4px;
+		margin-left: 10px;
+		margin-right: 10px;
+		align-self: normal;
+
+		.gamipress-rank-unlock-with-points-button {
+			font-size: $font-size-smaller;
+		}
+	}
+
+	@media screen and (min-width: $md) {
+		&.gamipress-columns-2 > .gamipress-rank {
+			width: calc(50% - 20px);
+		}
+
+		&.gamipress-columns-3 > .gamipress-rank {
+			width: calc(33.333% - 20px);
+		}
+
+		&.gamipress-columns-4 > .gamipress-rank {
+			width: calc(25% - 20px);
+		}
+
+		&.gamipress-columns-5 > .gamipress-rank {
+			width: calc(20% - 20px);
+		}
+
+		&.gamipress-columns-6 > .gamipress-rank {
+			width: calc(16.666% - 20px);
+		}
+	}
+
+	& > .gamipress-rank {
+		.gamipress-rank-requirements {
+			border-bottom: 0;
+		}
+	}
+}
+
+.bb-gamipress {
+	article .entry-media.entry-img {
+		display: none;
+	}
+}

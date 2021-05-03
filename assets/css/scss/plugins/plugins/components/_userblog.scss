@@ -1,0 +1,167 @@
+.bp-user-blog {
+    .medium-editor-element, .medium-editor-placeholder {
+        background-color: transparent;
+    }
+    .medium-editor-toolbar .medium-editor-toolbar-actions {
+        height: auto;
+    }
+    .sap-words-counter {
+        font-weight: 400;
+    }
+    .sap-author-info {
+        width: 150px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        float: left;
+        margin-left: 0;
+    }
+    .toggle-sap-widgets.toggle-sap-widgets {
+        font: normal normal normal 14px/1 "bb-icons";
+        color: rgba(0,0,0,.4);
+        font-size: 21px;
+        line-height: 1;
+        display: inherit;
+        vertical-align: middle;
+        margin: 10px 0;
+    
+        &:before{
+            content: '\e89b';
+        }
+        &.active{
+            font-size: 30px;
+            margin: 4px 0;
+            &:before{
+                content: '\e828';
+            }
+        }
+        svg{
+            display: none;
+        }
+    }
+    .sap-editor-area-wrapper {
+        .sap-editable-title,
+        .medium-editor-element {
+            padding: 0;
+        }
+    }
+    #sap-widget-container {
+        .widget {
+            border: 0;
+            margin: 0 0 20px;
+            .category_hierarchy_ul li {
+                margin-bottom: 10px;
+                clear: both;
+                label {
+                    font-size: 14px;
+                    line-height: 1.5;
+                    .icheckbox_minimal {
+                        float: left;
+                        margin-bottom: 10px;
+                    }
+                }
+                li {
+                    label {
+                        display: inline-block;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+            .featured-img-placeholder {
+                border-radius: 3px;
+            }
+            &:first-child h3 {
+                font-size: 16px;
+                margin: 0 0 10px 0;
+            }
+            .selectize-input{
+                padding: 5px 8px 2px;
+                &.has-items{
+                    padding-top: 3px;
+                }
+                &> input{
+                    height: 23px !important;
+                }
+            } 
+        }
+    }
+    #blog-order-select {
+        float: right;
+    }
+    #add_new_post{
+        float: left;
+    }
+    .sap-post-container {
+        .post-featured-image img {
+            border-radius: 5px;
+        }
+        .post-content .date {
+            font-style: normal;
+            font-size: 12px;
+        }
+    }
+    #feaured-img-holder-wrap{
+        .featured-img-placeholder{
+            background: none rgba(240, 243, 247, 0.5);
+        }
+        .featured-img-gridicon{
+            margin-bottom: 10px;
+        }
+        .featured-img-button{
+            background: transparent;
+            border: 0;
+            font-size: 13px;
+        }
+    }
+}
+@media screen and (max-width: 620px) {
+    .bp-user-blog {
+        .sap-editor-wrap{
+            .sap-editor-publish-wrapper{
+                float: none;
+                position: static;
+            }
+            .side-panel{
+                max-width: inherit;
+                margin-top: 25px;
+                .sap-editor-toolbar{
+                    overflow: visible;
+                    width: 100%;
+                }
+            }
+            .sap-words-counter{
+                line-height: 1.7;
+            }
+        }
+        .sap-editor-toolbar .sap-publish-popup a.button {
+            font-size: 12px;
+            padding: 7px 9px;
+        }
+        .toggle-sap-widgets.toggle-sap-widgets{
+            margin: 5px 0;
+        }
+    }
+}
+@media screen and (max-width: 480px) {
+    .bp-user-blog {
+        .sap-words-counter{
+            margin-top: -50px;
+        }
+        #add_new_post, #blog-order-select {
+            float: none;
+            text-align: center;
+            margin-top: 5px;
+        }
+    }
+}
+@media screen and (max-width: 360px) {
+    .bp-user-blog {
+       .sap-editor-toolbar .sap-publish-popup a.button {
+            padding: 5px 8px;
+        }
+        .sap-editor-wrap .sap-editor-publish-wrapper{
+            float: left;
+            position: relative;
+        }
+    }
+}

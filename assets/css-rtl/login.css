@@ -1,0 +1,4633 @@
+.group:after {
+  content: ' ';
+  display: table;
+  clear: both;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, address, hr, body.login .login-popup.bb-modal h1, body.login .login-popup.bb-modal .h1, body.login .login-popup.bb-modal h2, body.login .login-popup.bb-modal .h2, body.login .login-popup.bb-modal h3, body.login .login-popup.bb-modal .h3, body.login .login-popup.bb-modal h4, body.login .login-popup.bb-modal .h4, body.login .login-popup.bb-modal h5, body.login .login-popup.bb-modal .h5, body.login .login-popup.bb-modal h6, body.login .login-popup.bb-modal .h6, body.login .login-popup.bb-modal hr, body.login .login-popup.bb-modal p, body.login .login-popup.bb-modal address {
+  margin: 0 0 1.6875rem;
+  padding: 0;
+}
+
+/*! normalize.css v6.0.0 | MIT License | github.com/necolas/normalize.css */
+/* Sections
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+article,
+aside,
+footer,
+header,
+nav,
+section {
+  display: block;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in IE.
+ */
+figcaption,
+figure,
+main {
+  /* 1 */
+  display: block;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the bottom border in Chrome 57- and Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+ * Prevent the duplicate application of 'bolder' by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit;
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000;
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent 'sub' and 'sup' elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+video {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  margin: 0;
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native 'audio' and 'video'
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from 'fieldset' elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    'fieldset' elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+ * 1. Add the correct display in IE 9-.
+ * 2. Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to 'inherit' in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ */
+details,
+menu {
+  display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item;
+}
+
+/* Scripting
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+canvas {
+  display: inline-block;
+}
+
+/**
+ * Add the correct display in IE.
+ */
+template {
+  display: none;
+}
+
+/* Hidden
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10-.
+ */
+[hidden] {
+  display: none;
+}
+
+/**
+ * 1. Set the global 'box-sizing' state to 'border-box'.
+ *    http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+ * 2. Set font family. [normalize.css]
+ * 3. Set the base element's 'font-size' to the value of your choosing.
+ * 4. Work out the unitless 'line-height' for your project based around your
+ *    desired 'line-height' (defined previously in pixels), and your project's
+ *    base font size.
+ * 5. Prevent iOS and IE text size adjust after device orientation change,
+ *    without disabling user zoom. [normalize.css]
+ *
+ */
+html {
+  box-sizing: border-box;
+  /* [1] */
+}
+
+/**
+ * 1. Inherit box-sizing to make it easier to change the property for components
+ *    that leverage other behavior.
+ *    https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/
+ */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  /* [1] */
+}
+
+/**
+ * 1. Fallback for when there is no custom background color defined. [WordPress]
+ * 2. Remove default margin. [normalize.css]
+ */
+body {
+  background-color: #FAFBFD;
+  /* [1] */
+  color: #4D5C6D;
+  /* [additional] */
+  margin: 0;
+  /* [2] */
+  font-size: 18px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  /* [2] */
+  font-size: 16px;
+  /* [3] */
+  line-height: 1.6875rem;
+  /* [4] */
+  -ms-text-size-adjust: 100%;
+  /* [5] */
+  -webkit-text-size-adjust: 100%;
+  /* [5] */
+  overflow-x: hidden;
+}
+body.mce-content-body {
+  font-family: inherit;
+  margin: 0.9375rem;
+}
+
+/**
+ * 1. Remove border when inside 'a' element in IE 8/9/10. [normalize.css]
+ * 2. Offset 'alt' text from surrounding copy.
+ * 3. Make sure images are scaled correctly.
+ * 4. Fluid images for responsive purposes.
+ * 5. Setting 'vertical-align' removes the whitespace that appears under 'img'
+ *    elements when they are dropped into a page as-is. Safer alternative to
+ *    using 'display: block;'.
+ *
+ */
+img {
+  border: 0;
+  /* [1] */
+  font-style: italic;
+  /* [2] */
+  height: auto;
+  /* [3] */
+  max-width: 100%;
+  /* [4] */
+  vertical-align: middle;
+  /* [5] */
+}
+
+/* Default Links */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */
+}
+a {
+  color: #007CFF;
+  outline: 0;
+  text-decoration: none;
+}
+a:hover {
+  color: #007CFF;
+  outline: 0;
+  text-decoration: none;
+}
+a:focus {
+  outline: 0;
+  text-decoration: none;
+}
+
+.black {
+  color: #0d0d0e;
+}
+
+.inverted {
+  color: #fff;
+}
+
+.error {
+  color: #EF3E46;
+}
+
+.success {
+  color: #1CD991;
+}
+
+.warning {
+  color: #f7ba45;
+}
+
+.focus {
+  color: #1c86f2;
+}
+
+.aluminum {
+  color: #f8f8f8;
+}
+
+.silver {
+  color: #e0e1e1;
+}
+
+.lightgray {
+  color: #DEDFE2;
+}
+
+.gray {
+  color: #bdbdbd;
+}
+
+.midgray {
+  color: #676b72;
+}
+
+.darkgray {
+  color: #313439;
+}
+
+.bg-black {
+  background-color: #0d0d0e;
+}
+
+.bg-inverted {
+  background-color: #fff;
+}
+
+.bg-error {
+  background-color: #EF3E46;
+}
+
+.bg-success {
+  background-color: #1CD991;
+}
+
+.bg-warning {
+  background-color: #f7ba45;
+}
+
+.bg-focus {
+  background-color: #1c86f2;
+}
+
+.bg-aluminum {
+  background-color: #f8f8f8;
+}
+
+.bg-silver {
+  background-color: #e0e1e1;
+}
+
+.bg-lightgray {
+  background-color: #DEDFE2;
+}
+
+.bg-gray {
+  background-color: #bdbdbd;
+}
+
+.bg-midgray {
+  background-color: #676b72;
+}
+
+.bg-darkgray {
+  background-color: #313439;
+}
+
+.bg-highlight {
+  background-color: #edf2ff;
+}
+
+/*------------------------------------*\
+    #HEADINGS
+\*------------------------------------*/
+h1, .h1 {
+  font-size: 2.125rem;
+  line-height: 42px;
+}
+
+h2, .h2 {
+  font-size: 1.5rem;
+  line-height: 32px;
+}
+
+h3, .h3 {
+  font-size: 1.25rem;
+  line-height: 28px;
+}
+
+h4, .h4 {
+  font-size: 1.125rem;
+  line-height: 24px;
+}
+
+h5, .h5 {
+  font-size: 1rem;
+  line-height: 21px;
+}
+
+h6, .h6 {
+  font-size: 0.75rem;
+  line-height: 21px;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  color: #122B46;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+
+h6, .h6 {
+  font-weight: 500;
+}
+
+ul, ol, dd {
+  margin: 0 1.6875rem 1.6875rem 0;
+  padding: 0;
+}
+
+/**
+ * Paragraphs
+ */
+/**
+ * Not strictly a paragraph, but probably doesn't need its own section.
+ */
+/**
+ * CODE
+ */
+pre {
+  background: #EEF0F3;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  margin: 0 auto 1.6875rem;
+  max-width: 80%;
+  overflow: auto;
+  /* Contain overflow in all browsers. */
+  padding: 2rem;
+}
+pre code.bash, pre > code {
+  background: transparent;
+  border: 0;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+pre code code.bash {
+  font-size: inherit;
+}
+
+code {
+  padding: 0.125rem 0.375rem;
+  margin: 0 0.1875rem;
+  font-size: 80%;
+  background: #EEF0F3;
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  border-radius: 3px;
+}
+
+/**
+ * 1. Fix an odd quirk whereby, without this, code blocks are rendered at a font-size smaller than 1em.
+ * 2. Correct the odd 'em' font sizing in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+  /* [1] */
+  font-size: 1rem;
+  /* 2 */
+}
+
+/**
+ * Set up quote marks on quoting elements.
+ */
+q,
+blockquote {
+  font-size: 1.25rem;
+  font-weight: 300;
+  font-style: italic;
+  color: #4D5C6D;
+  line-height: 1.637;
+}
+
+/**
+ * HR
+ */
+hr {
+  background-color: #E6EAF0;
+  border: 0;
+  box-sizing: content-box;
+  /* Address differences between Firefox and other browsers. Source- normalize.css */
+  height: 2px;
+}
+
+/**
+ * Address margin not present in IE 8/9 and Safari. [normalize.css]
+ */
+figure {
+  margin: 0;
+}
+
+.text-left {
+  text-align: right;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: left;
+}
+
+ul.unstyled {
+  margin-right: 0;
+}
+ul.unstyled, ul.unstyled ul {
+  list-style: none;
+}
+
+.monospace {
+  font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.lower {
+  text-transform: lowercase;
+}
+
+.italic {
+  font-style: italic !important;
+}
+
+.strong {
+  font-weight: bold !important;
+}
+
+.normal {
+  font-weight: normal !important;
+}
+
+.muted {
+  opacity: .55;
+}
+
+a.muted {
+  color: #0d0d0e;
+}
+
+a.muted:hover {
+  opacity: 1;
+}
+
+.black {
+  color: #0d0d0e;
+}
+
+.smaller {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.small {
+  font-size: 16px;
+  line-height: 24px;
+  color: #A3A5A9;
+}
+
+.big {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.large {
+  font-size: 22px;
+  line-height: 32px;
+}
+
+.end {
+  margin-bottom: 0 !important;
+}
+
+.nowrap,
+.nowrap td {
+  white-space: nowrap;
+}
+
+/* Container */
+.container,
+.container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.container {
+  max-width: 1200px;
+}
+
+.page-template-page-fullscreen .site-content,
+.page-template-page-fullwidth-content .site-content {
+  padding: 0;
+}
+.page-template-page-fullscreen .site-content > .container,
+.page-template-page-fullwidth-content .site-content > .container {
+  max-width: none;
+  padding: 0;
+}
+.page-template-page-fullscreen .content-area,
+.page-template-page-fullwidth-content .content-area {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.page-template-page-fullwidth-content #content {
+  padding-right: 0;
+  padding-left: 0;
+}
+.page-template-page-fullwidth-content #content #primary {
+  max-width: 100%;
+}
+
+.container-full {
+  width: 100vw;
+  position: relative;
+  right: 50%;
+  left: 50%;
+  margin-right: -50vw;
+  margin-left: -50vw;
+}
+
+/* Grid Cell Wrapper */
+.bb-grid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: -10px;
+  margin-left: -10px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+/* Grid Cell */
+.bb-grid > *,
+.bb-grid-cell {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 1px;
+  display: inline-block;
+  list-style: none;
+}
+.bb-grid > *:not(.no-gutter),
+.bb-grid-cell:not(.no-gutter) {
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+/*prevent style tag to display*/
+.site-content-grid > style {
+  display: none;
+}
+
+.grid-reverse {
+  -ms-flex-flow: row-reverse;
+      flex-flow: row-reverse;
+}
+
+/* Alignment Top */
+.align-items-top {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+/* Alignment Bottom */
+.align-items-bottom {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+/* Alignment Center */
+.align-items-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+/* Alignment Center */
+.justify-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* Alignment Top */
+.align-self-top {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+/* Alignment Bottom */
+.align-self-bottom {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+/* Alignment Center */
+.align-self-center {
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.push-center {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.push-right {
+  margin-right: auto;
+}
+
+.push-middle {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.push-bottom {
+  margin-top: auto;
+}
+
+.push-top {
+  margin-bottom: auto;
+}
+
+/* Extra small screen / phone */
+@media (max-width: 543px) {
+  .bb-grid {
+    -ms-flex-flow: row wrap;
+        flex-flow: row wrap;
+  }
+
+  .bb-grid > *,
+  .bb-grid-cell {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+/* Small screen / phone */
+@media (min-width: 544px) {
+  .sm-grid-1-1 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .sm-grid-1-2 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .sm-grid-1-3 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.33333%;
+            flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+
+  .sm-grid-1-4 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
+    max-width: 25%;
+  }
+
+  .sm-grid-1-5 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+            flex: 0 0 20%;
+    max-width: 20%;
+  }
+
+  .sm-grid-1-6 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 16.66667%;
+            flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+  }
+
+  .sm-grid-2-3 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 66.66%;
+            flex: 0 0 66.66%;
+    max-width: 66.66%;
+  }
+
+  .sm-grid-3-4 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 75%;
+            flex: 0 0 75%;
+    max-width: 75%;
+  }
+}
+/* Medium screen / tablet */
+@media (min-width: 800px) {
+  .md-grid-1-1 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .md-grid-1-2 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .md-grid-1-3 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.33333%;
+            flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+
+  .md-grid-1-4 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
+    max-width: 25%;
+  }
+
+  .md-grid-1-5 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+            flex: 0 0 20%;
+    max-width: 20%;
+  }
+
+  .md-grid-1-6 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 16.66667%;
+            flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+  }
+
+  .md-grid-2-3 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 66.66%;
+            flex: 0 0 66.66%;
+    max-width: 66.66%;
+  }
+
+  .md-grid-3-4 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 75%;
+            flex: 0 0 75%;
+    max-width: 75%;
+  }
+
+  .md-grid-reverse {
+    -ms-flex-flow: row-reverse;
+        flex-flow: row-reverse;
+  }
+}
+/* Large screen / desktop */
+@media (min-width: 992px) {
+  .lg-grid-1-1 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  .lg-grid-1-2 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+    max-width: 50%;
+  }
+
+  .lg-grid-1-3 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.33333%;
+            flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+  }
+
+  .lg-grid-1-4 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
+    max-width: 25%;
+  }
+
+  .lg-grid-1-5 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 20%;
+            flex: 0 0 20%;
+    max-width: 20%;
+  }
+
+  .lg-grid-1-6 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 16.66667%;
+            flex: 0 0 16.66667%;
+    max-width: 16.66667%;
+  }
+
+  .lg-grid-2-3 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 66.66%;
+            flex: 0 0 66.66%;
+    max-width: 66.66%;
+  }
+
+  .lg-grid-3-4 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 75%;
+            flex: 0 0 75%;
+    max-width: 75%;
+  }
+
+  .lg-grid-reverse {
+    -ms-flex-flow: row-reverse;
+        flex-flow: row-reverse;
+  }
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  max-width: 100%;
+  width: 100%;
+  empty-cells: show;
+  font-size: 17px;
+  line-height: 24px;
+  margin-bottom: 27px;
+}
+
+table caption {
+  text-align: right;
+  font-size: 16px;
+  font-weight: 500;
+  color: #A3A5A9;
+}
+
+th {
+  text-align: right;
+  font-weight: 700;
+  vertical-align: bottom;
+}
+
+td {
+  vertical-align: top;
+}
+
+tr.align-middle td,
+td.align-middle {
+  vertical-align: middle;
+}
+
+th,
+td {
+  padding: 1rem 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+th:first-child,
+td:first-child {
+  padding-right: 0;
+}
+th:last-child,
+td:last-child {
+  padding-left: 0;
+}
+
+tfoot th,
+tfoot td {
+  color: #A3A5A9;
+}
+
+table.bordered td, table.bordered th {
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+table.striped tr:nth-child(odd) td {
+  background: #f8f8f8;
+}
+
+table.bordered td:first-child, table.bordered th:first-child,
+table.striped td:first-child,
+table.striped th:first-child {
+  padding-right: 1rem;
+}
+table.bordered td:last-child, table.bordered th:last-child,
+table.striped td:last-child,
+table.striped th:last-child {
+  padding-left: 1rem;
+}
+
+table.unstyled td, table.unstyled th {
+  border: none;
+  padding: 0;
+}
+
+fieldset {
+  font-family: inherit;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+input,
+textarea,
+select {
+  display: inline-block;
+  font-family: inherit;
+  font-style: inherit;
+  font-size: 15px;
+  height: 40px;
+  outline: none;
+  vertical-align: middle;
+  background-color: #fff;
+  border: 1px solid #DEDFE2;
+  border-radius: 3px;
+  box-shadow: none;
+  padding: 0 12px;
+  color: #4D5C6D;
+}
+input.placeholder,
+textarea.placeholder,
+select.placeholder {
+  color: #C3C6C9;
+}
+input:-moz-placeholder,
+textarea:-moz-placeholder,
+select:-moz-placeholder {
+  color: #C3C6C9;
+}
+input::-moz-placeholder,
+textarea::-moz-placeholder,
+select::-moz-placeholder {
+  color: #C3C6C9;
+}
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder,
+select:-ms-input-placeholder {
+  color: #C3C6C9;
+}
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder,
+select::-webkit-input-placeholder {
+  color: #C3C6C9;
+}
+
+input.small,
+textarea.small,
+select.small {
+  height: 34px;
+  font-size: 13px;
+  padding: 0 12px;
+  border-radius: 3px;
+}
+
+input.big,
+textarea.big,
+select.big {
+  height: 48px;
+  font-size: 17px;
+  padding: 0 12px;
+  border-radius: 3px;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+  background-color: #fff;
+  border-color: rgba(0, 0, 0, 0.25);
+  box-shadow: none;
+}
+input.error,
+textarea.error,
+select.error {
+  background-color: rgba(239, 62, 70, 0.1);
+  border: 1px solid #f5858a;
+}
+input.error:focus,
+textarea.error:focus,
+select.error:focus {
+  border-color: #EF3E46;
+  box-shadow: none;
+}
+input.success,
+textarea.success,
+select.success {
+  background-color: rgba(28, 217, 145, 0.1);
+  border: 1px solid #58e9b2;
+}
+input.success:focus,
+textarea.success:focus,
+select.success:focus {
+  border-color: #1CD991;
+  box-shadow: none;
+}
+input:disabled, input.disabled,
+textarea:disabled,
+textarea.disabled,
+select:disabled,
+select.disabled {
+  resize: none;
+  opacity: 0.6;
+  cursor: default;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+select {
+  -webkit-appearance: none;
+  background-image: url("../images/svg/arrow-down.svg");
+  background-repeat: no-repeat;
+  background-position: left 1rem center;
+  padding-left: 40px;
+}
+
+select[multiple] {
+  background-image: none;
+  height: auto;
+  padding: .5rem .75rem;
+}
+
+textarea {
+  height: auto;
+  padding: 8px 12px;
+  line-height: 27px;
+  vertical-align: top;
+}
+
+input[type="file"] {
+  width: auto;
+  border: none;
+  padding: 0;
+  height: auto;
+  background: none;
+  box-shadow: none;
+  display: inline-block;
+}
+
+input[name="bbp_search"],
+input[type="search"],
+input.search {
+  background-repeat: no-repeat;
+  background-position: 10px 50%;
+  background-size: 16px;
+  background-image: url("../images/svg/search.svg");
+  background-position: right 10px center;
+  padding-right: 2rem;
+  /*opacity: 0.6;*/
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  padding: 0;
+}
+
+label {
+  /*display: block;*/
+  color: #122B46;
+  margin-bottom: 0.25rem;
+  font-size: 17px;
+}
+label.checkbox, label .desc, label .success, label .error {
+  text-transform: none;
+  font-weight: normal;
+}
+label.checkbox {
+  font-size: 18px;
+  line-height: 27px;
+  cursor: pointer;
+  color: inherit;
+}
+label.checkbox input {
+  margin-top: 0;
+}
+
+.form-checkboxes label.checkbox {
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+.req {
+  position: relative;
+  top: 1px;
+  font-weight: bold;
+  color: #EF3E46;
+  font-size: 110%;
+}
+
+span.desc,
+div.desc {
+  color: rgba(77, 92, 109, 0.5);
+  font-size: 14px;
+  line-height: 20px;
+}
+
+span.desc {
+  margin-right: 4px;
+}
+
+div.desc {
+  margin-top: 0.25rem;
+  margin-bottom: -0.5rem;
+}
+
+.form-buttons button, .form-buttons .button {
+  margin-left: 0.5rem;
+}
+
+form,
+.form-item {
+  margin-bottom: 2rem;
+}
+
+.form > .form-item:last-child {
+  margin-bottom: 0;
+}
+.form .row:last-child .form-item {
+  margin-bottom: 0;
+}
+.form span.success, .form span.error {
+  font-size: 14px;
+  line-height: 20px;
+  margin-right: 0.25rem;
+}
+
+.form-inline input, .form-inline textarea, .form-inline select {
+  display: inline-block;
+  width: auto;
+}
+
+.append,
+.prepend {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.append input,
+.prepend input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.append .button, .append span,
+.prepend .button,
+.prepend span {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.append span,
+.prepend span {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-weight: normal;
+  border: 1px solid #DEDFE2;
+  background-color: #f8f8f8;
+  padding: 0 .875rem;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.prepend input {
+  border-radius: 3px 0 0 3px;
+}
+.prepend .button {
+  margin-left: -1px;
+  border-radius: 0 3px 3px 0 !important;
+}
+.prepend span {
+  border-left: none;
+  border-radius: 0 3px 3px 0;
+}
+
+.append input {
+  border-radius: 0 3px 3px 0;
+}
+.append .button {
+  margin-right: -1px;
+  border-radius: 3px 0 0 3px !important;
+}
+.append span {
+  border-right: none;
+  border-radius: 3px 0 0 3px;
+}
+
+.bs-styled-checkbox {
+  position: absolute;
+  opacity: 0;
+}
+.bs-styled-checkbox + label {
+  cursor: pointer;
+  position: relative;
+  padding: 0;
+  line-height: 1;
+}
+.bs-styled-checkbox + label:before {
+  content: '';
+  margin-left: 10px;
+  display: inline-block;
+  vertical-align: text-top;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 3px;
+  border: 1px solid #C9CBCA;
+}
+.bs-styled-checkbox:checked + label:before {
+  background: #007CFF;
+  border-color: #007CFF;
+}
+.bs-styled-checkbox:disabled + label {
+  color: #b8b8b8;
+  cursor: auto;
+}
+.bs-styled-checkbox:disabled + label:before {
+  box-shadow: none;
+  background: #ddd;
+}
+.bs-styled-checkbox:checked + label:after {
+  content: '\E876';
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  font-family: 'bb-icons';
+  color: #fff;
+  font-size: 14px;
+  line-height: 1;
+  display: block;
+}
+
+.bs-styled-radio {
+  position: absolute;
+  opacity: 0;
+}
+.bs-styled-radio + label, .bs-styled-radio + .bb-radio-label {
+  position: relative;
+  cursor: pointer;
+  padding: 0;
+}
+.bs-styled-radio + label:before, .bs-styled-radio + .bb-radio-label:before {
+  content: '';
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  width: 22px;
+  height: 22px;
+  line-height: 1;
+  background-color: #fff;
+  border: 2px solid #D6DCE6;
+  border-radius: 100%;
+  margin-left: 10px;
+}
+.bs-styled-radio:disabled + label, .bs-styled-radio:disabled + .bb-radio-label {
+  color: #b8b8b8;
+  cursor: auto;
+}
+.bs-styled-radio:disabled + label:before, .bs-styled-radio:disabled + .bb-radio-label:before {
+  box-shadow: none;
+  background: #ddd;
+}
+.bs-styled-radio:checked + label:after, .bs-styled-radio:checked + .bb-radio-label:after {
+  content: '';
+  background-color: #007CFF;
+  margin: auto;
+  width: 14px;
+  position: absolute;
+  height: 14px;
+  text-align: center;
+  right: 4px;
+  top: 5px;
+  border-radius: 100%;
+}
+
+@media screen and (max-width: 544px) {
+  form.search-form > label {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  form.search-form > label input[type="search"] {
+    width: 100%;
+  }
+}
+/* clears the 'X' from Chrome */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+button,
+.button,
+input[type=button],
+input[type=submit],
+.buddypress .buddypress-wrap .comment-reply-link,
+.buddypress .buddypress-wrap .generic-button a,
+.buddypress .buddypress-wrap a.bp-title-button,
+.buddypress .buddypress-wrap a.button,
+.buddypress .buddypress-wrap button,
+.buddypress .buddypress-wrap input[type=button],
+.buddypress .buddypress-wrap input[type=reset],
+.buddypress .buddypress-wrap input[type=submit],
+.buddypress .buddypress-wrap ul.button-nav:not(.button-tabs) li a {
+  font-family: inherit;
+  font-size: 15px;
+  color: #fff;
+  background-color: #007CFF;
+  border-radius: 100px;
+  padding: 10px 20px;
+  font-weight: 500;
+  font-style: normal;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  display: inline-block;
+  line-height: 1.3;
+  border: 1px solid transparent;
+  outline: none;
+  vertical-align: middle;
+  -webkit-appearance: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-transition: all linear 0.2s;
+          transition: all linear 0.2s;
+}
+button i,
+.button i,
+input[type=button] i,
+input[type=submit] i,
+.buddypress .buddypress-wrap .comment-reply-link i,
+.buddypress .buddypress-wrap .generic-button a i,
+.buddypress .buddypress-wrap a.bp-title-button i,
+.buddypress .buddypress-wrap a.button i,
+.buddypress .buddypress-wrap button i,
+.buddypress .buddypress-wrap input[type=button] i,
+.buddypress .buddypress-wrap input[type=reset] i,
+.buddypress .buddypress-wrap input[type=submit] i,
+.buddypress .buddypress-wrap ul.button-nav:not(.button-tabs) li a i {
+  position: relative;
+  /*top: 1px;*/
+  /*margin: 0 2px;*/
+}
+button:hover, button:focus,
+.button:hover,
+.button:focus,
+input[type=button]:hover,
+input[type=button]:focus,
+input[type=submit]:hover,
+input[type=submit]:focus,
+.buddypress .buddypress-wrap .comment-reply-link:hover,
+.buddypress .buddypress-wrap .comment-reply-link:focus,
+.buddypress .buddypress-wrap .generic-button a:hover,
+.buddypress .buddypress-wrap .generic-button a:focus,
+.buddypress .buddypress-wrap a.bp-title-button:hover,
+.buddypress .buddypress-wrap a.bp-title-button:focus,
+.buddypress .buddypress-wrap a.button:hover,
+.buddypress .buddypress-wrap a.button:focus,
+.buddypress .buddypress-wrap button:hover,
+.buddypress .buddypress-wrap button:focus,
+.buddypress .buddypress-wrap input[type=button]:hover,
+.buddypress .buddypress-wrap input[type=button]:focus,
+.buddypress .buddypress-wrap input[type=reset]:hover,
+.buddypress .buddypress-wrap input[type=reset]:focus,
+.buddypress .buddypress-wrap input[type=submit]:hover,
+.buddypress .buddypress-wrap input[type=submit]:focus,
+.buddypress .buddypress-wrap ul.button-nav:not(.button-tabs) li a:hover,
+.buddypress .buddypress-wrap ul.button-nav:not(.button-tabs) li a:focus {
+  outline: none;
+  text-decoration: none;
+  color: #fff;
+  box-shadow: inset 0 0 0 99999px rgba(0, 0, 0, 0.1);
+}
+button:active,
+.button:active,
+input[type=button]:active,
+input[type=submit]:active,
+.buddypress .buddypress-wrap .comment-reply-link:active,
+.buddypress .buddypress-wrap .generic-button a:active,
+.buddypress .buddypress-wrap a.bp-title-button:active,
+.buddypress .buddypress-wrap a.button:active,
+.buddypress .buddypress-wrap button:active,
+.buddypress .buddypress-wrap input[type=button]:active,
+.buddypress .buddypress-wrap input[type=reset]:active,
+.buddypress .buddypress-wrap input[type=submit]:active,
+.buddypress .buddypress-wrap ul.button-nav:not(.button-tabs) li a:active {
+  outline: none;
+  text-decoration: none;
+  color: #fff;
+  box-shadow: inset 0 0 0 99999px rgba(0, 0, 0, 0.1);
+}
+button.disabled,
+.button.disabled,
+input[type=button].disabled,
+input[type=submit].disabled,
+.buddypress .buddypress-wrap .comment-reply-link.disabled,
+.buddypress .buddypress-wrap .generic-button a.disabled,
+.buddypress .buddypress-wrap a.bp-title-button.disabled,
+.buddypress .buddypress-wrap a.button.disabled,
+.buddypress .buddypress-wrap button.disabled,
+.buddypress .buddypress-wrap input[type=button].disabled,
+.buddypress .buddypress-wrap input[type=reset].disabled,
+.buddypress .buddypress-wrap input[type=submit].disabled,
+.buddypress .buddypress-wrap ul.button-nav:not(.button-tabs) li a.disabled {
+  cursor: default;
+  font-style: normal;
+  color: #C8CBCF;
+  background-color: #F5F5F5;
+  opacity: 1;
+}
+button.small,
+.button.small,
+input[type=button].small,
+input[type=submit].small,
+.buddypress .buddypress-wrap .comment-reply-link.small,
+.buddypress .buddypress-wrap .generic-button a.small,
+.buddypress .buddypress-wrap a.bp-title-button.small,
+.buddypress .buddypress-wrap a.button.small,
+.buddypress .buddypress-wrap button.small,
+.buddypress .buddypress-wrap input[type=button].small,
+.buddypress .buddypress-wrap input[type=reset].small,
+.buddypress .buddypress-wrap input[type=submit].small,
+.buddypress .buddypress-wrap ul.button-nav:not(.button-tabs) li a.small {
+  font-size: 14px;
+  font-weight: 500;
+  min-height: 34px;
+  padding: 6px 20px;
+  border-radius: 100px;
+}
+button.big,
+.button.big,
+input[type=button].big,
+input[type=submit].big,
+.buddypress .buddypress-wrap .comment-reply-link.big,
+.buddypress .buddypress-wrap .generic-button a.big,
+.buddypress .buddypress-wrap a.bp-title-button.big,
+.buddypress .buddypress-wrap a.button.big,
+.buddypress .buddypress-wrap button.big,
+.buddypress .buddypress-wrap input[type=button].big,
+.buddypress .buddypress-wrap input[type=reset].big,
+.buddypress .buddypress-wrap input[type=submit].big,
+.buddypress .buddypress-wrap ul.button-nav:not(.button-tabs) li a.big {
+  font-size: 16px;
+  min-height: 62px;
+  padding: 20px 40px;
+  border-radius: 100px;
+}
+button.large,
+.button.large,
+input[type=button].large,
+input[type=submit].large,
+.buddypress .buddypress-wrap .comment-reply-link.large,
+.buddypress .buddypress-wrap .generic-button a.large,
+.buddypress .buddypress-wrap a.bp-title-button.large,
+.buddypress .buddypress-wrap a.button.large,
+.buddypress .buddypress-wrap button.large,
+.buddypress .buddypress-wrap input[type=button].large,
+.buddypress .buddypress-wrap input[type=reset].large,
+.buddypress .buddypress-wrap input[type=submit].large,
+.buddypress .buddypress-wrap ul.button-nav:not(.button-tabs) li a.large {
+  font-size: 16px;
+  min-height: 50px;
+  padding: 14px 30px;
+  border-radius: 100px;
+}
+button.full,
+.button.full,
+input[type=button].full,
+input[type=submit].full,
+.buddypress .buddypress-wrap .comment-reply-link.full,
+.buddypress .buddypress-wrap .generic-button a.full,
+.buddypress .buddypress-wrap a.bp-title-button.full,
+.buddypress .buddypress-wrap a.button.full,
+.buddypress .buddypress-wrap button.full,
+.buddypress .buddypress-wrap input[type=button].full,
+.buddypress .buddypress-wrap input[type=reset].full,
+.buddypress .buddypress-wrap input[type=submit].full,
+.buddypress .buddypress-wrap ul.button-nav:not(.button-tabs) li a.full {
+  width: 100%;
+}
+button.secondary,
+.button.secondary,
+input[type=button].secondary,
+input[type=submit].secondary,
+.buddypress .buddypress-wrap .comment-reply-link.secondary,
+.buddypress .buddypress-wrap .generic-button a.secondary,
+.buddypress .buddypress-wrap a.bp-title-button.secondary,
+.buddypress .buddypress-wrap a.button.secondary,
+.buddypress .buddypress-wrap button.secondary,
+.buddypress .buddypress-wrap input[type=button].secondary,
+.buddypress .buddypress-wrap input[type=reset].secondary,
+.buddypress .buddypress-wrap input[type=submit].secondary,
+.buddypress .buddypress-wrap ul.button-nav:not(.button-tabs) li a.secondary {
+  color: #fff;
+  background-color: #A1ABB5;
+}
+button.secondary:hover,
+.button.secondary:hover,
+input[type=button].secondary:hover,
+input[type=submit].secondary:hover,
+.buddypress .buddypress-wrap .comment-reply-link.secondary:hover,
+.buddypress .buddypress-wrap .generic-button a.secondary:hover,
+.buddypress .buddypress-wrap a.bp-title-button.secondary:hover,
+.buddypress .buddypress-wrap a.button.secondary:hover,
+.buddypress .buddypress-wrap button.secondary:hover,
+.buddypress .buddypress-wrap input[type=button].secondary:hover,
+.buddypress .buddypress-wrap input[type=reset].secondary:hover,
+.buddypress .buddypress-wrap input[type=submit].secondary:hover,
+.buddypress .buddypress-wrap ul.button-nav:not(.button-tabs) li a.secondary:hover {
+  color: #fff;
+  background-color: #939eaa;
+}
+button.secondary:active,
+.button.secondary:active,
+input[type=button].secondary:active,
+input[type=submit].secondary:active,
+.buddypress .buddypress-wrap .comment-reply-link.secondary:active,
+.buddypress .buddypress-wrap .generic-button a.secondary:active,
+.buddypress .buddypress-wrap a.bp-title-button.secondary:active,
+.buddypress .buddypress-wrap a.button.secondary:active,
+.buddypress .buddypress-wrap button.secondary:active,
+.buddypress .buddypress-wrap input[type=button].secondary:active,
+.buddypress .buddypress-wrap input[type=reset].secondary:active,
+.buddypress .buddypress-wrap input[type=submit].secondary:active,
+.buddypress .buddypress-wrap ul.button-nav:not(.button-tabs) li a.secondary:active {
+  color: #fff;
+  background-color: #bbc2c9;
+}
+button.secondary:disabled, button.secondary.disabled,
+.button.secondary:disabled,
+.button.secondary.disabled,
+input[type=button].secondary:disabled,
+input[type=button].secondary.disabled,
+input[type=submit].secondary:disabled,
+input[type=submit].secondary.disabled,
+.buddypress .buddypress-wrap .comment-reply-link.secondary:disabled,
+.buddypress .buddypress-wrap .comment-reply-link.secondary.disabled,
+.buddypress .buddypress-wrap .generic-button a.secondary:disabled,
+.buddypress .buddypress-wrap .generic-button a.secondary.disabled,
+.buddypress .buddypress-wrap a.bp-title-button.secondary:disabled,
+.buddypress .buddypress-wrap a.bp-title-button.secondary.disabled,
+.buddypress .buddypress-wrap a.button.secondary:disabled,
+.buddypress .buddypress-wrap a.button.secondary.disabled,
+.buddypress .buddypress-wrap button.secondary:disabled,
+.buddypress .buddypress-wrap button.secondary.disabled,
+.buddypress .buddypress-wrap input[type=button].secondary:disabled,
+.buddypress .buddypress-wrap input[type=button].secondary.disabled,
+.buddypress .buddypress-wrap input[type=reset].secondary:disabled,
+.buddypress .buddypress-wrap input[type=reset].secondary.disabled,
+.buddypress .buddypress-wrap input[type=submit].secondary:disabled,
+.buddypress .buddypress-wrap input[type=submit].secondary.disabled,
+.buddypress .buddypress-wrap ul.button-nav:not(.button-tabs) li a.secondary:disabled,
+.buddypress .buddypress-wrap ul.button-nav:not(.button-tabs) li a.secondary.disabled {
+  color: #C8CBCF;
+  background-color: #F5F5F5;
+}
+button.secondary.outline,
+.button.secondary.outline,
+input[type=button].secondary.outline,
+input[type=submit].secondary.outline,
+.buddypress .buddypress-wrap .comment-reply-link.secondary.outline,
+.buddypress .buddypress-wrap .generic-button a.secondary.outline,
+.buddypress .buddypress-wrap a.bp-title-button.secondary.outline,
+.buddypress .buddypress-wrap a.button.secondary.outline,
+.buddypress .buddypress-wrap button.secondary.outline,
+.buddypress .buddypress-wrap input[type=button].secondary.outline,
+.buddypress .buddypress-wrap input[type=reset].secondary.outline,
+.buddypress .buddypress-wrap input[type=submit].secondary.outline,
+.buddypress .buddypress-wrap ul.button-nav:not(.button-tabs) li a.secondary.outline {
+  background: none;
+  color: #A1ABB5;
+  border-color: #A1ABB5;
+}
+button.secondary.outline:hover,
+.button.secondary.outline:hover,
+input[type=button].secondary.outline:hover,
+input[type=submit].secondary.outline:hover,
+.buddypress .buddypress-wrap .comment-reply-link.secondary.outline:hover,
+.buddypress .buddypress-wrap .generic-button a.secondary.outline:hover,
+.buddypress .buddypress-wrap a.bp-title-button.secondary.outline:hover,
+.buddypress .buddypress-wrap a.button.secondary.outline:hover,
+.buddypress .buddypress-wrap button.secondary.outline:hover,
+.buddypress .buddypress-wrap input[type=button].secondary.outline:hover,
+.buddypress .buddypress-wrap input[type=reset].secondary.outline:hover,
+.buddypress .buddypress-wrap input[type=submit].secondary.outline:hover,
+.buddypress .buddypress-wrap ul.button-nav:not(.button-tabs) li a.secondary.outline:hover {
+  color: #939eaa;
+  border-color: #939eaa;
+}
+button.secondary.outline:active,
+.button.secondary.outline:active,
+input[type=button].secondary.outline:active,
+input[type=submit].secondary.outline:active,
+.buddypress .buddypress-wrap .comment-reply-link.secondary.outline:active,
+.buddypress .buddypress-wrap .generic-button a.secondary.outline:active,
+.buddypress .buddypress-wrap a.bp-title-button.secondary.outline:active,
+.buddypress .buddypress-wrap a.button.secondary.outline:active,
+.buddypress .buddypress-wrap button.secondary.outline:active,
+.buddypress .buddypress-wrap input[type=button].secondary.outline:active,
+.buddypress .buddypress-wrap input[type=reset].secondary.outline:active,
+.buddypress .buddypress-wrap input[type=submit].secondary.outline:active,
+.buddypress .buddypress-wrap ul.button-nav:not(.button-tabs) li a.secondary.outline:active {
+  color: #c3cad0;
+  border-color: #c3cad0;
+}
+button.secondary.outline:disabled, button.secondary.outline.disabled,
+.button.secondary.outline:disabled,
+.button.secondary.outline.disabled,
+input[type=button].secondary.outline:disabled,
+input[type=button].secondary.outline.disabled,
+input[type=submit].secondary.outline:disabled,
+input[type=submit].secondary.outline.disabled,
+.buddypress .buddypress-wrap .comment-reply-link.secondary.outline:disabled,
+.buddypress .buddypress-wrap .comment-reply-link.secondary.outline.disabled,
+.buddypress .buddypress-wrap .generic-button a.secondary.outline:disabled,
+.buddypress .buddypress-wrap .generic-button a.secondary.outline.disabled,
+.buddypress .buddypress-wrap a.bp-title-button.secondary.outline:disabled,
+.buddypress .buddypress-wrap a.bp-title-button.secondary.outline.disabled,
+.buddypress .buddypress-wrap a.button.secondary.outline:disabled,
+.buddypress .buddypress-wrap a.button.secondary.outline.disabled,
+.buddypress .buddypress-wrap button.secondary.outline:disabled,
+.buddypress .buddypress-wrap button.secondary.outline.disabled,
+.buddypress .buddypress-wrap input[type=button].secondary.outline:disabled,
+.buddypress .buddypress-wrap input[type=button].secondary.outline.disabled,
+.buddypress .buddypress-wrap input[type=reset].secondary.outline:disabled,
+.buddypress .buddypress-wrap input[type=reset].secondary.outline.disabled,
+.buddypress .buddypress-wrap input[type=submit].secondary.outline:disabled,
+.buddypress .buddypress-wrap input[type=submit].secondary.outline.disabled,
+.buddypress .buddypress-wrap ul.button-nav:not(.button-tabs) li a.secondary.outline:disabled,
+.buddypress .buddypress-wrap ul.button-nav:not(.button-tabs) li a.secondary.outline.disabled {
+  background: #f5f5f5;
+  color: #DEDFE2;
+  border-color: #DEDFE2;
+  opacity: 1;
+}
+button.success,
+.button.success,
+input[type=button].success,
+input[type=submit].success,
+.buddypress .buddypress-wrap .comment-reply-link.success,
+.buddypress .buddypress-wrap .generic-button a.success,
+.buddypress .buddypress-wrap a.bp-title-button.success,
+.buddypress .buddypress-wrap a.button.success,
+.buddypress .buddypress-wrap button.success,
+.buddypress .buddypress-wrap input[type=button].success,
+.buddypress .buddypress-wrap input[type=reset].success,
+.buddypress .buddypress-wrap input[type=submit].success,
+.buddypress .buddypress-wrap ul.button-nav:not(.button-tabs) li a.success {
+  color: #fff;
+  background-color: #28cf8b;
+}
+button.success:hover,
+.button.success:hover,
+input[type=button].success:hover,
+input[type=submit].success:hover,
+.buddypress .buddypress-wrap .comment-reply-link.success:hover,
+.buddypress .buddypress-wrap .generic-button a.success:hover,
+.buddypress .buddypress-wrap a.bp-title-button.success:hover,
+.buddypress .buddypress-wrap a.button.success:hover,
+.buddypress .buddypress-wrap button.success:hover,
+.buddypress .buddypress-wrap input[type=button].success:hover,
+.buddypress .buddypress-wrap input[type=reset].success:hover,
+.buddypress .buddypress-wrap input[type=submit].success:hover,
+.buddypress .buddypress-wrap ul.button-nav:not(.button-tabs) li a.success:hover {
+  color: #fff;
+  background-color: #24ba7d;
+}
+button.success:active,
+.button.success:active,
+input[type=button].success:active,
+input[type=submit].success:active,
+.buddypress .buddypress-wrap .comment-reply-link.success:active,
+.buddypress .buddypress-wrap .generic-button a.success:active,
+.buddypress .buddypress-wrap a.bp-title-button.success:active,
+.buddypress .buddypress-wrap a.button.success:active,
+.buddypress .buddypress-wrap button.success:active,
+.buddypress .buddypress-wrap input[type=button].success:active,
+.buddypress .buddypress-wrap input[type=reset].success:active,
+.buddypress .buddypress-wrap input[type=submit].success:active,
+.buddypress .buddypress-wrap ul.button-nav:not(.button-tabs) li a.success:active {
+  color: #fff;
+  background-color: #49dca0;
+}
+button.success:disabled, button.success.disabled,
+.button.success:disabled,
+.button.success.disabled,
+input[type=button].success:disabled,
+input[type=button].success.disabled,
+input[type=submit].success:disabled,
+input[type=submit].success.disabled,
+.buddypress .buddypress-wrap .comment-reply-link.success:disabled,
+.buddypress .buddypress-wrap .comment-reply-link.success.disabled,
+.buddypress .buddypress-wrap .generic-button a.success:disabled,
+.buddypress .buddypress-wrap .generic-button a.success.disabled,
+.buddypress .buddypress-wrap a.bp-title-button.success:disabled,
+.buddypress .buddypress-wrap a.bp-title-button.success.disabled,
+.buddypress .buddypress-wrap a.button.success:disabled,
+.buddypress .buddypress-wrap a.button.success.disabled,
+.buddypress .buddypress-wrap button.success:disabled,
+.buddypress .buddypress-wrap button.success.disabled,
+.buddypress .buddypress-wrap input[type=button].success:disabled,
+.buddypress .buddypress-wrap input[type=button].success.disabled,
+.buddypress .buddypress-wrap input[type=reset].success:disabled,
+.buddypress .buddypress-wrap input[type=reset].success.disabled,
+.buddypress .buddypress-wrap input[type=submit].success:disabled,
+.buddypress .buddypress-wrap input[type=submit].success.disabled,
+.buddypress .buddypress-wrap ul.button-nav:not(.button-tabs) li a.success:disabled,
+.buddypress .buddypress-wrap ul.button-nav:not(.button-tabs) li a.success.disabled {
+  color: #C8CBCF;
+  background-color: #F5F5F5;
+}
+button.success.outline,
+.button.success.outline,
+input[type=button].success.outline,
+input[type=submit].success.outline,
+.buddypress .buddypress-wrap .comment-reply-link.success.outline,
+.buddypress .buddypress-wrap .generic-button a.success.outline,
+.buddypress .buddypress-wrap a.bp-title-button.success.outline,
+.buddypress .buddypress-wrap a.button.success.outline,
+.buddypress .buddypress-wrap button.success.outline,
+.buddypress .buddypress-wrap input[type=button].success.outline,
+.buddypress .buddypress-wrap input[type=reset].success.outline,
+.buddypress .buddypress-wrap input[type=submit].success.outline,
+.buddypress .buddypress-wrap ul.button-nav:not(.button-tabs) li a.success.outline {
+  background: none;
+  color: #28cf8b;
+  border-color: #28cf8b;
+}
+button.success.outline:hover,
+.button.success.outline:hover,
+input[type=button].success.outline:hover,
+input[type=submit].success.outline:hover,
+.buddypress .buddypress-wrap .comment-reply-link.success.outline:hover,
+.buddypress .buddypress-wrap .generic-button a.success.outline:hover,
+.buddypress .buddypress-wrap a.bp-title-button.success.outline:hover,
+.buddypress .buddypress-wrap a.button.success.outline:hover,
+.buddypress .buddypress-wrap button.success.outline:hover,
+.buddypress .buddypress-wrap input[type=button].success.outline:hover,
+.buddypress .buddypress-wrap input[type=reset].success.outline:hover,
+.buddypress .buddypress-wrap input[type=submit].success.outline:hover,
+.buddypress .buddypress-wrap ul.button-nav:not(.button-tabs) li a.success.outline:hover {
+  color: #24ba7d;
+  border-color: #24ba7d;
+}
+button.success.outline:active,
+.button.success.outline:active,
+input[type=button].success.outline:active,
+input[type=submit].success.outline:active,
+.buddypress .buddypress-wrap .comment-reply-link.success.outline:active,
+.buddypress .buddypress-wrap .generic-button a.success.outline:active,
+.buddypress .buddypress-wrap a.bp-title-button.success.outline:active,
+.buddypress .buddypress-wrap a.button.success.outline:active,
+.buddypress .buddypress-wrap button.success.outline:active,
+.buddypress .buddypress-wrap input[type=button].success.outline:active,
+.buddypress .buddypress-wrap input[type=reset].success.outline:active,
+.buddypress .buddypress-wrap input[type=submit].success.outline:active,
+.buddypress .buddypress-wrap ul.button-nav:not(.button-tabs) li a.success.outline:active {
+  color: #56dea7;
+  border-color: #56dea7;
+}
+button.success.outline:disabled, button.success.outline.disabled,
+.button.success.outline:disabled,
+.button.success.outline.disabled,
+input[type=button].success.outline:disabled,
+input[type=button].success.outline.disabled,
+input[type=submit].success.outline:disabled,
+input[type=submit].success.outline.disabled,
+.buddypress .buddypress-wrap .comment-reply-link.success.outline:disabled,
+.buddypress .buddypress-wrap .comment-reply-link.success.outline.disabled,
+.buddypress .buddypress-wrap .generic-button a.success.outline:disabled,
+.buddypress .buddypress-wrap .generic-button a.success.outline.disabled,
+.buddypress .buddypress-wrap a.bp-title-button.success.outline:disabled,
+.buddypress .buddypress-wrap a.bp-title-button.success.outline.disabled,
+.buddypress .buddypress-wrap a.button.success.outline:disabled,
+.buddypress .buddypress-wrap a.button.success.outline.disabled,
+.buddypress .buddypress-wrap button.success.outline:disabled,
+.buddypress .buddypress-wrap button.success.outline.disabled,
+.buddypress .buddypress-wrap input[type=button].success.outline:disabled,
+.buddypress .buddypress-wrap input[type=button].success.outline.disabled,
+.buddypress .buddypress-wrap input[type=reset].success.outline:disabled,
+.buddypress .buddypress-wrap input[type=reset].success.outline.disabled,
+.buddypress .buddypress-wrap input[type=submit].success.outline:disabled,
+.buddypress .buddypress-wrap input[type=submit].success.outline.disabled,
+.buddypress .buddypress-wrap ul.button-nav:not(.button-tabs) li a.success.outline:disabled,
+.buddypress .buddypress-wrap ul.button-nav:not(.button-tabs) li a.success.outline.disabled {
+  background: #f5f5f5;
+  color: #DEDFE2;
+  border-color: #DEDFE2;
+  opacity: 1;
+}
+button.error,
+.button.error,
+input[type=button].error,
+input[type=submit].error,
+.buddypress .buddypress-wrap .comment-reply-link.error,
+.buddypress .buddypress-wrap .generic-button a.error,
+.buddypress .buddypress-wrap a.bp-title-button.error,
+.buddypress .buddypress-wrap a.button.error,
+.buddypress .buddypress-wrap button.error,
+.buddypress .buddypress-wrap input[type=button].error,
+.buddypress .buddypress-wrap input[type=reset].error,
+.buddypress .buddypress-wrap input[type=submit].error,
+.buddypress .buddypress-wrap ul.button-nav:not(.button-tabs) li a.error {
+  color: #fff;
+  background-color: #EF3E46;
+}
+button.error:hover,
+.button.error:hover,
+input[type=button].error:hover,
+input[type=submit].error:hover,
+.buddypress .buddypress-wrap .comment-reply-link.error:hover,
+.buddypress .buddypress-wrap .generic-button a.error:hover,
+.buddypress .buddypress-wrap a.bp-title-button.error:hover,
+.buddypress .buddypress-wrap a.button.error:hover,
+.buddypress .buddypress-wrap button.error:hover,
+.buddypress .buddypress-wrap input[type=button].error:hover,
+.buddypress .buddypress-wrap input[type=reset].error:hover,
+.buddypress .buddypress-wrap input[type=submit].error:hover,
+.buddypress .buddypress-wrap ul.button-nav:not(.button-tabs) li a.error:hover {
+  color: #fff;
+  background-color: #ed262f;
+}
+button.error:active,
+.button.error:active,
+input[type=button].error:active,
+input[type=submit].error:active,
+.buddypress .buddypress-wrap .comment-reply-link.error:active,
+.buddypress .buddypress-wrap .generic-button a.error:active,
+.buddypress .buddypress-wrap a.bp-title-button.error:active,
+.buddypress .buddypress-wrap a.button.error:active,
+.buddypress .buddypress-wrap button.error:active,
+.buddypress .buddypress-wrap input[type=button].error:active,
+.buddypress .buddypress-wrap input[type=reset].error:active,
+.buddypress .buddypress-wrap input[type=submit].error:active,
+.buddypress .buddypress-wrap ul.button-nav:not(.button-tabs) li a.error:active {
+  color: #fff;
+  background-color: #f3686f;
+}
+button.error:disabled, button.error.disabled,
+.button.error:disabled,
+.button.error.disabled,
+input[type=button].error:disabled,
+input[type=button].error.disabled,
+input[type=submit].error:disabled,
+input[type=submit].error.disabled,
+.buddypress .buddypress-wrap .comment-reply-link.error:disabled,
+.buddypress .buddypress-wrap .comment-reply-link.error.disabled,
+.buddypress .buddypress-wrap .generic-button a.error:disabled,
+.buddypress .buddypress-wrap .generic-button a.error.disabled,
+.buddypress .buddypress-wrap a.bp-title-button.error:disabled,
+.buddypress .buddypress-wrap a.bp-title-button.error.disabled,
+.buddypress .buddypress-wrap a.button.error:disabled,
+.buddypress .buddypress-wrap a.button.error.disabled,
+.buddypress .buddypress-wrap button.error:disabled,
+.buddypress .buddypress-wrap button.error.disabled,
+.buddypress .buddypress-wrap input[type=button].error:disabled,
+.buddypress .buddypress-wrap input[type=button].error.disabled,
+.buddypress .buddypress-wrap input[type=reset].error:disabled,
+.buddypress .buddypress-wrap input[type=reset].error.disabled,
+.buddypress .buddypress-wrap input[type=submit].error:disabled,
+.buddypress .buddypress-wrap input[type=submit].error.disabled,
+.buddypress .buddypress-wrap ul.button-nav:not(.button-tabs) li a.error:disabled,
+.buddypress .buddypress-wrap ul.button-nav:not(.button-tabs) li a.error.disabled {
+  color: #C8CBCF;
+  background-color: #F5F5F5;
+}
+button.error.outline,
+.button.error.outline,
+input[type=button].error.outline,
+input[type=submit].error.outline,
+.buddypress .buddypress-wrap .comment-reply-link.error.outline,
+.buddypress .buddypress-wrap .generic-button a.error.outline,
+.buddypress .buddypress-wrap a.bp-title-button.error.outline,
+.buddypress .buddypress-wrap a.button.error.outline,
+.buddypress .buddypress-wrap button.error.outline,
+.buddypress .buddypress-wrap input[type=button].error.outline,
+.buddypress .buddypress-wrap input[type=reset].error.outline,
+.buddypress .buddypress-wrap input[type=submit].error.outline,
+.buddypress .buddypress-wrap ul.button-nav:not(.button-tabs) li a.error.outline {
+  background: none;
+  color: #EF3E46;
+  border-color: #EF3E46;
+}
+button.error.outline:hover,
+.button.error.outline:hover,
+input[type=button].error.outline:hover,
+input[type=submit].error.outline:hover,
+.buddypress .buddypress-wrap .comment-reply-link.error.outline:hover,
+.buddypress .buddypress-wrap .generic-button a.error.outline:hover,
+.buddypress .buddypress-wrap a.bp-title-button.error.outline:hover,
+.buddypress .buddypress-wrap a.button.error.outline:hover,
+.buddypress .buddypress-wrap button.error.outline:hover,
+.buddypress .buddypress-wrap input[type=button].error.outline:hover,
+.buddypress .buddypress-wrap input[type=reset].error.outline:hover,
+.buddypress .buddypress-wrap input[type=submit].error.outline:hover,
+.buddypress .buddypress-wrap ul.button-nav:not(.button-tabs) li a.error.outline:hover {
+  color: #ed262f;
+  border-color: #ed262f;
+}
+button.error.outline:active,
+.button.error.outline:active,
+input[type=button].error.outline:active,
+input[type=submit].error.outline:active,
+.buddypress .buddypress-wrap .comment-reply-link.error.outline:active,
+.buddypress .buddypress-wrap .generic-button a.error.outline:active,
+.buddypress .buddypress-wrap a.bp-title-button.error.outline:active,
+.buddypress .buddypress-wrap a.button.error.outline:active,
+.buddypress .buddypress-wrap button.error.outline:active,
+.buddypress .buddypress-wrap input[type=button].error.outline:active,
+.buddypress .buddypress-wrap input[type=reset].error.outline:active,
+.buddypress .buddypress-wrap input[type=submit].error.outline:active,
+.buddypress .buddypress-wrap ul.button-nav:not(.button-tabs) li a.error.outline:active {
+  color: #f4777c;
+  border-color: #f4777c;
+}
+button.error.outline:disabled, button.error.outline.disabled,
+.button.error.outline:disabled,
+.button.error.outline.disabled,
+input[type=button].error.outline:disabled,
+input[type=button].error.outline.disabled,
+input[type=submit].error.outline:disabled,
+input[type=submit].error.outline.disabled,
+.buddypress .buddypress-wrap .comment-reply-link.error.outline:disabled,
+.buddypress .buddypress-wrap .comment-reply-link.error.outline.disabled,
+.buddypress .buddypress-wrap .generic-button a.error.outline:disabled,
+.buddypress .buddypress-wrap .generic-button a.error.outline.disabled,
+.buddypress .buddypress-wrap a.bp-title-button.error.outline:disabled,
+.buddypress .buddypress-wrap a.bp-title-button.error.outline.disabled,
+.buddypress .buddypress-wrap a.button.error.outline:disabled,
+.buddypress .buddypress-wrap a.button.error.outline.disabled,
+.buddypress .buddypress-wrap button.error.outline:disabled,
+.buddypress .buddypress-wrap button.error.outline.disabled,
+.buddypress .buddypress-wrap input[type=button].error.outline:disabled,
+.buddypress .buddypress-wrap input[type=button].error.outline.disabled,
+.buddypress .buddypress-wrap input[type=reset].error.outline:disabled,
+.buddypress .buddypress-wrap input[type=reset].error.outline.disabled,
+.buddypress .buddypress-wrap input[type=submit].error.outline:disabled,
+.buddypress .buddypress-wrap input[type=submit].error.outline.disabled,
+.buddypress .buddypress-wrap ul.button-nav:not(.button-tabs) li a.error.outline:disabled,
+.buddypress .buddypress-wrap ul.button-nav:not(.button-tabs) li a.error.outline.disabled {
+  background: #f5f5f5;
+  color: #DEDFE2;
+  border-color: #DEDFE2;
+  opacity: 1;
+}
+button.inverted,
+.button.inverted,
+input[type=button].inverted,
+input[type=submit].inverted,
+.buddypress .buddypress-wrap .comment-reply-link.inverted,
+.buddypress .buddypress-wrap .generic-button a.inverted,
+.buddypress .buddypress-wrap a.bp-title-button.inverted,
+.buddypress .buddypress-wrap a.button.inverted,
+.buddypress .buddypress-wrap button.inverted,
+.buddypress .buddypress-wrap input[type=button].inverted,
+.buddypress .buddypress-wrap input[type=reset].inverted,
+.buddypress .buddypress-wrap input[type=submit].inverted,
+.buddypress .buddypress-wrap ul.button-nav:not(.button-tabs) li a.inverted {
+  color: #000;
+  background-color: #fff;
+}
+button.inverted:hover,
+.button.inverted:hover,
+input[type=button].inverted:hover,
+input[type=submit].inverted:hover,
+.buddypress .buddypress-wrap .comment-reply-link.inverted:hover,
+.buddypress .buddypress-wrap .generic-button a.inverted:hover,
+.buddypress .buddypress-wrap a.bp-title-button.inverted:hover,
+.buddypress .buddypress-wrap a.button.inverted:hover,
+.buddypress .buddypress-wrap button.inverted:hover,
+.buddypress .buddypress-wrap input[type=button].inverted:hover,
+.buddypress .buddypress-wrap input[type=reset].inverted:hover,
+.buddypress .buddypress-wrap input[type=submit].inverted:hover,
+.buddypress .buddypress-wrap ul.button-nav:not(.button-tabs) li a.inverted:hover {
+  color: #000;
+  background-color: #f2f2f2;
+}
+button.inverted:active,
+.button.inverted:active,
+input[type=button].inverted:active,
+input[type=submit].inverted:active,
+.buddypress .buddypress-wrap .comment-reply-link.inverted:active,
+.buddypress .buddypress-wrap .generic-button a.inverted:active,
+.buddypress .buddypress-wrap a.bp-title-button.inverted:active,
+.buddypress .buddypress-wrap a.button.inverted:active,
+.buddypress .buddypress-wrap button.inverted:active,
+.buddypress .buddypress-wrap input[type=button].inverted:active,
+.buddypress .buddypress-wrap input[type=reset].inverted:active,
+.buddypress .buddypress-wrap input[type=submit].inverted:active,
+.buddypress .buddypress-wrap ul.button-nav:not(.button-tabs) li a.inverted:active {
+  color: #000;
+  background-color: white;
+}
+button.inverted:disabled, button.inverted.disabled,
+.button.inverted:disabled,
+.button.inverted.disabled,
+input[type=button].inverted:disabled,
+input[type=button].inverted.disabled,
+input[type=submit].inverted:disabled,
+input[type=submit].inverted.disabled,
+.buddypress .buddypress-wrap .comment-reply-link.inverted:disabled,
+.buddypress .buddypress-wrap .comment-reply-link.inverted.disabled,
+.buddypress .buddypress-wrap .generic-button a.inverted:disabled,
+.buddypress .buddypress-wrap .generic-button a.inverted.disabled,
+.buddypress .buddypress-wrap a.bp-title-button.inverted:disabled,
+.buddypress .buddypress-wrap a.bp-title-button.inverted.disabled,
+.buddypress .buddypress-wrap a.button.inverted:disabled,
+.buddypress .buddypress-wrap a.button.inverted.disabled,
+.buddypress .buddypress-wrap button.inverted:disabled,
+.buddypress .buddypress-wrap button.inverted.disabled,
+.buddypress .buddypress-wrap input[type=button].inverted:disabled,
+.buddypress .buddypress-wrap input[type=button].inverted.disabled,
+.buddypress .buddypress-wrap input[type=reset].inverted:disabled,
+.buddypress .buddypress-wrap input[type=reset].inverted.disabled,
+.buddypress .buddypress-wrap input[type=submit].inverted:disabled,
+.buddypress .buddypress-wrap input[type=submit].inverted.disabled,
+.buddypress .buddypress-wrap ul.button-nav:not(.button-tabs) li a.inverted:disabled,
+.buddypress .buddypress-wrap ul.button-nav:not(.button-tabs) li a.inverted.disabled {
+  color: #C8CBCF;
+  background-color: #F5F5F5;
+}
+button.inverted.outline,
+.button.inverted.outline,
+input[type=button].inverted.outline,
+input[type=submit].inverted.outline,
+.buddypress .buddypress-wrap .comment-reply-link.inverted.outline,
+.buddypress .buddypress-wrap .generic-button a.inverted.outline,
+.buddypress .buddypress-wrap a.bp-title-button.inverted.outline,
+.buddypress .buddypress-wrap a.button.inverted.outline,
+.buddypress .buddypress-wrap button.inverted.outline,
+.buddypress .buddypress-wrap input[type=button].inverted.outline,
+.buddypress .buddypress-wrap input[type=reset].inverted.outline,
+.buddypress .buddypress-wrap input[type=submit].inverted.outline,
+.buddypress .buddypress-wrap ul.button-nav:not(.button-tabs) li a.inverted.outline {
+  background: none;
+  color: #fff;
+  border-color: #fff;
+}
+button.inverted.outline:hover,
+.button.inverted.outline:hover,
+input[type=button].inverted.outline:hover,
+input[type=submit].inverted.outline:hover,
+.buddypress .buddypress-wrap .comment-reply-link.inverted.outline:hover,
+.buddypress .buddypress-wrap .generic-button a.inverted.outline:hover,
+.buddypress .buddypress-wrap a.bp-title-button.inverted.outline:hover,
+.buddypress .buddypress-wrap a.button.inverted.outline:hover,
+.buddypress .buddypress-wrap button.inverted.outline:hover,
+.buddypress .buddypress-wrap input[type=button].inverted.outline:hover,
+.buddypress .buddypress-wrap input[type=reset].inverted.outline:hover,
+.buddypress .buddypress-wrap input[type=submit].inverted.outline:hover,
+.buddypress .buddypress-wrap ul.button-nav:not(.button-tabs) li a.inverted.outline:hover {
+  color: #f2f2f2;
+  border-color: #f2f2f2;
+}
+button.inverted.outline:active,
+.button.inverted.outline:active,
+input[type=button].inverted.outline:active,
+input[type=submit].inverted.outline:active,
+.buddypress .buddypress-wrap .comment-reply-link.inverted.outline:active,
+.buddypress .buddypress-wrap .generic-button a.inverted.outline:active,
+.buddypress .buddypress-wrap a.bp-title-button.inverted.outline:active,
+.buddypress .buddypress-wrap a.button.inverted.outline:active,
+.buddypress .buddypress-wrap button.inverted.outline:active,
+.buddypress .buddypress-wrap input[type=button].inverted.outline:active,
+.buddypress .buddypress-wrap input[type=reset].inverted.outline:active,
+.buddypress .buddypress-wrap input[type=submit].inverted.outline:active,
+.buddypress .buddypress-wrap ul.button-nav:not(.button-tabs) li a.inverted.outline:active {
+  color: white;
+  border-color: white;
+}
+button.inverted.outline:disabled, button.inverted.outline.disabled,
+.button.inverted.outline:disabled,
+.button.inverted.outline.disabled,
+input[type=button].inverted.outline:disabled,
+input[type=button].inverted.outline.disabled,
+input[type=submit].inverted.outline:disabled,
+input[type=submit].inverted.outline.disabled,
+.buddypress .buddypress-wrap .comment-reply-link.inverted.outline:disabled,
+.buddypress .buddypress-wrap .comment-reply-link.inverted.outline.disabled,
+.buddypress .buddypress-wrap .generic-button a.inverted.outline:disabled,
+.buddypress .buddypress-wrap .generic-button a.inverted.outline.disabled,
+.buddypress .buddypress-wrap a.bp-title-button.inverted.outline:disabled,
+.buddypress .buddypress-wrap a.bp-title-button.inverted.outline.disabled,
+.buddypress .buddypress-wrap a.button.inverted.outline:disabled,
+.buddypress .buddypress-wrap a.button.inverted.outline.disabled,
+.buddypress .buddypress-wrap button.inverted.outline:disabled,
+.buddypress .buddypress-wrap button.inverted.outline.disabled,
+.buddypress .buddypress-wrap input[type=button].inverted.outline:disabled,
+.buddypress .buddypress-wrap input[type=button].inverted.outline.disabled,
+.buddypress .buddypress-wrap input[type=reset].inverted.outline:disabled,
+.buddypress .buddypress-wrap input[type=reset].inverted.outline.disabled,
+.buddypress .buddypress-wrap input[type=submit].inverted.outline:disabled,
+.buddypress .buddypress-wrap input[type=submit].inverted.outline.disabled,
+.buddypress .buddypress-wrap ul.button-nav:not(.button-tabs) li a.inverted.outline:disabled,
+.buddypress .buddypress-wrap ul.button-nav:not(.button-tabs) li a.inverted.outline.disabled {
+  background: #f5f5f5;
+  color: #DEDFE2;
+  border-color: #DEDFE2;
+  opacity: 1;
+}
+button.inverted:hover,
+.button.inverted:hover,
+input[type=button].inverted:hover,
+input[type=submit].inverted:hover,
+.buddypress .buddypress-wrap .comment-reply-link.inverted:hover,
+.buddypress .buddypress-wrap .generic-button a.inverted:hover,
+.buddypress .buddypress-wrap a.bp-title-button.inverted:hover,
+.buddypress .buddypress-wrap a.button.inverted:hover,
+.buddypress .buddypress-wrap button.inverted:hover,
+.buddypress .buddypress-wrap input[type=button].inverted:hover,
+.buddypress .buddypress-wrap input[type=reset].inverted:hover,
+.buddypress .buddypress-wrap input[type=submit].inverted:hover,
+.buddypress .buddypress-wrap ul.button-nav:not(.button-tabs) li a.inverted:hover {
+  opacity: .7;
+}
+button.round,
+.button.round,
+input[type=button].round,
+input[type=submit].round,
+.buddypress .buddypress-wrap .comment-reply-link.round,
+.buddypress .buddypress-wrap .generic-button a.round,
+.buddypress .buddypress-wrap a.bp-title-button.round,
+.buddypress .buddypress-wrap a.button.round,
+.buddypress .buddypress-wrap button.round,
+.buddypress .buddypress-wrap input[type=button].round,
+.buddypress .buddypress-wrap input[type=reset].round,
+.buddypress .buddypress-wrap input[type=submit].round,
+.buddypress .buddypress-wrap ul.button-nav:not(.button-tabs) li a.round {
+  border-radius: 50px;
+}
+button.raised,
+.button.raised,
+input[type=button].raised,
+input[type=submit].raised,
+.buddypress .buddypress-wrap .comment-reply-link.raised,
+.buddypress .buddypress-wrap .generic-button a.raised,
+.buddypress .buddypress-wrap a.bp-title-button.raised,
+.buddypress .buddypress-wrap a.button.raised,
+.buddypress .buddypress-wrap button.raised,
+.buddypress .buddypress-wrap input[type=button].raised,
+.buddypress .buddypress-wrap input[type=reset].raised,
+.buddypress .buddypress-wrap input[type=submit].raised,
+.buddypress .buddypress-wrap ul.button-nav:not(.button-tabs) li a.raised {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+}
+button.outline,
+.button.outline,
+input[type=button].outline,
+input[type=submit].outline,
+.buddypress .buddypress-wrap .comment-reply-link.outline,
+.buddypress .buddypress-wrap .generic-button a.outline,
+.buddypress .buddypress-wrap a.bp-title-button.outline,
+.buddypress .buddypress-wrap a.button.outline,
+.buddypress .buddypress-wrap button.outline,
+.buddypress .buddypress-wrap input[type=button].outline,
+.buddypress .buddypress-wrap input[type=reset].outline,
+.buddypress .buddypress-wrap input[type=submit].outline,
+.buddypress .buddypress-wrap ul.button-nav:not(.button-tabs) li a.outline {
+  background: none;
+  border-width: 1px;
+  border-color: #007CFF;
+  color: #007CFF;
+  box-shadow: none;
+}
+button.outline:hover, button.outline:focus,
+.button.outline:hover,
+.button.outline:focus,
+input[type=button].outline:hover,
+input[type=button].outline:focus,
+input[type=submit].outline:hover,
+input[type=submit].outline:focus,
+.buddypress .buddypress-wrap .comment-reply-link.outline:hover,
+.buddypress .buddypress-wrap .comment-reply-link.outline:focus,
+.buddypress .buddypress-wrap .generic-button a.outline:hover,
+.buddypress .buddypress-wrap .generic-button a.outline:focus,
+.buddypress .buddypress-wrap a.bp-title-button.outline:hover,
+.buddypress .buddypress-wrap a.bp-title-button.outline:focus,
+.buddypress .buddypress-wrap a.button.outline:hover,
+.buddypress .buddypress-wrap a.button.outline:focus,
+.buddypress .buddypress-wrap button.outline:hover,
+.buddypress .buddypress-wrap button.outline:focus,
+.buddypress .buddypress-wrap input[type=button].outline:hover,
+.buddypress .buddypress-wrap input[type=button].outline:focus,
+.buddypress .buddypress-wrap input[type=reset].outline:hover,
+.buddypress .buddypress-wrap input[type=reset].outline:focus,
+.buddypress .buddypress-wrap input[type=submit].outline:hover,
+.buddypress .buddypress-wrap input[type=submit].outline:focus,
+.buddypress .buddypress-wrap ul.button-nav:not(.button-tabs) li a.outline:hover,
+.buddypress .buddypress-wrap ul.button-nav:not(.button-tabs) li a.outline:focus {
+  background: none;
+  color: #0070e6;
+  border-color: #0070e6;
+}
+button.outline:active,
+.button.outline:active,
+input[type=button].outline:active,
+input[type=submit].outline:active,
+.buddypress .buddypress-wrap .comment-reply-link.outline:active,
+.buddypress .buddypress-wrap .generic-button a.outline:active,
+.buddypress .buddypress-wrap a.bp-title-button.outline:active,
+.buddypress .buddypress-wrap a.button.outline:active,
+.buddypress .buddypress-wrap button.outline:active,
+.buddypress .buddypress-wrap input[type=button].outline:active,
+.buddypress .buddypress-wrap input[type=reset].outline:active,
+.buddypress .buddypress-wrap input[type=submit].outline:active,
+.buddypress .buddypress-wrap ul.button-nav:not(.button-tabs) li a.outline:active {
+  background: none;
+  color: #3d9bff;
+  border-color: #3d9bff;
+}
+button.outline:disabled, button.outline.disabled,
+.button.outline:disabled,
+.button.outline.disabled,
+input[type=button].outline:disabled,
+input[type=button].outline.disabled,
+input[type=submit].outline:disabled,
+input[type=submit].outline.disabled,
+.buddypress .buddypress-wrap .comment-reply-link.outline:disabled,
+.buddypress .buddypress-wrap .comment-reply-link.outline.disabled,
+.buddypress .buddypress-wrap .generic-button a.outline:disabled,
+.buddypress .buddypress-wrap .generic-button a.outline.disabled,
+.buddypress .buddypress-wrap a.bp-title-button.outline:disabled,
+.buddypress .buddypress-wrap a.bp-title-button.outline.disabled,
+.buddypress .buddypress-wrap a.button.outline:disabled,
+.buddypress .buddypress-wrap a.button.outline.disabled,
+.buddypress .buddypress-wrap button.outline:disabled,
+.buddypress .buddypress-wrap button.outline.disabled,
+.buddypress .buddypress-wrap input[type=button].outline:disabled,
+.buddypress .buddypress-wrap input[type=button].outline.disabled,
+.buddypress .buddypress-wrap input[type=reset].outline:disabled,
+.buddypress .buddypress-wrap input[type=reset].outline.disabled,
+.buddypress .buddypress-wrap input[type=submit].outline:disabled,
+.buddypress .buddypress-wrap input[type=submit].outline.disabled,
+.buddypress .buddypress-wrap ul.button-nav:not(.button-tabs) li a.outline:disabled,
+.buddypress .buddypress-wrap ul.button-nav:not(.button-tabs) li a.outline.disabled {
+  background: #f5f5f5;
+  color: #DEDFE2;
+  border-color: #DEDFE2;
+  opacity: 1;
+}
+button.upper,
+.button.upper,
+input[type=button].upper,
+input[type=submit].upper,
+.buddypress .buddypress-wrap .comment-reply-link.upper,
+.buddypress .buddypress-wrap .generic-button a.upper,
+.buddypress .buddypress-wrap a.bp-title-button.upper,
+.buddypress .buddypress-wrap a.button.upper,
+.buddypress .buddypress-wrap button.upper,
+.buddypress .buddypress-wrap input[type=button].upper,
+.buddypress .buddypress-wrap input[type=reset].upper,
+.buddypress .buddypress-wrap input[type=submit].upper,
+.buddypress .buddypress-wrap ul.button-nav:not(.button-tabs) li a.upper {
+  text-transform: uppercase;
+  letter-spacing: .04em;
+  font-size: 14px;
+}
+button.upper.small,
+.button.upper.small,
+input[type=button].upper.small,
+input[type=submit].upper.small,
+.buddypress .buddypress-wrap .comment-reply-link.upper.small,
+.buddypress .buddypress-wrap .generic-button a.upper.small,
+.buddypress .buddypress-wrap a.bp-title-button.upper.small,
+.buddypress .buddypress-wrap a.button.upper.small,
+.buddypress .buddypress-wrap button.upper.small,
+.buddypress .buddypress-wrap input[type=button].upper.small,
+.buddypress .buddypress-wrap input[type=reset].upper.small,
+.buddypress .buddypress-wrap input[type=submit].upper.small,
+.buddypress .buddypress-wrap ul.button-nav:not(.button-tabs) li a.upper.small {
+  font-size: 12px;
+}
+button.upper.big,
+.button.upper.big,
+input[type=button].upper.big,
+input[type=submit].upper.big,
+.buddypress .buddypress-wrap .comment-reply-link.upper.big,
+.buddypress .buddypress-wrap .generic-button a.upper.big,
+.buddypress .buddypress-wrap a.bp-title-button.upper.big,
+.buddypress .buddypress-wrap a.button.upper.big,
+.buddypress .buddypress-wrap button.upper.big,
+.buddypress .buddypress-wrap input[type=button].upper.big,
+.buddypress .buddypress-wrap input[type=reset].upper.big,
+.buddypress .buddypress-wrap input[type=submit].upper.big,
+.buddypress .buddypress-wrap ul.button-nav:not(.button-tabs) li a.upper.big {
+  font-size: 14px;
+}
+button.upper.large,
+.button.upper.large,
+input[type=button].upper.large,
+input[type=submit].upper.large,
+.buddypress .buddypress-wrap .comment-reply-link.upper.large,
+.buddypress .buddypress-wrap .generic-button a.upper.large,
+.buddypress .buddypress-wrap a.bp-title-button.upper.large,
+.buddypress .buddypress-wrap a.button.upper.large,
+.buddypress .buddypress-wrap button.upper.large,
+.buddypress .buddypress-wrap input[type=button].upper.large,
+.buddypress .buddypress-wrap input[type=reset].upper.large,
+.buddypress .buddypress-wrap input[type=submit].upper.large,
+.buddypress .buddypress-wrap ul.button-nav:not(.button-tabs) li a.upper.large {
+  font-size: 15px;
+}
+
+input[type="submit"] {
+  width: auto;
+  font-style: normal;
+}
+
+.breadcrumbs {
+  font-size: 16px;
+  margin-bottom: 27px;
+}
+.breadcrumbs ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.breadcrumbs.push-center ul {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.breadcrumbs span, .breadcrumbs a {
+  font-style: normal;
+  padding: 0 0.625rem;
+  display: inline-block;
+  white-space: nowrap;
+}
+.breadcrumbs li:after {
+  display: inline-block;
+  content: '/';
+  color: rgba(0, 0, 0, 0.3);
+}
+.breadcrumbs li:last-child:after {
+  display: none;
+}
+.breadcrumbs li:first-child span, .breadcrumbs li:first-child a {
+  padding-right: 0;
+}
+.breadcrumbs li.active a {
+  color: #4D5C6D;
+  text-decoration: none;
+  cursor: text;
+}
+
+.pagination {
+  margin: 27px 0;
+  font-size: 16px;
+}
+.pagination ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+}
+.pagination.align-center ul {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+.pagination span, .pagination a {
+  border-radius: 3px;
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+  line-height: 1;
+  white-space: nowrap;
+  border: 1px solid transparent;
+}
+.pagination a {
+  text-decoration: none;
+  color: #4D5C6D;
+}
+.pagination a:hover {
+  color: rgba(0, 0, 0, 0.5);
+  border-color: #e0e1e1;
+}
+.pagination span, .pagination li.active a {
+  color: rgba(0, 0, 0, 0.5);
+  border-color: #e0e1e1;
+  cursor: text;
+}
+.pagination.upper {
+  font-size: 14px;
+}
+
+.push-left {
+  margin-left: auto;
+}
+
+.push-right {
+  margin-right: auto;
+}
+
+.push-center {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.push-middle {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.push-bottom {
+  margin-top: auto;
+}
+
+@media (max-width: 544px) {
+  .push-left-sm {
+    margin-right: 0;
+  }
+
+  .push-center-sm {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .push-top-sm {
+    margin-top: 0;
+  }
+}
+.align-middle {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.align-right {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.align-center {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 544px) {
+  .align-left-sm {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+.fixed {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 100;
+  width: 100%;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-1 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.flex-wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.flex-full {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%;
+}
+
+.flex-reverse {
+  -ms-flex-flow: row-reverse;
+      flex-flow: row-reverse;
+}
+
+.flex-column {
+  -ms-flex-flow: column;
+      flex-flow: column;
+}
+
+@media (max-width: 544px) {
+  .flex-column-sm {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .flex-w100-sm {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
+}
+@media (max-width: 544px) and (max-width: 544px) {
+  .flex-w100-sm {
+    -webkit-box-flex: 0 !important;
+        -ms-flex: 0 0 100% !important;
+            flex: 0 0 100% !important;
+  }
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.visible {
+  visibility: visible;
+}
+
+.display-block {
+  display: block;
+}
+
+.hide {
+  display: none !important;
+}
+
+@media (max-width: 544px) {
+  .hide-sm {
+    display: none !important;
+  }
+}
+@media (min-width: 544px) {
+  .show-sm {
+    display: block !important;
+  }
+}
+@media print {
+  .hide-print {
+    display: none !important;
+  }
+
+  .show-print {
+    display: block !important;
+  }
+}
+.no-scroll {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100% !important;
+}
+
+.scrollbar-measure {
+  position: absolute;
+  top: -9999px;
+  width: 50px;
+  height: 50px;
+  overflow: scroll;
+}
+
+.video-container {
+  height: 0;
+  padding-bottom: 56.25%;
+  position: relative;
+  margin-bottom: 18px;
+}
+.video-container iframe:not(.wp-embedded-content), .video-container object, .video-container embed {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.close {
+  display: inline-block;
+  min-height: 16px;
+  min-width: 16px;
+  line-height: 16px;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 0.75rem;
+  opacity: .6;
+}
+.close:hover {
+  opacity: 1;
+}
+.close.small {
+  font-size: 0.5rem;
+}
+.close.big {
+  font-size: 1.125rem;
+}
+.close.white {
+  color: #fff;
+}
+
+.caret {
+  display: inline-block;
+}
+
+.button .caret {
+  margin-left: -0.5rem;
+}
+
+.overlay {
+  position: fixed;
+  z-index: 200;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.95);
+}
+.overlay > .close {
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+}
+.overlay.black {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.round {
+  border-radius: 50%;
+}
+
+@media print {
+  * {
+    background: transparent !important;
+    color: black !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  pre, blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  p, h2, h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  tr, img {
+    page-break-inside: avoid;
+  }
+
+  img {
+    max-width: 100% !important;
+  }
+
+  h2, h3, h4 {
+    page-break-after: avoid;
+  }
+
+  @page {
+    margin: 0.5cm;
+  }
+}
+/*
+   Animation example, for spinners
+*/
+.ani-bg {
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-name: ani-bg;
+          animation-name: ani-bg;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  background: #eee;
+  background: -webkit-gradient(linear, right top, left top, color-stop(8%, #eee), color-stop(18%, #ddd), color-stop(33%, #eee));
+  background: -webkit-linear-gradient(right, #eee 8%, #ddd 18%, #eee 33%);
+  background: linear-gradient(to left, #eee 8%, #ddd 18%, #eee 33%);
+  background-size: 1000px 100%;
+  height: 96px;
+  position: relative;
+}
+
+@-webkit-keyframes ani-bg {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+@keyframes ani-bg {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+@-webkit-keyframes loading {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+@keyframes loading {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.9;
+  }
+}
+@-webkit-keyframes slideUp {
+  to {
+    height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+@keyframes slideUp {
+  to {
+    height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+@-webkit-keyframes slideDown {
+  from {
+    height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+@keyframes slideDown {
+  from {
+    height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes flipIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+}
+@keyframes flipIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+}
+@-webkit-keyframes flipOut {
+  from {
+    opacity: 1;
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+}
+@keyframes flipOut {
+  from {
+    opacity: 1;
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+  to {
+    opacity: 0;
+    -webkit-transform: scaleY(0);
+            transform: scaleY(0);
+  }
+}
+@-webkit-keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+            transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+            transform: scale3d(0.3, 0.3, 0.3);
+  }
+  50% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes zoomOut {
+  from {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+            transform: scale3d(0.3, 0.3, 0.3);
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes zoomOut {
+  from {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+    -webkit-transform: scale3d(0.3, 0.3, 0.3);
+            transform: scale3d(0.3, 0.3, 0.3);
+  }
+  to {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes slideInRight {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes slideInRight {
+  from {
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+@-webkit-keyframes slideInLeft {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes slideInLeft {
+  from {
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+@-webkit-keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes slideInDown {
+  from {
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+    visibility: visible;
+  }
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+}
+@-webkit-keyframes slideOutLeft {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  to {
+    visibility: hidden;
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+  }
+}
+@keyframes slideOutLeft {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  to {
+    visibility: hidden;
+    -webkit-transform: translate3d(100%, 0, 0);
+            transform: translate3d(100%, 0, 0);
+  }
+}
+@-webkit-keyframes slideOutRight {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  to {
+    visibility: hidden;
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+  }
+}
+@keyframes slideOutRight {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  to {
+    visibility: hidden;
+    -webkit-transform: translate3d(-100%, 0, 0);
+            transform: translate3d(-100%, 0, 0);
+  }
+}
+@-webkit-keyframes slideOutUp {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  to {
+    visibility: hidden;
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+  }
+}
+@keyframes slideOutUp {
+  from {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  to {
+    visibility: hidden;
+    -webkit-transform: translate3d(0, -100%, 0);
+            transform: translate3d(0, -100%, 0);
+  }
+}
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+@keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+@-webkit-keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+            transform: scale3d(1.03, 1.03, 1.03);
+  }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes pulse {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+  50% {
+    -webkit-transform: scale3d(1.03, 1.03, 1.03);
+            transform: scale3d(1.03, 1.03, 1.03);
+  }
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+  }
+}
+@-webkit-keyframes shake {
+  15% {
+    -webkit-transform: translateX(-0.5rem);
+            transform: translateX(-0.5rem);
+  }
+  30% {
+    -webkit-transform: translateX(0.4rem);
+            transform: translateX(0.4rem);
+  }
+  45% {
+    -webkit-transform: translateX(-0.3rem);
+            transform: translateX(-0.3rem);
+  }
+  60% {
+    -webkit-transform: translateX(0.2rem);
+            transform: translateX(0.2rem);
+  }
+  75% {
+    -webkit-transform: translateX(-0.1rem);
+            transform: translateX(-0.1rem);
+  }
+  90% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  90% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+@keyframes shake {
+  15% {
+    -webkit-transform: translateX(-0.5rem);
+            transform: translateX(-0.5rem);
+  }
+  30% {
+    -webkit-transform: translateX(0.4rem);
+            transform: translateX(0.4rem);
+  }
+  45% {
+    -webkit-transform: translateX(-0.3rem);
+            transform: translateX(-0.3rem);
+  }
+  60% {
+    -webkit-transform: translateX(0.2rem);
+            transform: translateX(0.2rem);
+  }
+  75% {
+    -webkit-transform: translateX(-0.1rem);
+            transform: translateX(-0.1rem);
+  }
+  90% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+  90% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
+.fadeIn {
+  -webkit-animation: fadeIn 250ms;
+          animation: fadeIn 250ms;
+}
+
+.fadeOut {
+  -webkit-animation: fadeOut 250ms;
+          animation: fadeOut 250ms;
+}
+
+.zoomIn {
+  -webkit-animation: zoomIn 200ms;
+          animation: zoomIn 200ms;
+}
+
+.zoomOut {
+  -webkit-animation: zoomOut 500ms;
+          animation: zoomOut 500ms;
+}
+
+.slideInRight {
+  -webkit-animation: slideInRight 500ms;
+          animation: slideInRight 500ms;
+}
+
+.slideInLeft {
+  -webkit-animation: slideInLeft 500ms;
+          animation: slideInLeft 500ms;
+}
+
+.slideInDown {
+  -webkit-animation: slideInDown 500ms;
+          animation: slideInDown 500ms;
+}
+
+.slideOutLeft {
+  -webkit-animation: slideOutLeft 500ms;
+          animation: slideOutLeft 500ms;
+}
+
+.slideOutRight {
+  -webkit-animation: slideOutRight 500ms;
+          animation: slideOutRight 500ms;
+}
+
+.slideOutUp {
+  -webkit-animation: slideOutUp 500ms;
+          animation: slideOutUp 500ms;
+}
+
+.slideUp {
+  overflow: hidden;
+  -webkit-animation: slideUp 200ms ease-in-out;
+          animation: slideUp 200ms ease-in-out;
+}
+
+.slideDown {
+  overflow: hidden;
+  -webkit-animation: slideDown 80ms ease-in-out;
+          animation: slideDown 80ms ease-in-out;
+}
+
+.flipIn {
+  -webkit-animation: flipIn 250ms cubic-bezier(0.5, -0.5, 0.5, 1.5);
+          animation: flipIn 250ms cubic-bezier(0.5, -0.5, 0.5, 1.5);
+}
+
+.flipOut {
+  -webkit-animation: flipOut 500ms cubic-bezier(0.5, -0.5, 0.5, 1.5);
+          animation: flipOut 500ms cubic-bezier(0.5, -0.5, 0.5, 1.5);
+}
+
+.rotate {
+  -webkit-animation: rotate 500ms;
+          animation: rotate 500ms;
+}
+
+.pulse {
+  -webkit-animation: pulse 250ms 2;
+          animation: pulse 250ms 2;
+}
+
+.shake {
+  -webkit-animation: shake 500ms;
+          animation: shake 500ms;
+}
+
+.dropdown:not(.v-select) {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 17.5rem;
+  color: #000;
+  font-size: 17px;
+  background: #fff;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+  max-height: 18.75rem;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.dropdown:not(.v-select).dropdown-mobile {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  max-height: none;
+  border: none;
+}
+.dropdown:not(.v-select) .close {
+  margin: 1.25rem auto;
+}
+.dropdown:not(.v-select).open {
+  overflow: auto;
+}
+.dropdown:not(.v-select) ul {
+  list-style: none;
+  margin: 0;
+}
+.dropdown:not(.v-select) ul li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+}
+.dropdown:not(.v-select) ul li:last-child {
+  border-bottom: none;
+}
+.dropdown:not(.v-select) ul a {
+  display: block;
+  padding: 0.75rem;
+  text-decoration: none;
+  color: #000;
+}
+.dropdown:not(.v-select) ul a:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.message {
+  font-size: 16px;
+  line-height: 24px;
+  background: #e0e1e1;
+  color: #4D5C6D;
+  padding: 1rem;
+  padding-left: 2.5em;
+  padding-bottom: .75rem;
+  margin-bottom: 27px;
+  position: relative;
+}
+.message a {
+  color: inherit;
+}
+.message h2, .message h3, .message h4, .message h5, .message h6 {
+  margin-bottom: 0;
+}
+.message .close {
+  position: absolute;
+  left: 1rem;
+  top: 1.1rem;
+}
+
+.message.error {
+  background: #EF3E46;
+  color: #fff;
+}
+
+.message.success {
+  background: #1CD991;
+  color: #fff;
+}
+
+.message.warning {
+  background: #f7ba45;
+}
+
+.message.focus {
+  background: #1c86f2;
+  color: #fff;
+}
+
+.message.black {
+  background: #0d0d0e;
+  color: #fff;
+}
+
+.message.inverted {
+  background: #fff;
+}
+
+button[data-balloon] {
+  overflow: visible;
+}
+
+[data-balloon] {
+  position: relative;
+  cursor: pointer;
+}
+[data-balloon]:after {
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.18s ease-out 0.18s;
+          transition: all 0.18s ease-out 0.18s;
+  font-weight: 500;
+  font-size: 13px;
+  letter-spacing: -0.24px;
+  background: rgba(18, 43, 70, 0.95);
+  border-radius: 4px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.22);
+  color: #fff;
+  content: attr(data-balloon);
+  line-height: 1.3;
+  padding: 7px 15px;
+  position: absolute;
+  white-space: nowrap;
+  z-index: 10;
+}
+[data-balloon]:before {
+  background: no-repeat url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http://www.w3.org/2000/svg%22%20width%3D%2236px%22%20height%3D%2212px%22%3E%3Cpath%20fill%3D%22rgba(18, 43, 70, 0.95)%22%20transform%3D%22rotate(0)%22%20d%3D%22M2.658,0.000%20C-13.615,0.000%2050.938,0.000%2034.662,0.000%20C28.662,0.000%2023.035,12.002%2018.660,12.002%20C14.285,12.002%208.594,0.000%202.658,0.000%20Z%22/%3E%3C/svg%3E");
+  background-size: 100% auto;
+  width: 18px;
+  height: 6px;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: all 0.18s ease-out 0.18s;
+          transition: all 0.18s ease-out 0.18s;
+  content: '';
+  position: absolute;
+  z-index: 10;
+}
+[data-balloon]:hover:before, [data-balloon]:hover:after, [data-balloon][data-balloon-visible]:before, [data-balloon][data-balloon-visible]:after {
+  opacity: 1;
+  pointer-events: auto;
+}
+[data-balloon].font-awesome:after {
+  font-family: FontAwesome;
+}
+[data-balloon][data-balloon-break]:after {
+  white-space: pre;
+}
+[data-balloon][data-balloon-blunt]:before, [data-balloon][data-balloon-blunt]:after {
+  -webkit-transition: none;
+          transition: none;
+}
+[data-balloon][data-balloon-pos="up"]:after {
+  bottom: 100%;
+  right: 50%;
+  margin-bottom: 11px;
+  -webkit-transform: translate(50%, 10px);
+      -ms-transform: translate(50%, 10px);
+          transform: translate(50%, 10px);
+  -webkit-transform-origin: top;
+      -ms-transform-origin: top;
+          transform-origin: top;
+}
+[data-balloon][data-balloon-pos="up"]:before {
+  bottom: 100%;
+  right: 50%;
+  margin-bottom: 5px;
+  -webkit-transform: translate(50%, 10px);
+      -ms-transform: translate(50%, 10px);
+          transform: translate(50%, 10px);
+  -webkit-transform-origin: top;
+      -ms-transform-origin: top;
+          transform-origin: top;
+}
+[data-balloon][data-balloon-pos="up"]:hover:after, [data-balloon][data-balloon-pos="up"][data-balloon-visible]:after {
+  -webkit-transform: translate(50%, 0);
+      -ms-transform: translate(50%, 0);
+          transform: translate(50%, 0);
+}
+[data-balloon][data-balloon-pos="up"]:hover:before, [data-balloon][data-balloon-pos="up"][data-balloon-visible]:before {
+  -webkit-transform: translate(50%, 0);
+      -ms-transform: translate(50%, 0);
+          transform: translate(50%, 0);
+}
+[data-balloon][data-balloon-pos="up-left"]:after {
+  bottom: 100%;
+  right: 0;
+  margin-bottom: 11px;
+  -webkit-transform: translate(0, 10px);
+      -ms-transform: translate(0, 10px);
+          transform: translate(0, 10px);
+  -webkit-transform-origin: top;
+      -ms-transform-origin: top;
+          transform-origin: top;
+}
+[data-balloon][data-balloon-pos="up-left"]:before {
+  bottom: 100%;
+  right: 5px;
+  margin-bottom: 5px;
+  -webkit-transform: translate(0, 10px);
+      -ms-transform: translate(0, 10px);
+          transform: translate(0, 10px);
+  -webkit-transform-origin: top;
+      -ms-transform-origin: top;
+          transform-origin: top;
+}
+[data-balloon][data-balloon-pos="up-left"]:hover:after, [data-balloon][data-balloon-pos="up-left"][data-balloon-visible]:after {
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+[data-balloon][data-balloon-pos="up-left"]:hover:before, [data-balloon][data-balloon-pos="up-left"][data-balloon-visible]:before {
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+[data-balloon][data-balloon-pos="up-right"]:after {
+  bottom: 100%;
+  left: 0;
+  margin-bottom: 11px;
+  -webkit-transform: translate(0, 10px);
+      -ms-transform: translate(0, 10px);
+          transform: translate(0, 10px);
+  -webkit-transform-origin: top;
+      -ms-transform-origin: top;
+          transform-origin: top;
+}
+[data-balloon][data-balloon-pos="up-right"]:before {
+  bottom: 100%;
+  left: 5px;
+  margin-bottom: 5px;
+  -webkit-transform: translate(0, 10px);
+      -ms-transform: translate(0, 10px);
+          transform: translate(0, 10px);
+  -webkit-transform-origin: top;
+      -ms-transform-origin: top;
+          transform-origin: top;
+}
+[data-balloon][data-balloon-pos="up-right"]:hover:after, [data-balloon][data-balloon-pos="up-right"][data-balloon-visible]:after {
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+[data-balloon][data-balloon-pos="up-right"]:hover:before, [data-balloon][data-balloon-pos="up-right"][data-balloon-visible]:before {
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+[data-balloon][data-balloon-pos='down']:after {
+  right: 50%;
+  margin-top: 11px;
+  top: 100%;
+  -webkit-transform: translate(50%, -10px);
+      -ms-transform: translate(50%, -10px);
+          transform: translate(50%, -10px);
+}
+[data-balloon][data-balloon-pos='down']:before {
+  background: no-repeat url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http://www.w3.org/2000/svg%22%20width%3D%2236px%22%20height%3D%2212px%22%3E%3Cpath%20fill%3D%22rgba(18, 43, 70, 0.95)%22%20transform%3D%22rotate(180 18 6)%22%20d%3D%22M2.658,0.000%20C-13.615,0.000%2050.938,0.000%2034.662,0.000%20C28.662,0.000%2023.035,12.002%2018.660,12.002%20C14.285,12.002%208.594,0.000%202.658,0.000%20Z%22/%3E%3C/svg%3E");
+  background-size: 100% auto;
+  width: 18px;
+  height: 6px;
+  right: 50%;
+  margin-top: 5px;
+  top: 100%;
+  -webkit-transform: translate(50%, -10px);
+      -ms-transform: translate(50%, -10px);
+          transform: translate(50%, -10px);
+}
+[data-balloon][data-balloon-pos='down']:hover:after, [data-balloon][data-balloon-pos='down'][data-balloon-visible]:after {
+  -webkit-transform: translate(50%, 0);
+      -ms-transform: translate(50%, 0);
+          transform: translate(50%, 0);
+}
+[data-balloon][data-balloon-pos='down']:hover:before, [data-balloon][data-balloon-pos='down'][data-balloon-visible]:before {
+  -webkit-transform: translate(50%, 0);
+      -ms-transform: translate(50%, 0);
+          transform: translate(50%, 0);
+}
+[data-balloon][data-balloon-pos='down-left']:after {
+  right: 0;
+  margin-top: 11px;
+  top: 100%;
+  -webkit-transform: translate(0, -10px);
+      -ms-transform: translate(0, -10px);
+          transform: translate(0, -10px);
+}
+[data-balloon][data-balloon-pos='down-left']:before {
+  background: no-repeat url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http://www.w3.org/2000/svg%22%20width%3D%2236px%22%20height%3D%2212px%22%3E%3Cpath%20fill%3D%22rgba(18, 43, 70, 0.95)%22%20transform%3D%22rotate(180 18 6)%22%20d%3D%22M2.658,0.000%20C-13.615,0.000%2050.938,0.000%2034.662,0.000%20C28.662,0.000%2023.035,12.002%2018.660,12.002%20C14.285,12.002%208.594,0.000%202.658,0.000%20Z%22/%3E%3C/svg%3E");
+  background-size: 100% auto;
+  width: 18px;
+  height: 6px;
+  right: 5px;
+  margin-top: 5px;
+  top: 100%;
+  -webkit-transform: translate(0, -10px);
+      -ms-transform: translate(0, -10px);
+          transform: translate(0, -10px);
+}
+[data-balloon][data-balloon-pos='down-left']:hover:after, [data-balloon][data-balloon-pos='down-left'][data-balloon-visible]:after {
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+[data-balloon][data-balloon-pos='down-left']:hover:before, [data-balloon][data-balloon-pos='down-left'][data-balloon-visible]:before {
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+[data-balloon][data-balloon-pos='down-right']:after {
+  left: 0;
+  margin-top: 11px;
+  top: 100%;
+  -webkit-transform: translate(0, -10px);
+      -ms-transform: translate(0, -10px);
+          transform: translate(0, -10px);
+}
+[data-balloon][data-balloon-pos='down-right']:before {
+  background: no-repeat url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http://www.w3.org/2000/svg%22%20width%3D%2236px%22%20height%3D%2212px%22%3E%3Cpath%20fill%3D%22rgba(18, 43, 70, 0.95)%22%20transform%3D%22rotate(180 18 6)%22%20d%3D%22M2.658,0.000%20C-13.615,0.000%2050.938,0.000%2034.662,0.000%20C28.662,0.000%2023.035,12.002%2018.660,12.002%20C14.285,12.002%208.594,0.000%202.658,0.000%20Z%22/%3E%3C/svg%3E");
+  background-size: 100% auto;
+  width: 18px;
+  height: 6px;
+  left: 5px;
+  margin-top: 5px;
+  top: 100%;
+  -webkit-transform: translate(0, -10px);
+      -ms-transform: translate(0, -10px);
+          transform: translate(0, -10px);
+}
+[data-balloon][data-balloon-pos='down-right']:hover:after, [data-balloon][data-balloon-pos='down-right'][data-balloon-visible]:after {
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+[data-balloon][data-balloon-pos='down-right']:hover:before, [data-balloon][data-balloon-pos='down-right'][data-balloon-visible]:before {
+  -webkit-transform: translate(0, 0);
+      -ms-transform: translate(0, 0);
+          transform: translate(0, 0);
+}
+[data-balloon][data-balloon-pos='left']:after {
+  margin-left: 11px;
+  left: 100%;
+  top: 50%;
+  -webkit-transform: translate(-10px, -50%);
+      -ms-transform: translate(-10px, -50%);
+          transform: translate(-10px, -50%);
+}
+[data-balloon][data-balloon-pos='left']:before {
+  background: no-repeat url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http://www.w3.org/2000/svg%22%20width%3D%2212px%22%20height%3D%2236px%22%3E%3Cpath%20fill%3D%22rgba(18, 43, 70, 0.95)%22%20transform%3D%22rotate(-90 18 18)%22%20d%3D%22M2.658,0.000%20C-13.615,0.000%2050.938,0.000%2034.662,0.000%20C28.662,0.000%2023.035,12.002%2018.660,12.002%20C14.285,12.002%208.594,0.000%202.658,0.000%20Z%22/%3E%3C/svg%3E");
+  background-size: 100% auto;
+  width: 6px;
+  height: 18px;
+  margin-left: 5px;
+  left: 100%;
+  top: 50%;
+  -webkit-transform: translate(-10px, -50%);
+      -ms-transform: translate(-10px, -50%);
+          transform: translate(-10px, -50%);
+}
+[data-balloon][data-balloon-pos='left']:hover:after, [data-balloon][data-balloon-pos='left'][data-balloon-visible]:after {
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+[data-balloon][data-balloon-pos='left']:hover:before, [data-balloon][data-balloon-pos='left'][data-balloon-visible]:before {
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+[data-balloon][data-balloon-pos='right']:after {
+  right: 100%;
+  margin-right: 11px;
+  top: 50%;
+  -webkit-transform: translate(10px, -50%);
+      -ms-transform: translate(10px, -50%);
+          transform: translate(10px, -50%);
+}
+[data-balloon][data-balloon-pos='right']:before {
+  background: no-repeat url("data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http://www.w3.org/2000/svg%22%20width%3D%2212px%22%20height%3D%2236px%22%3E%3Cpath%20fill%3D%22rgba(18, 43, 70, 0.95)%22%20transform%3D%22rotate(90 6 6)%22%20d%3D%22M2.658,0.000%20C-13.615,0.000%2050.938,0.000%2034.662,0.000%20C28.662,0.000%2023.035,12.002%2018.660,12.002%20C14.285,12.002%208.594,0.000%202.658,0.000%20Z%22/%3E%3C/svg%3E");
+  background-size: 100% auto;
+  width: 6px;
+  height: 18px;
+  right: 100%;
+  margin-right: 5px;
+  top: 50%;
+  -webkit-transform: translate(10px, -50%);
+      -ms-transform: translate(10px, -50%);
+          transform: translate(10px, -50%);
+}
+[data-balloon][data-balloon-pos='right']:hover:after, [data-balloon][data-balloon-pos='right'][data-balloon-visible]:after {
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+[data-balloon][data-balloon-pos='right']:hover:before, [data-balloon][data-balloon-pos='right'][data-balloon-visible]:before {
+  -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+          transform: translate(0, -50%);
+}
+[data-balloon][data-balloon-length='small']:after {
+  white-space: normal;
+  width: 80px;
+}
+[data-balloon][data-balloon-length='medium']:after {
+  white-space: normal;
+  width: 150px;
+}
+[data-balloon][data-balloon-length='large']:after {
+  white-space: normal;
+  width: 260px;
+}
+[data-balloon][data-balloon-length='xlarge']:after {
+  white-space: normal;
+  width: 380px;
+}
+@media screen and (max-width: 768px) {
+  [data-balloon][data-balloon-length='xlarge']:after {
+    white-space: normal;
+    width: 90vw;
+  }
+}
+[data-balloon][data-balloon-length='fit']:after {
+  white-space: normal;
+  width: 100%;
+}
+
+@font-face {
+  font-family: 'bb-icons';
+  src: url("../icons/bb-icons.eot?20881496");
+  src: url("../icons/bb-icons.eot?20881496#iefix") format("embedded-opentype"), url("../icons/bb-icons.woff2?20881496") format("woff2"), url("../icons/bb-icons.woff?20881496") format("woff"), url("../icons/bb-icons.ttf?20881496") format("truetype"), url("../icons/bb-icons.svg?20881496#bb-icons") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  margin-left: 0 !important;
+  /*Fix magnificpopup double scroll bar*/
+}
+
+body {
+  font-family: 'SF UI Text', sans-serif;
+}
+
+body.login {
+  background-color: #FAFBFD;
+  font-size: 14px;
+  line-height: 1.4em;
+}
+body.login form {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  box-shadow: none;
+}
+body.login input, body.login textarea, body.login select {
+  vertical-align: baseline;
+}
+body.login #bp_member_switching_switch_on .dashicons-admin-users:before {
+  content: '\e825';
+  font-family: "bb-icons";
+  font-size: 16px;
+  color: #fff;
+  position: relative;
+  top: -1px;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
+  font-family: 'SF UI Display';
+}
+
+.login.bb-login #login {
+  padding-top: 8%;
+  padding-bottom: 8%;
+}
+
+@media (min-width: 992px) {
+  .login.bb-login #login {
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+}
+@media (max-width: 360px) {
+  .login.bb-login #login {
+    width: 84%;
+    padding-right: 8%;
+    padding-left: 8%;
+  }
+}
+.login.bb-login #login > h1 > a {
+  margin-bottom: 15px;
+  height: auto;
+}
+
+.bs-cs-login-logo {
+  visibility: hidden;
+  width: 100%;
+  display: block;
+}
+
+img.bs-cs-login-logo.private-on {
+  visibility: visible;
+  display: inline-block;
+}
+
+.login h1 a.bb-login-title {
+  background-image: none;
+  text-indent: 0;
+  width: auto;
+  color: #007cff;
+}
+.login h1 a.bb-login-title:hover {
+  color: #0F74E0;
+}
+
+body.login.login-split-page .login-split {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  body.login.login-split-page .login-split {
+    width: 50%;
+    position: fixed;
+    right: 0px;
+    height: 100%;
+    display: block;
+  }
+  body.login.login-split-page .login-split .split-overlay {
+    width: 100%;
+    height: 100%;
+    background-color: #000000;
+    position: relative;
+    z-index: 1;
+    opacity: 0;
+  }
+
+  body.login.login-split-page .login-split div {
+    color: #fff;
+  }
+
+  body.login.login-split-page .login-split > div:not(.split-overlay) {
+    display: block;
+    width: 50%;
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 8% 0 0;
+    font-size: 32px;
+    line-height: 1.15;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9;
+    margin: auto;
+  }
+
+  body.login.login-split-page .login-split > div > span {
+    font-size: 16px;
+    line-height: 1.4;
+    display: block;
+    margin-top: 20px;
+  }
+
+  body.login.login-split-page #login {
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    padding: 30px 50px 30px 0;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
+  body.login.login-split-page.login-exh #login {
+    -webkit-transform: translateY(-35%);
+    -ms-transform: translateY(-35%);
+    transform: translateY(-35%);
+  }
+
+  body.login.login-split-page #login h1 a {
+    margin-right: 0;
+    text-align: right;
+  }
+}
+.login #backtoblog,
+.login #nav {
+  padding: 0;
+}
+
+.login input[type=text],
+.login input[type=email],
+.login input[type=password] {
+  background-color: #fff;
+  border: 1px solid #E7E9EC;
+  box-shadow: none;
+  border-radius: 3px;
+  font-size: 16px;
+  padding: 10px 15px;
+}
+
+.login form#loginform input[type=text] {
+  padding: 10px 40px 10px 10px;
+}
+
+.login form#loginform input[type=password],
+.login form#loginform input[type=text]#user_pass {
+  padding: 10px 40px 10px 35px;
+}
+
+.login form label[for="user_login"],
+.login form label[for="user_pass"] {
+  display: block;
+  position: relative;
+}
+.login form label[for="user_login"] br,
+.login form label[for="user_pass"] br {
+  display: none;
+}
+
+.user-pass-wrap .wp-pwd:before,
+.login form#loginform label[for="user_login"]:before,
+.login form#loginform label[for="user_pass"]:before {
+  font-family: "bb-icons";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-left: .2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  margin-right: .2em;
+  position: absolute;
+  top: 12px;
+  right: 10px;
+}
+
+.login form#loginform label[for="user_login"]:before {
+  content: '\e825';
+}
+
+.login label {
+  margin-bottom: 1px;
+}
+
+.login .user-pass-wrap .wp-pwd {
+  position: relative;
+}
+.login .user-pass-wrap .wp-pwd:before {
+  content: '\e829';
+  font-size: 20px;
+  top: 10px;
+}
+.login .user-pass-wrap .wp-pwd .dashicons {
+  font-family: "bb-icons";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-left: .2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  margin-right: .2em;
+  position: absolute;
+  top: 11px;
+  right: 5px;
+  color: #122B46;
+  opacity: 0.5;
+}
+.login .user-pass-wrap .wp-pwd .dashicons:before {
+  content: '\e8fc';
+}
+.login .user-pass-wrap .wp-pwd .dashicons-visibility:before {
+  content: '\e8be';
+}
+
+.login form#loginform label[for="user_pass"]:before {
+  content: '\e829';
+  font-size: 20px;
+  top: 12px;
+}
+.login form#loginform label[for="user_pass"] .label-switch {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-size: 0;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  opacity: 0.5;
+}
+.login form#loginform label[for="user_pass"] .label-switch.bb-eye:after {
+  content: '\e8be';
+}
+.login form#loginform label[for="user_pass"] .label-switch:after {
+  content: '\e8fc';
+  font-family: "bb-icons";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-left: .2em;
+  text-align: center;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1em;
+  margin-right: .2em;
+  font-size: 14px;
+}
+
+.login.bb-login .button-primary {
+  background-color: #007CFF;
+  border-color: #007CFF;
+  border-radius: 100px;
+  box-shadow: none;
+  text-shadow: none;
+  height: auto;
+  padding: 4px 30px;
+  -webkit-transition: all linear 0.2s;
+  transition: all linear 0.2s;
+  float: none;
+  width: 100%;
+  margin: 20px 0 0;
+  font-size: 14px;
+}
+
+.admin-email__actions .admin-email__actions-primary a.button {
+  background: transparent;
+  border-color: #007CFF;
+  color: #007CFF;
+  min-height: 40px;
+  line-height: 40px;
+  padding: 0 30px;
+  border-radius: 50px;
+  margin-left: 15px;
+  outline: none;
+  box-shadow: none;
+  min-width: 160px;
+}
+
+.login-action-confirm_admin_email #login {
+  max-width: 440px;
+  padding: 0 20px;
+  width: 100%;
+}
+
+.login h1.admin-email__heading {
+  font-size: 26px;
+  color: #122B46;
+}
+
+@media (max-width: 782px) {
+  .login.bb-login .button-primary {
+    line-height: 28px;
+  }
+}
+.login.bb-login .button-primary:hover {
+  background-color: #0070e6;
+  border-color: #0070e6;
+}
+
+.login.bb-login .button-primary:active {
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
+}
+
+.login .login-heading {
+  margin: 35px 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.login #login_error,
+.login .message {
+  margin-top: 15px;
+  border: 0;
+  box-shadow: none;
+  border-radius: 3px;
+}
+
+.login #login_error a,
+.login .message a {
+  color: #fff;
+}
+
+.login #login_error {
+  border-right-color: #ef3e46;
+  background-color: #EF3E46;
+  color: #fff;
+}
+
+.login:not(.login-action-lostpassword) .message:not(.reset-pass),
+.login.login-action-lostpassword .message > .message {
+  background-color: #007CFF;
+  color: #fff;
+}
+
+.login .login-heading h2 {
+  font-weight: normal;
+  margin-left: auto;
+  font-size: 20px;
+}
+
+.login .bs-register-message,
+.login:not(.login-action-lostpassword) .message.bs-register-message:not(.reset-pass) {
+  border: 0;
+  background-color: transparent;
+  color: #122B46;
+  padding: 0;
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+}
+
+.login .login-heading a {
+  text-decoration: none;
+  color: #007CFF;
+}
+
+.login a {
+  outline: 0;
+  box-shadow: none;
+}
+
+.login .login-heading a:hover {
+  color: #0F74E0;
+}
+
+.login form .forgetmenot label strong {
+  font-weight: normal;
+}
+
+.login.bb-login #login p#nav,
+.login.bb-login:not(.login-action-resetpass) #backtoblog {
+  display: none;
+}
+
+.login.bb-login form .forgetmenot {
+  font-size: 14px;
+  line-height: 20px;
+  vertical-align: bottom;
+  padding-top: 4px;
+  position: relative;
+}
+.login.bb-login form .forgetmenot input[type=checkbox],
+.login.bb-login form .forgetmenot input[type=checkbox]:before {
+  margin: 0;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 0;
+  top: 4px;
+}
+
+.admin-email__actions-primary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-flow: row wrap;
+      flex-flow: row wrap;
+}
+.admin-email__actions-primary #correct-admin-email {
+  margin: 0;
+  width: auto;
+}
+
+.admin-email__actions-secondary a {
+  text-decoration: underline;
+}
+
+.login .button.wp-hide-pw,
+.login .button.wp-hide-pw:focus {
+  border: 0;
+  box-shadow: none;
+  outline: none;
+}
+
+.checkbox {
+  position: relative;
+  z-index: 10;
+}
+
+span.checkbox {
+  z-index: 5;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+  background: #fff;
+  border: 1px solid #E7E9EC;
+  margin-left: 6px;
+  float: right;
+}
+
+span.checkbox.on {
+  background-color: #007CFF;
+  border-color: #007CFF;
+  border-radius: 2px;
+}
+span.checkbox.on:before {
+  color: #fff;
+  content: '\E809';
+  font-family: "bb-icons";
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  font-size: 25px;
+  position: relative;
+  top: 0;
+  right: -3px;
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-left: 6px;
+}
+
+.login form .lostmenot {
+  float: left;
+  padding: 5px 0 0;
+}
+
+.login form .lostmenot a,
+.login a.privacy-policy-link,
+form#lostpasswordform a.bs-sign-in {
+  text-decoration: none;
+  color: #007CFF;
+}
+
+.login form .lostmenot a:hover,
+.login a.privacy-policy-link:hover,
+form#lostpasswordform a.bs-sign-in:hover {
+  color: #0070e6;
+}
+
+.login form#resetpassform .password-input-wrapper {
+  width: 100%;
+}
+.login form#resetpassform .password-input-wrapper .button.button-secondary {
+  text-align: center;
+  vertical-align: baseline;
+}
+
+.login.bb-login form#resetpassform .password-input-wrapper .button.button-secondary.wp-hide-pw {
+  display: none !important;
+}
+
+.login.bb-login #pass-strength-result {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  display: none !important;
+}
+
+.login.bb-login #pass-strength-result.short,
+.login.bb-login #pass-strength-result.bad,
+.login.bb-login #pass-strength-result.good,
+.login.bb-login #pass-strength-result.strong {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  margin-bottom: 0;
+  display: block !important;
+}
+
+.login.bb-login #pass-strength-result.short,
+.login.bb-login #pass-strength-result.bad {
+  margin-bottom: 10px;
+  background-color: #EF3E46;
+  border-color: #EF3E46;
+  color: #fff;
+}
+
+.login.bb-login #pass-strength-result.good {
+  background-color: #f7ba45;
+  border-color: #f7ba45;
+  color: #fff;
+}
+
+.login.bb-login #pass-strength-result.strong {
+  background-color: #1CD991;
+  border-color: #1CD991;
+  color: #fff;
+}
+
+.login.login-action-resetpass.bb-login p#backtoblog span.bs-pass-update-msg {
+  display: block;
+  margin: 0 0 20px;
+}
+
+.login.bb-login form#resetpassform p.description.indicator-hint {
+  display: none;
+}
+
+.user-bs-pass2-wrap > p,
+.login.bb-login form#resetpassform label[for="pass1"] {
+  display: none;
+}
+
+.login.bb-login p.message.reset-pass,
+.login.login-action-lostpassword.bb-login #login > p.message {
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  padding: 12px 0 0;
+}
+
+.login.bb-login p.message.reset-pass {
+  font-size: 1rem;
+}
+
+.login.login-action-lostpassword.bb-login #login > p.message > div {
+  font-size: 1rem;
+  padding: 0 0 5px;
+}
+
+#bs-pass2 {
+  margin-bottom: 20px;
+}
+
+.login.login-action-lostpassword.bb-login form#lostpasswordform p.submit {
+  text-align: center;
+}
+.login.login-action-lostpassword.bb-login form#lostpasswordform p.submit input#wp-submit {
+  float: none;
+}
+
+form#lostpasswordform a.bs-sign-in,
+form#lostpasswordform a:hover.bs-sign-in,
+form#lostpasswordform a:active.bs-sign-in,
+form#lostpasswordform a:focus.bs-sign-in {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  margin: 15px auto 0;
+  text-decoration: none;
+  outline: 0 !important;
+  box-shadow: none;
+}
+
+span.apsl-login-new-text {
+  font-weight: normal;
+}
+
+.apsl-login-networks.theme-1 .apsl-icon-block .fa {
+  -webkit-transition-property: none;
+  transition-property: none;
+  /*AccessPress Social Login fix*/
+}
+
+body.login .privacy-policy-page-link {
+  margin: 2em 0;
+}
+
+body.login .login-popup.bb-modal {
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #E7E9EC;
+  border-radius: 4px;
+  padding: 30px;
+  width: auto;
+  max-width: 800px;
+  margin: 40px auto;
+  box-shadow: 0 3px 24px 0 rgba(18, 43, 70, 0.28);
+  max-width: 800px;
+  font-size: 16px;
+  line-height: 1.6875rem;
+}
+body.login .login-popup.bb-modal ul, body.login .login-popup.bb-modal ol, body.login .login-popup.bb-modal dd {
+  margin: 0 1.6875rem 1.6875rem 0;
+  padding: 0;
+}
+body.login .login-popup.bb-modal .mfp-close,
+body.login .login-popup.bb-modal .mfp-close:hover {
+  background-color: transparent;
+  box-shadow: none;
+}
+body.login .login-popup.bb-modal h1 {
+  color: #122B46;
+  font-weight: 400;
+  text-align: right;
+  font-size: 2.125rem;
+  line-height: 42px;
+  margin-bottom: 27px;
+}
+body.login .login-popup.bb-modal p {
+  margin: 0 0 1.6875rem;
+}
+
+body.login .mfp-bg {
+  opacity: 0.4;
+}
+
+@media (max-width: 992px) {
+  body.login .login-popup.bb-modal {
+    padding: 40px 20px;
+  }
+}

@@ -1,0 +1,190 @@
+.bb-groups-invites-left {
+    .bb-panel-head {
+        position: relative;
+        border-bottom: 1px solid rgb(231, 233, 236);
+        padding: 15px 20px;
+    }
+
+    .bb-panel-subhead {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 4px 0px;
+    }
+
+    span.select-members-text {
+        font-size: 13px;
+    }
+    
+    .bb-title-wrap {
+        margin: -20px -20px 20px;
+        border-bottom: 1px solid #E7E9EC;
+        padding: 20px;
+    }
+
+    .bs-styled-checkbox + label:before {
+        vertical-align: middle;
+    }
+
+    .bs-styled-checkbox:checked + label:after {
+        top: 4px;
+    }
+
+    #members-list.item-list .item-avatar img {
+        max-width: 45px;
+    }
+
+    input#group_invites_search {
+        background-size: 14px;
+        background-position: left 12px center;
+        background-color: #FBFBFC;
+        height: 32px;
+    }
+}
+
+#item-body .total-members-text {
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: -0.24px;
+    margin: 0;
+}
+
+.bb-groups-invites-right-top {
+    min-height: 222px;
+
+    div.bp-feedback {
+        background: #fbfbfc;
+    }
+}
+
+#send_group_invite_form .bb-groups-invites-right-top .bb-title {
+    margin: 0;
+    line-height: 1.4;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: -0.24px;
+}
+
+.bb-groups-invites-right .bb-title-wrap {
+    margin: -20px -20px 20px;
+    border-bottom: 1px solid #E7E9EC;
+    padding: 20px;
+}
+
+#buddypress input#bp_invites_reset {
+    background: transparent;
+    color: $color-button-primary;
+    border: 1px solid $color-button-primary;
+    box-shadow: none;
+}
+
+#group-invites-container .bb-groups-invites-left .group-invites-members-listing .action button {
+    background: url(../images/svg/circle-add.svg) no-repeat;
+    height: 26px;
+    width: 26px;
+    background-size: contain;
+    padding: 0;
+    min-width: 26px;
+}
+
+#group-invites-container .bb-groups-invites-left .group-invites-members-listing li.selected .action button {
+    background: url(../images/svg/circle-close.svg) no-repeat;
+}
+
+#group-invites-container .bb-groups-invites-left .group-invites-members-listing .action button .icons {
+    opacity: 0;
+}
+
+#send_group_invite_form .select2-selection__choice__remove {
+    font-size: 0;
+    padding: 1px 0 0 0;
+
+    &:before {
+        content: '\e828';
+        font-family: 'bb-icons';
+        font-size: 14px;
+        line-height: 1;
+        color: rgb(77, 92, 109);
+        display: flex;
+        -webkit-box-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        align-items: center;
+        -webkit-font-smoothing: antialiased;
+    }
+}
+
+#bp-group-invite-content {
+    #whats-new-toolbar {
+        padding: 20px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+}
+
+#group-invites-new-submit {
+    padding: 0;
+
+    #bp_invites_reset {
+        margin: 0;  
+    }
+}
+
+#bp-invites-dropdown-options-loader {
+    margin-left: auto;
+    margin-right: 10px;
+    position: relative;
+    top: 3px;
+
+    .dashicons-update:before {
+        content: '\e838';
+        font-family: 'bb-icons';
+        font-size: 20px;
+        display: block;
+        transform: scale(0.8);
+    }
+}
+
+.group-invites-members-listing .bp-invites-feedback {
+    padding: 0 20px;
+}
+
+.group-invites-members-listing {
+    .dashicons-update:before {
+        content: '\e838';
+        font-family: 'bb-icons';
+        font-size: 20px;
+        display: block;
+    }
+}
+
+#buddypress #send_group_invite_form .select2-search__field {
+    height: 30px;
+}
+
+body #buddypress .group-invites-members-listing .bp-list .action {
+    max-width: 26px;
+}
+
+body.send-invites .select2-container .select2-dropdown {
+    display: none;
+}
+
+.bb-more-invites-wrap {
+    .dashicons {
+        margin-right: 5px;
+    }
+
+    .dashicons:before {
+        content: '\e921';
+        font: normal normal normal 18px/1 "bb-icons";
+        speak: none;
+        display: inline-block;
+        text-decoration: inherit;
+        text-transform: none;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        vertical-align: text-bottom;
+    }
+}

@@ -1,0 +1,80 @@
+.entry-content #badgeos-achievements-container {
+	border-top: 0;
+}
+
+#badgeos-achievements-container {
+	.badgeos-achievements-list-item {
+		padding: 20px;
+		background-color: $color-white;
+		border: 1px solid $color-border;
+		border-radius: 4px;
+		margin-bottom: 20px;
+
+		.badgeos-item-title {
+			margin-bottom: 10px;
+
+			a {
+				color: $color-headings;
+
+				&:hover {
+					color: $color-link;
+				}
+			}
+		}
+	}
+
+	.badgeos-open-close-switch a {
+		display: flex;
+		width: 100%;
+		align-items: center;
+		padding: 5px 0;
+		font-size: $font-size-extra-small;
+		text-transform: uppercase;
+		color: $color-small-text;
+
+		&:after {
+			padding: 0;
+			margin-left: auto;
+			background: transparent;
+			background-image: none;
+			background-color: #EEF0F3;
+			border-radius: 100%;
+			font-family: "bb-icons";
+		    display: inline-block;
+		    line-height: 1;
+		    font-weight: normal;
+		    font-style: normal;
+		    speak: none;
+		    text-decoration: inherit;
+		    text-transform: none;
+		    text-rendering: auto;
+		    -webkit-font-smoothing: antialiased;
+		    -moz-osx-font-smoothing: grayscale;
+		    width: 20px;
+		    height: 20px;
+		    font-size: 16px;
+		    line-height: 20px;
+		    vertical-align: top;
+		    text-align: center;
+		    transition: color .1s ease-in 0;
+		    color: $color-small-text;
+		}
+
+		&.show-hide-open:after {
+			content: '\e879';
+			line-height: 21px;
+		}
+
+		&.show-hide-close:after {
+			content: '\e87c';
+			transform: none;
+		}
+	}
+}
+
+.widget {
+	.badgeos-achievements-list-item {
+		padding: 0 0 10px;
+		border: 0;
+	}
+}

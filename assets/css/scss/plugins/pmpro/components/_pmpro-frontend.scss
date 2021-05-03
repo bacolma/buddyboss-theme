@@ -1,0 +1,241 @@
+table.pmpro_checkout,
+table#pmpro_invoices_table,
+#pmpro_account-invoices table,
+#pmpro_account-membership table,
+#pmpro_cancel table {
+	border-collapse: separate;
+	background: #fff;
+	font-size: $font-size-smaller;
+
+	th:first-child, 
+	td:first-child {
+		padding-left: 1em;
+	}
+
+	th:last-child, 
+	td:last-child {
+		padding-right: 1em;
+	}
+
+	thead {
+		th:first-child {
+            border-left: 1px solid rgba(0,0,0,0.05);
+        }
+
+		th:last-child {
+        	border-right: 1px solid rgba(0,0,0,0.05);	
+        }
+
+        tr:first-child th {
+        	border-top: 1px solid rgba(0,0,0,0.05);
+        }
+
+        tr:first-child th:first-child {
+        	border-radius: 4px 0 0 0;
+        }
+
+        tr:first-child th:last-child {
+        	border-radius: 0 4px 0 0;
+        }
+
+        th {
+        	text-transform: uppercase;
+        	font-weight: 400;
+        	color: $color-small-text;
+        	white-space: nowrap;
+        }
+	}
+
+	tbody {
+		td:first-child {
+            border-left: 1px solid rgba(0,0,0,0.05);
+        }
+
+        td:last-child {
+        	border-right: 1px solid rgba(0,0,0,0.05);
+        }
+
+        tr:last-child td {
+        	border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+
+        tr:last-child td:first-child {
+        	border-radius: 0 0 0 4px;
+        }
+
+        tr:last-child td:last-child {
+        	border-radius: 0 0 4px 0;
+        }
+	}
+}
+
+.pmpro_btn,
+a.pmpro_btn,
+.entry-content a.pmpro_btn,
+.pmpro_btn:link {
+	/*padding: 5px 20px;*/
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    color: $color-white;
+    background-color: $color-link;
+    border-radius: 100px;
+    display: inline-block;
+    border: 0;
+    transition: all linear 0.2s;
+
+    &:hover {
+    	box-shadow:inset 0 0 0 99999px rgba(0,0,0,0.1);
+    	border: 0;
+    }
+
+    &.pmpro_btn-cancel {
+		color: #939597;
+		text-decoration: none;
+
+		&:hover {
+			color: $color-link;
+			text-decoration: none;
+		}
+	}
+}
+
+#pmpro_levels_table {
+	.pmpro_btn {
+		padding: 5px 40px;
+		display: inline-block;
+		min-width: 150px;
+	}
+
+	tbody {
+		td:last-child {
+			text-align: right;
+		}
+	}
+}
+
+form.pmpro_form {
+	.input, 
+	textarea, 
+	select {
+		width: 100%;
+	}
+
+	.pmpro_payment-expiration {
+		select {
+			max-width: 150px;
+
+			&#ExpirationMonth {
+				margin-right: 5px;
+			}
+
+			&#ExpirationYear {
+				margin-left: 7px;
+			}
+		}
+	}
+
+	.pmpro_checkout-field-bcity_state_zip {
+		input[type=text] {
+			max-width: 25%;
+			margin-right: 5px;
+		}
+	}
+
+	hr {
+		height: 1px;
+		background-color: transparent;
+		border-top: 1px solid $color-border;
+		margin: 1.5em 0;
+	}
+
+	& > div[align=center] {
+		text-align: left;
+	}
+
+	input[type="button"]#other_discount_code_button {
+		text-decoration: none;
+	}
+}
+
+input[type=submit].pmpro_btn {
+	border: 0;
+}
+
+.pmpro_checkout {
+	h3 span.pmpro_checkout-h3-msg {
+		font-style: normal;
+		color: $color-small-text;
+	}
+}
+
+#pmpro_account .pmpro_box {
+	border-top: 0;
+	margin: 20px 0;
+	padding: 0;
+
+	h3 {
+		margin-bottom: inherit;		
+	}
+}
+
+#pmpro_account-membership > .pmpro_actionlinks {
+	margin-top: -15px;
+	font-size: 14px;
+}
+
+body[class^="pmpro"] hr {
+	height: 1px;
+	background-color: transparent;
+	border-top: 1px solid $color-border;
+	margin: 1.5em 0;
+}
+
+.pmpro_a-print {
+	background: transparent;
+	color: #939597;
+
+	&:before {
+		content: '\e924';
+        font-family: "bb-icons";
+        font-size: 16px;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        position: relative;
+        top: 1px;
+        margin-right: 4px;
+	}
+
+	&:hover {
+		color: $color-link;
+	}
+}
+
+.bb-pmpro_account-profile {
+	background-color: #fff;
+	border: 1px solid $color-border;
+	border-radius: 4px;
+	padding: 1rem;
+	font-size: 14px;
+
+	& > p {
+		color: $color-headings;
+		text-transform: uppercase;
+	}
+
+	& > ul {
+		list-style: none;
+	}
+}
+
+#pmpro_account .pmpro_box {
+	.bb-pmpro_account-profile {
+		p {
+			margin: 0 0 10px;
+		}
+
+		ul {
+			margin-left: 0;
+		}
+	}
+}

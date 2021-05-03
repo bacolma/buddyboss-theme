@@ -1,0 +1,637 @@
+.lifterlms {
+
+    .llms-checkout-wrapper {
+
+        font-weight: 400;
+        font-size: 22px;
+        color: $color-text;
+
+        .llms-checkout {
+            background: transparent;
+        }
+
+        .llms-checkout-col {
+            padding: 20px 15px;
+            border: 1px solid $color-light;
+            border-radius: 4px;
+            background: $color-white;
+        }
+
+        .llms-checkout-section-content {
+
+            .llms-field-button {
+                width: 30%;
+            }
+
+            .llms-form-field.type-submit {
+                text-align: right;
+            }
+        }
+
+        .llms-notice {
+            margin: 0;
+            font-weight: 400;
+            font-size: 14px;
+        }
+
+        .llms-form-heading {
+            font-size: 16px;
+            font-weight: 700;
+            background: none;
+            color: $color-headings;
+        }
+
+        .llms-checkout-section {
+            border: none;
+        }
+
+        .llms-form-field {
+            label {
+                color: #17304a;
+                font-size: 16px;
+                font-weight: 400;
+            }
+        }
+
+        .llms-form-field.type-radio label:before {
+            display: none !important;
+        }
+
+        .llms-button-action {
+            border-radius: 100px;
+            background: $color-link;
+        }
+
+        .llms-notice {
+            background: none;
+            border: none;
+        }
+
+        .llms-person-login-form-wrapper {
+            padding: 0;
+            border: 0;
+        }
+
+        .llms-checkout-wrapper form.llms-login {
+            border: 0;
+        }
+
+        .llms-person-login-aktif {
+            border: 1px solid $color-light;
+            padding: 20px;
+        }
+
+        .llms-login {
+            border: none;
+        }
+    }
+
+    .llms-student-dashboard {
+        display: flex;
+        border: 1px solid $color-border;
+        border-radius: 4px;
+
+        @media only screen and (max-width: 768px) {
+            flex-direction: column;
+        }
+
+        .llms-sep {
+            display: none;
+        }
+
+        .llms-sd-link {
+            display: block;
+            width: 100%;
+            padding: 12px 20px;
+            color: #939597;
+            font-size: 14px;
+        }
+
+        .llms-sd-section {
+            width: 100%;
+            margin-bottom: 0;
+            padding: 38px 80px;
+            background: $color-white;
+            border-radius: 4px;
+
+            @media only screen and (max-width: 768px) {
+                padding: 30px 30px;
+            }
+
+            .llms-sd-section-title {
+                font-weight: 500;
+                font-size: 22px;
+            }
+
+            .llms-sd-section-footer {
+                margin-top: 20px;
+            }
+        }
+
+        .llms-sd-grades {
+            padding: 38px 30px;
+        }
+
+        .llms-person-login-form-wrapper {
+            border: none;
+            margin: auto;
+
+            form {
+                max-width: 100%;
+            }
+        }
+
+    }
+
+    .llms-sd-title {
+        display: none;
+    }
+
+    .llms-sd-header {
+        min-width: 230px !important;
+        background: $background-light;
+        border-right: 1px solid $color-border;
+        border-radius: 4px 0 0 4px;
+
+        @media only screen and (max-width: 768px) {
+            border-right: none; 
+        }
+    }
+
+    .llms-sd-items {
+        display: flex;
+        flex-direction: column;
+        padding: 30px 0;
+
+        @media only screen and (max-width: 768px) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 0;
+        }
+
+        .current {
+            background: #e9eaed;
+            
+            a {
+                color: $color-headings;
+            }
+        }
+
+        .llms-sd-item {
+            a {
+                &::before {
+                    font-size: 18px;
+                    text-rendering: auto;
+                    -webkit-font-smoothing: antialiased;
+                    font-family: bb-icons;
+                    margin-right: 10px;
+
+                    @media only screen and (max-width: 768px) {
+                        display: none;
+                    }
+                }
+
+                &:hover {
+                    color: $color-link;
+                }
+            }
+
+            @media only screen and (max-width: 768px) {
+                width: 50%;
+            }
+        }
+
+        .llms-sd-item:hover a {
+            color: $color-link;
+        }
+
+        .dashboard {
+            a {
+                &::before {
+                    content: '\e89f';
+                }
+            }
+        }
+
+        .signout {
+            a {
+                &::before {
+                    content: '\e8b4';
+                }
+            }
+        }
+
+        .orders {
+
+            a {
+                &::before {
+                    content: '\e8bd';
+                }
+            }
+
+        }
+
+        .my-grades {
+            a {
+                &::before {
+                    content: '\e86e';
+                }
+            }
+        }
+
+        .edit-account {
+            a {
+                &::before {
+                    content: '\e80c';
+                }
+            }
+        }
+
+        .view-memberships {
+            a {
+                &::before {
+                    content: '\e93c';
+                }
+            }
+        }
+
+        .notifications {
+            a {
+                &::before {
+                    content: '\e8a5';
+                }
+            }
+        }
+
+        .view-certificates {
+            a {
+                &::before {
+                    content: '\e882';
+                }
+            }
+        }
+
+        .view-achievements {
+            a {
+                &::before {
+                    content: '\e931';
+                }
+            }
+        }
+
+        .view-courses {
+            a {
+                &::before {
+                    content: '\e917';
+                }
+            }
+        }
+
+        .redeem-voucher {
+            a {
+                &::before {
+                    content: '\e8e6';
+                }
+            }
+        }
+
+        .dashboard,
+        .signout,
+        .orders,
+        .my-grades,
+        .edit-account,
+        .view-memberships,
+        .notifications,
+        .view-certificates,
+        .view-achievements,
+        .view-courses,
+        .redeem-voucher {
+            cursor: pointer;
+            border-top: 1px solid $background-light;
+
+            @media only screen and (max-width: 768px) {
+                border-top: 0;
+            }
+
+            &:hover {
+                background: #e9eaed;
+            }
+        }
+
+    }    
+
+    .llms-button-primary,
+    .llms-button-secondary,
+    .llms-field-button {
+        background: $color-link;
+        color: $color-white;
+        border-radius: 100px;
+    }
+
+    .llms-sd-notification-center {
+        border-radius: 0 4px 4px 0;
+        background: $color-white;
+        width: 100%;
+        margin-bottom: 0;
+        padding: 38px 80px;
+    }
+
+    .redeem-voucher {
+        form {
+            border-radius: 0 4px 4px 0;
+            background: $color-white;
+            width: 100%;
+            margin-bottom: 0;
+            padding: 38px 80px;
+        }
+    }
+    
+    .llms-status.llms-completed {
+        color: $color-white;
+    }
+
+    .llms-person-form-wrapper {
+
+        background: $color-white;
+        border-radius: 0 4px 4px 0;
+
+        form {
+            width: 100%;
+            margin-bottom: 0;
+            padding: 38px 80px;
+        }
+
+    }
+
+    .llms-table-sort .llms-button-secondary.small {
+        padding: 6px 20px;
+        // margin-top: 20px;
+    }
+
+}
+
+.llms-student-dashboard .orders-table th, .llms-student-dashboard .orders-table td {
+    vertical-align: middle;
+}
+
+.entry-header {
+    margin-bottom: 30px;
+}
+
+.llms-checkout-section-content .llms-label {
+    color: $color-headings;
+    font-size: 16px;
+    font-weight: 700;
+    font-variant: small-caps;
+    text-transform: lowercase;
+}
+
+.llms-checkout-section-content .llms-coupon-wrapper {
+    font-weight: 700;
+    font-size: 16px;
+    color: $color-headings;
+}
+
+.llms-coupon-entry .llms-form-field .llms-button-secondary {
+    width: 100% !important;
+}
+
+.llms-gateway-description p {
+    font-weight: 400;
+    font-size: 16px;
+    color: $color-headings;
+}
+
+.llms-order-summary li {
+    color: $color-headings;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.llms-form-field .llms-description {
+    font-size: 14px;
+    font-style: italic;
+    font-weight: 400;
+    color: $color-headings;
+    line-height: 1;
+}
+
+
+.lifter-purchase {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 30px;
+    font-weight: 400;
+    font-size: 22px;
+    color: $color-text;
+    border-radius: 4px;
+    border: 1px solid $color-border;
+    background: $color-white;
+}
+
+.lifter-purchase a {
+    display: contents;
+}
+
+.lifter-purchase:before {
+    display: inline-block;
+    width: 100%;
+    height: 60px;
+    content: '';
+    background-image: url(../images/svg/cart.svg);
+    background-repeat: no-repeat;
+    background-size: 60px 60px;
+    background-position: center;
+    margin-bottom: 24px;
+}
+
+.llms-general-notification {
+    box-shadow: none;
+    border-radius: 0 4px 4px 0;
+    border-color: $color-border;
+    margin-bottom: 10px !important;
+    background: $background-light;
+
+    span {
+        border-radius: 4px 0 0 4px;
+    }
+}
+
+.llms-general-notification p {
+    font-size: 14px;
+    line-height: 21px;
+    padding: 7px 5px;
+    color: $color-text;
+}
+
+.llms-general-notification.info .bp-icon, .bp-feedback.help .bp-icon {
+    background: $color-link;
+}
+
+.llms-table {
+    border-radius: 4px;
+    border-collapse: separate !important;
+    font-size: 14px;
+
+    tr:hover {
+        background: #F5F5F5 !important;
+
+        td {
+            background: #F5F5F5 !important;
+        }
+    }
+
+    td {
+        border: none !important;
+    }
+}
+
+.llms-table thead th, .llms-table thead td {
+    font-size: 15px;
+}
+
+.llms-table-sort form select {
+    display: inline-block;
+    font-family: inherit;
+    font-style: inherit;
+    font-size: 15px;
+    height: 40px;
+    outline: 0;
+    vertical-align: middle;
+    background-color: $color-white;
+    border: 1px solid $color-lightgray;
+    border-radius: 3px;
+    box-shadow: none;
+    padding: 0 12px;
+    width: auto;
+    background-image: url(../images/svg/arrow-down.svg);
+    background-repeat: no-repeat;
+    background-position: right 1rem center;
+    padding: 10px 40px 10px 20px;
+}
+
+.llms-table tbody tr:nth-child(odd) td, .llms-table tbody tr:nth-child(odd) th {
+    background: #f6f9fe;
+}
+
+td.llms-table-navigation {
+    width: 45%;
+}
+
+.llms-table-sort form {
+    width: 100%;
+    display: flex;
+    justify-content:flex-end;
+    align-items: center;
+    
+    select {
+        margin: 0 10px !important;
+    }
+}
+
+.llms-table th:first-child, .llms-table td:first-child {
+    width: 30%;
+}
+
+/* To fix sidebar issue with LMS */
+
+.llms-sd-tab.dashboard {
+    width: 100%;
+}
+
+.llms-my-memberships p {
+    position: relative;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    box-shadow: none;
+    border-radius: 0 4px 4px 0;
+    padding: 7px 60px;
+    margin-bottom: 10px !important;
+    background: $background-light;
+    border: 1px solid $color-border;
+
+    &:before {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 0px 11px;
+        font-family: dashicons;
+        font-size: 20px;
+        content: "";
+        width: 42px;
+        height: 100%;
+        background: $color-link;
+        color: $color-white;
+        border-radius: 4px 0 0 4px;
+    }
+}
+
+
+.llms-sd-widgets {
+    display: flex;
+    flex-direction: column;
+
+    .llms-sd-widget-title {
+        margin-right: 10px;
+    }
+
+    .llms-sd-widget:first-child {
+        margin-left: 10px;
+    }
+
+    .llms-sd-widget:last-child {
+        margin-right: 10px;
+    }
+}
+
+.llms-table.llms-single-course-grades {
+    margin: 10px;
+}
+
+.lifterlms .llms-button-primary, .lifterlms .llms-button-secondary, .lifterlms .llms-field-button {
+    padding: 10px 20px !important;
+
+    &:hover {
+        background: #0065e5;
+    }
+}
+
+.llms-sd-widgets .llms-sd-widget .llms-sd-widget-title {
+    text-align: center;
+}
+
+
+.llms-person-form.edit-account {
+
+    .llms-form-fields {
+
+        .llms-form-field {
+
+            label {
+                font-size: 16px;
+                font-weight: 400;
+                color: $color-text;
+            }
+
+            input {
+                margin-top: 9px;
+                margin-bottom: 21px;
+                height: 50px;
+            }
+
+        }
+
+    }
+
+    .llms-field-button.llms-button-action {
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+}
+

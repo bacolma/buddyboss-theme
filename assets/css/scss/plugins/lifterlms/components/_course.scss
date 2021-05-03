@@ -1,0 +1,179 @@
+.llms-loop-list {
+    display: flex;
+	flex-basis: 25%;
+	flex-wrap: wrap;
+
+	@media only screen and (max-width: 1200px) {
+		flex-basis: 33.333%;
+	}
+
+	@media only screen and (max-width: 820px) {
+		flex-basis: 50%;
+	}
+
+	@media only screen and (max-width: 480px) {
+		flex-basis: 100%;
+	}
+
+	.llms-loop-item-content {
+		background-color: $color-white;
+		border-radius: 4px;
+		padding-bottom: 0;
+		border: 1px solid $color-light;
+
+		&:hover {
+			box-shadow: 0 4px 32px 0 rgba(18,43,70,.1);
+			transition: box-shadow 0.3s ease-in-out;
+		}
+
+		.llms-meta, 
+		.llms-author, 
+		.llms-loop-title {
+			padding: 0;
+		}
+
+		a.llms-loop-link {
+			display: flex;
+			flex-direction: column;
+			height: 100%;
+		}
+
+		h4.llms-loop-title {
+			padding: 0;
+			margin-top: 0;
+			margin-bottom: 9px;
+			font-size: 22px;
+		    font-weight: 600;
+		    line-height: 1.22;
+		}
+
+		.llms-loop-item-footer {
+			padding-bottom: 15px;
+			border-top: 0;
+			border-radius: 0 0 4px 4px;
+		}
+
+		.llms-author {
+			font-weight: 500;
+			margin-bottom: 10px;
+			display: flex;
+			align-items: center;
+
+			.llms-author-info.name {
+				color: $color-text;
+			}
+		}
+
+		.llms-meta {
+			margin-bottom: 0;
+			font-size: 13px;
+			color: $color-small-text;
+		}
+
+		.llms-featured-image {
+			border-radius: 4px 4px 0 0;	
+			width: 100%;
+			height: 133px;		
+		}
+
+		.llms-progress {
+			height: 2px;
+
+			.llms-progress-bar {
+				height: 2px;				
+			}
+
+			.progress-bar-complete {
+				background-color: $color-link;
+			}
+		}
+
+		.llms-loop-item-after-image {
+			padding: 14px 20px;
+		}
+	}
+}
+
+.llms-loop-list.cols-3 .llms-loop-item {
+	width: 25%;
+
+	@media only screen and (max-width: 1200px) {
+		width: 33.333%;
+	}
+
+	@media only screen and (max-width: 820px) {
+		width: 50%;
+	}
+
+	@media only screen and (max-width: 480px) {
+		width: 100%;
+	}
+
+}
+
+.llms-page-title {
+	font-size: 28px;
+	color: $color-headings;
+	margin: 26px 0 22px 0;
+}
+
+
+.lifterlms {
+	.llms-sd-section {
+		.llms-loop-list {
+			display: flex;
+			flex-basis: 33.333%;
+			flex-wrap: wrap;
+		
+			@media only screen and (max-width: 1200px) {
+				flex-basis: 50%;
+			}
+		
+			@media only screen and (max-width: 820px) {
+				flex-basis: 100%;
+			}
+		}
+
+		.llms-loop-list.cols-3 .llms-loop-item {
+			width: 33.333%;
+		
+			@media only screen and (max-width: 1200px) {
+				width: 50%;
+			}
+		
+			@media only screen and (max-width: 820px) {
+				width: 100%;
+			}
+		
+		}
+	}
+
+	.llms-sd-section.llms-my-memberships {
+		.llms-loop-list {
+			display: flex;
+			flex-basis: 50%;
+			flex-wrap: wrap;
+		
+			@media only screen and (max-width: 1200px) {
+				flex-basis: 50%;
+			}
+		
+			@media only screen and (max-width: 820px) {
+				flex-basis: 100%;
+			}
+		}
+
+		.llms-loop-list.cols-3 .llms-loop-item {
+			width: 50%;
+		
+			@media only screen and (max-width: 1200px) {
+				width: 50%;
+			}
+		
+			@media only screen and (max-width: 820px) {
+				width: 100%;
+			}
+		
+		}
+	}
+}

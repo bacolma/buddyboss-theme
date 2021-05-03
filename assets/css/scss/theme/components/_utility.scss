@@ -1,0 +1,229 @@
+/*--------------------------------------------------------------
+# Accessibility
+--------------------------------------------------------------*/
+/* Text meant only for screen readers. */
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+.screen-reader-text:hover,
+.screen-reader-text:active,
+.screen-reader-text:focus {
+    background-color: #f1f1f1;
+    border-radius: 3px;
+    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+    clip: auto !important;
+    color: #21759b;
+    display: block;
+    font-size: 14px;
+    font-size: 0.875rem;
+    font-weight: bold;
+    height: auto;
+    left: 5px;
+    line-height: normal;
+    padding: 15px 23px 14px;
+    text-decoration: none;
+    top: 5px;
+    width: auto;
+    z-index: 100000; /* Above WP toolbar. */
+}
+
+// Alignleft
+.alignleft {
+    float: left;
+}
+
+// Alignright
+.alignright {
+    float: right;
+}
+
+// Aligncenter
+.aligncenter {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+// Clear Both
+.clear-both {
+    clear: both;
+}
+
+// Clear None
+.clear-none {
+    clear: none;
+}
+
+// Clear Left
+.clear-left {
+    clear: left;
+}
+
+// Clear Right
+.clear-right {
+    clear: right;
+}
+
+.clearfix {
+    @extend %clearfix;
+}
+
+/* Image Caption Style */
+.wp-caption {
+    background-color: darken($color-white, 10%);
+    max-width: 100%;
+    overflow: hidden;
+    text-align: center;
+
+    // Floated Elements
+    &.alignleft { margin: rem-calc(8 32 26 0); }
+    &.aligncenter { margin-left: auto; margin-right: auto; }
+    &.alignright { margin: rem-calc(8 0 26 32); }
+}
+
+.wp-caption-text {
+    color: #666;
+    font-size: rem-calc(14);
+    line-height: 1.2;
+    padding: rem-calc(8);
+}
+
+#tinymce.mce-content-body {
+    font-size: rem-calc(16);
+    font-style: normal;
+    font-weight: 400;
+    padding: 15px !important;
+}
+
+/* Gallery */
+.gallery {
+    margin: 0 -5px 45px; // Self
+    // Children
+    br + br { display: none; }
+}
+
+.gallery-item { display: inline-block; margin: 0; padding: 5px; vertical-align: top; }
+
+// Gallery Columns
+@for $i from 1 through 9 {
+    .gallery-columns-#{$i} .gallery-item { width: 100% / $i; }
+}
+
+.gallery-caption {
+    color: #666;
+    line-height: 1.2;
+    padding: rem-calc(8);
+    text-align: center;
+}
+
+// Gallery Icon
+
+.gallery-icon {
+    overflow: hidden;
+    text-align: center; // Self
+
+    .attachment-thumbnail {
+        background-color: darken($color-white, 4%);
+        margin: 0;
+        max-width: 100%;
+        padding: 5px;
+    }
+}
+
+.gallery img {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+// max-width 640px, mobile-only styles */
+/*.gallery .gallery-item {
+    width: 50%;
+}*/
+/* End - Gallery */
+
+.entry-content .fluid-width-video-wrapper,
+.entry-content img.aligncenter {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.bb-vw-container {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+#bb-loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    background: url(../images/svg/loader.svg) center no-repeat $color-white;
+    background-size: 62px;
+    transition: 0.3s all;
+    z-index: 9999;
+
+    .bb-remove-loader & {
+        opacity: 0;
+        visibility: hidden;
+        z-index: -1111;
+    }
+}
+
+.bp-screen-reader-text {
+    clip: rect(1px,1px,1px,1px);
+    height: 1px;
+    overflow: hidden;
+    position: absolute !important;
+    width: 1px;
+    word-wrap: normal !important;
+}
+
+[v-cloak] {
+    display: none !important;
+}
+
+img.wp-smiley {
+    display: inline !important;
+    border: none !important;
+    box-shadow: none !important;
+    height: 1em !important;
+    width: 1em !important;
+    margin: 0 .07em !important;
+    vertical-align: -0.1em !important;
+    background: none !important;
+    padding: 0 !important;
+}
+
+/* Fixed `contenteditable = true` height issue in FireFox */
+*[contenteditable]:empty:before {
+    content: "\feff";
+}
+
+.select2-dropdown {
+    background: #fff;
+    box-shadow: 0 2px 7px 1px rgba(0, 0, 0, 0.05), 0 6px 32px 0 rgba(18, 43, 70, 0.1);
+    border-radius: 4px;
+    border: 0;
+    padding: 5px 10px;
+    margin-right: 0;
+    max-width: 300px;
+
+    .select2-results__option {
+        border-radius: 3px;
+        margin-bottom: 0;
+        font-size: 14px;
+        padding: 2px 5px;
+    }
+}
